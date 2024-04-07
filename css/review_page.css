@@ -5,7 +5,7 @@
             background-attachment: fixed;
             background-size: cover;
             background-position: 100%;
-            background-color: #FFC0CB;
+            background-color: #e83e8c;
            
             margin: 0;
             padding: 0;
@@ -96,8 +96,8 @@
         .send{
             width: 200px;
             height: 30px;
-            background: #e83e8c;
-            border: 2px solid #e83e8c;
+            background: #ffC0CB;
+            border: 2px solid #FFC0CB;
             margin: 10px 165px;
             color: black;
             font-size: 15px;
@@ -124,7 +124,7 @@
             
         }
         .rvw {
-            background-color:#FFC0CB;
+            background-color:#e83e8c;
         
         border-radius: 15px;
        
