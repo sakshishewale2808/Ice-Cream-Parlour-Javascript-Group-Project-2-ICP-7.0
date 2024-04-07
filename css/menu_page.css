@@ -259,14 +259,19 @@ header{
   }
   .flavour-img{
     height: 300px;
-    padding: 20px;
+    padding-top: 15px;
   
 
   }
   .flavour-description{
     margin:10px 77px;
+    font-weight: bold;
   }
   .flavour-price{
     color: #e83e8c;
     padding-left: 10px;
+  }
+  .effect-hover{
+
+    
   }
