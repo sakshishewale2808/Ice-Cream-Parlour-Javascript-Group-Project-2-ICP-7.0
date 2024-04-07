@@ -22,7 +22,7 @@
         
         .card
         {  
-            width: 100px;
+            width: 150px;
             height: 200px;
             border-radius: 20px ;
             display: inline-block;
@@ -127,6 +127,8 @@
             background-color:#e83e8c;
         
         border-radius: 15px;
+        width:500px;
+        
        
         }
        
