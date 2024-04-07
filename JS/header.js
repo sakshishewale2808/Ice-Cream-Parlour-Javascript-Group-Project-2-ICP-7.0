@@ -4,12 +4,24 @@ function changeSlideBtn(ImageName)
     btnPrev.html = ImageName
 
 }
-// Open the full screen search box
+
 function openSearch() {
     document.getElementById("myOverlay").style.display = "block";
   }
   
-  // Close the full screen search box
+
   function closeSearch() {
     document.getElementById("myOverlay").style.display = "none";
+  }
+  function openCart() {
+    document.getElementById("mySidenav").style.width = "400px";
+    document.getElementById("main").style.marginLeft = "400px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
   }
