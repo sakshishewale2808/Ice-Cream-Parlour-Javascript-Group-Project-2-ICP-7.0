@@ -1,0 +1,27 @@
+.banner-class{
+    position: relative;
+}
+
+.banner-img{
+    width: 100%;
+    height: 400px;
+}
+
+.banner-text{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.heading-font{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pragraph-text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.video{
+    height: 500px;
+    width: 100%;
+}
