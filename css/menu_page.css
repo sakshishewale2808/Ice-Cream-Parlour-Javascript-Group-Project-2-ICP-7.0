@@ -245,6 +245,7 @@ header{
     background-position: center;
     background-size: cover;
     padding-top: 90px;
+    padding-bottom: 40px;
 }
 .page-heading {
     font-size: 50px;
@@ -255,4 +256,17 @@ header{
   }
   .decoration{
     text-decoration: none;
+  }
+  .flavour-img{
+    height: 300px;
+    padding: 20px;
+  
+
+  }
+  .flavour-description{
+    margin:10px 77px;
+  }
+  .flavour-price{
+    color: #e83e8c;
+    padding-left: 10px;
   }
