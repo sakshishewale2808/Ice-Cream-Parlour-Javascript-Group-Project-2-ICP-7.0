@@ -257,21 +257,51 @@ header{
   .decoration{
     text-decoration: none;
   }
+  .filter-container{
+    width:100px;
+    margin: 50px 80px;
+    padding: 10px;
+    border-radius: 2px;
+    border: #000 1px solid;
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+    color:black;
+  }
+  .filter-container:hover{
+    background-color: #e83e8c;
+    color: white;
+
+  }
   .flavour-img{
     height: 300px;
     padding-top: 15px;
-  
+  cursor: pointer;
 
   }
   .flavour-description{
     margin:10px 77px;
     font-weight: bold;
+    cursor: pointer;
   }
   .flavour-price{
     color: #e83e8c;
     padding-left: 10px;
+    cursor: pointer;
   }
   .effect-hover{
+    width:200px;
+    padding: 5px 10px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-around;
+    visibility: hidden;
 
-    
+  }
+  .flavour-card:hover{
+    .effect-hover{
+        visibility: visible;
+        transition:1.25s;
+      
+    }
   }
