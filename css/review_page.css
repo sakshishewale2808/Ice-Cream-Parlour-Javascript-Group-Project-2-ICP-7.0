@@ -1,0 +1,132 @@
+   
+        body{
+            width: 100%;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLtUQbd11u69EhQL7VEGfMTsZE18G5vWIChA&s);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 100%;
+            background-color: #FFC0CB;
+           
+            margin: 0;
+            padding: 0;
+        }
+         
+        .review
+        {
+            color: white ;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 15px;
+        }
+        
+        
+        .card
+        {  
+            width: 100px;
+            height: 200px;
+            border-radius: 20px ;
+            display: inline-block;
+            border: 2px solid #330d00;
+            margin:50px 20px ;
+            background-color: antiquewhite;
+        }
+        .img    
+        {
+            position: relative;
+            height:80px;
+            width: 80px;
+            border: 5px solid rgb(198, 83, 0);
+            border-radius: 200px;
+            margin:10px 30px;
+            
+        }
+      
+        .heading{
+            position: relative;
+            font-size: 30px;
+            padding:0px 0 0px 170px ;
+            margin-top: -75px;
+        
+        }
+        .p1
+        {
+            text-align: center;
+            font-size: large;
+            padding: 30px 10px 10px 10px;
+            color: white;
+        }
+         .rate {
+            padding: 0 0px 0px 170px;
+         }
+         .checked{
+            color:black;
+               }
+        .hp{
+            background-color:black;
+            height: 5px;
+            border: none;
+        }
+        
+        .post{
+            /* padding: 0px 20px; */
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            
+        }
+        .detail{
+            /* padding: 5px 30px; */
+            margin-top: 15px;
+            margin-left: 27px;
+            height: 25px;
+            width: 200px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .msg{
+            margin-top: 15px;
+            margin-left: 20px;
+            height: 100px;
+            width: 350px;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .send{
+            width: 200px;
+            height: 30px;
+            background: brown;
+            border: 2px solid brown;
+            margin: 10px 165px;
+            color: black;
+            font-size: 15px;
+            border-radius: 7px;
+         }
+       
+        .send:hover{
+            
+            transition: .3s ease;
+            border: none;
+            box-shadow: 3px 3px 0  2px black;
+        }
+
+       
+        @media screen and (max-width: 764px) {
+            .rvw{
+                margin: 10px 20px;
+                display:flex ;
+                flex-direction: column;
+            }
+            .send{
+                margin: 10px 110px;
+            }
+            
+        }
+        .rvw {
+            background-color:#FFC0CB;
+        
+        border-radius: 15px;
+       
+        }
+       
