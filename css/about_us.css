@@ -20,3 +20,8 @@
 .pragraph-text{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.video{
+    height: 500px;
+    width: 100%;
+}
