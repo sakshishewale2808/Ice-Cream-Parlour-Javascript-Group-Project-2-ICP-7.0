@@ -30,6 +30,14 @@
             background-color: #fff;
             
         }
+
+        /* Media Query */
+
+        @media screen and (max-width: 500px) {
+            .time{
+                width: 80%;
+            }
+        }
     </style>
 </head>
 
@@ -41,15 +49,15 @@
             <p class="text-center text-muted">we provide best services to our customers.</p>
 
             <div class="time m-4 p-1 d-block mx-auto border-0 rounded-5 shadow">
-                <div class="text-danger d-flex justify-content-center align-item-center fs-1 p-1">
-                    <span  class="p-2" id="hrs">00</span>
-                    <span class="p-2" >:</span>
-                    <span class="p-2"  id="min">00</span>
-                    <span class="p-2" >:</span>
-                    <span class="p-2"  id="sec">00</span>
-                    <span class="p-2"  id="ampm"></span>
+                <div class="text-danger text-center fs-3 pt-2">
+                    <span  class="p-1" id="hrs">00</span>
+                    <span class="p-1" >:</span>
+                    <span class="p-1"  id="min">00</span>
+                    <span class="p-1" >:</span>
+                    <span class="p-1"  id="sec">00</span>
+                    <span class="p-1"  id="ampm"></span>
                 </div>
-                <h4 class="text-center text-danger fs-bolder" id="openclose"></h4>
+                <p class="text-center text-danger fs-bolder m-1" id="openclose"></p>
                 <p class="text-center text-muted">Open : 07:00 AM TO 06:00 PM</p>
             </div>
 
