@@ -49,8 +49,8 @@
                     <span class="p-2"  id="sec">00</span>
                     <span class="p-2"  id="ampm"></span>
                 </div>
-                <h2 class="text-center text-danger fs-bolder">OPENED</h2>
-                <p class="text-center text-muted">Open : 07:00 AM Close : 06:00 PM</p>
+                <h4 class="text-center text-danger fs-bolder" id="openclose"></h4>
+                <p class="text-center text-muted">Open : 07:00 AM TO 06:00 PM</p>
             </div>
 
             <div class="row my-5">
@@ -100,10 +100,20 @@
             const ampm = document.getElementById('ampm');
 
             const date = new Date();
-            hrs.innerText =  (date.getMinutes() < 10?"0":"" ) + date.getHours()  % 12 || 12;
+            hrs.innerText =  (date.getHours() < 10?"0":"" ) + date.getHours()  % 12 || 12;
             min.innerText = (date.getMinutes() < 10?"0":"" ) + date.getMinutes();
             sec.innerText = (date.getSeconds() < 10?"0":"" ) + date.getSeconds();
-            ampm.innerText = hrs >= 12 ? 'PM' : 'AM';         
+            ampm.innerText = hrs >= 12 ? 'PM' : 'AM';  
+        
+            const openclose = document.getElementById('openclose');
+            if(date.getHours() >= 7 && date.getHours() <= 18)
+            {
+                openclose.innerText = "OPENED";
+            }
+            else
+            {
+                openclose.innerText = "CLOSED";
+            }
 
         }
         setInterval(clock, 1000);
