@@ -267,11 +267,18 @@ header{
     justify-content: space-around;
     background-color:white;
     color:black;
+    text-decoration: none;
   }
   .filter-container:hover{
     background-color: #e83e8c;
     color: white;
+    border:#e83e8c 1px solid;
+    text-decoration: none;
 
+  }
+  .flavour-container{
+    justify-content: space-between;
+    margin-left: 100px;
   }
   .flavour-img{
     height: 300px;
@@ -298,10 +305,15 @@ header{
     visibility: hidden;
 
   }
+  
   .flavour-card:hover{
     .effect-hover{
         visibility: visible;
         transition:1.25s;
       
     }
+  }
+  .load-more-btn{
+    display: block;
+    margin: 20px auto;
   }
