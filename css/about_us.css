@@ -7,12 +7,23 @@
     height: 400px;
 }
 
-.banner-text{
+.banner-heading{
     position: absolute;
     top: 35%;
-    left: 25%;
+    left: 19%;
+    color: white;
 }
 
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    color: white;
+}
+
+.banner-color{
+    color: white;
+}
 .heading-font{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
