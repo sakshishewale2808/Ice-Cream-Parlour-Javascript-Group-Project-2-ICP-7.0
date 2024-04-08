@@ -16,12 +16,19 @@
             font-family: "Space Grotesk", sans-serif;
         }
 
+        body {
+            background-color: lightpink;
+        }
+
         hr {
             width: 200px;
             background: #108178;
             height: 5px !important;
         }
-       
+        .time{
+            width: 400px;
+            
+        }
     </style>
 </head>
 
@@ -31,6 +38,18 @@
             <h1 class="text-center mt-3 display-3 fw-bold">Our services</h1>
             <hr class="mx-auto fs-bold">
             <p class="text-center text-muted">we provide best services to our customers.</p>
+
+            <div class="time p-2 d-block mx-auto">
+                <div class="bg-dark border-0 rounded-5 text-light d-flex justify-content-center align-item-center fs-1">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                    <span id="ampm"></span>
+                </div>
+            </div>
+
             <div class="row my-5">
                 <div class="col-12 col-sm-6 col-md-4 m-auto">
                     <div class="card border-0 shadow text-center my-3 mx-2">
@@ -70,7 +89,23 @@
             </div>
         </div>
     </section>
+    <script>
+        function clock() {
+            const hrs = document.getElementById('hrs');
+            const min = document.getElementById('min');
+            const sec = document.getElementById('sec');
+            const ampm = document.getElementById('ampm');
 
+            const date = new Date();
+            hrs.innerText =  date.getHours()  % 12 || 12;
+            min.innerText = (date.getMinutes() < 10?"0":"" ) + date.getMinutes();
+            sec.innerText = (date.getSeconds() < 10?"0":"" ) + date.getSeconds();
+            ampm.innerText = hrs >= 12 ? 'PM' : 'AM';         
+
+        }
+        setInterval(clock, 1000);
+        clock();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
