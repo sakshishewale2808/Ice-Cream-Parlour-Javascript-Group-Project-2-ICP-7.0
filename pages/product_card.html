@@ -39,6 +39,13 @@
                 box-shadow:0px 0px 10px rgba(0,0,0,25);
                 margin:auto 420px;
             }
+            .product-image{
+                height:200px;
+                cursor:pointer;
+            }
+            .info{
+                width:450px;
+            }
            
            
             @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap')
@@ -54,12 +61,25 @@
        <p class="text-center text-black fs-2">
         Enjoy our flavoursome <br/>range<br/> of gorgeous ice cream
     </p>  
-     <img class="d-block"src="./../imgs/product-card/choco2.png" id="choco2" alt="choco2"/>
-    
+    <div>
+     <img class=" d-inline" src="./../imgs/product-card/choco2.png" id="choco2" alt="choco2"/> 
+    </div>
          <div class="product-container">
-     <img src="./../imgs/product-card/choco3.png" alt="choco3"/>
-     <img src="./../imgs/product-card/choco4.png" alt="choco4"/>
+     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco3.png')" alt="choco3"/>
+     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco4.png')" alt="choco4"/>
+     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco3.png')" alt="choco3"/>
+     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco4.png')" alt="choco4"/>
+     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco3.png')" alt="choco3"/>
+     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco4.png')" alt="choco4"/>
          </div>
+
+         <script>
+            function changeimage(imagename){
+                const mainimage = document.getElementById('choco2');
+                mainimage.src = imagename;
+
+            }
+         </script>
        
     </body>
 </html>
