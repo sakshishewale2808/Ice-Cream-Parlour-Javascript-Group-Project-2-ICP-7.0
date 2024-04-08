@@ -25,3 +25,9 @@
     height: 500px;
     width: 100%;
 }
+
+.paragraph-img{
+    height: 550px;
+    width: 550px;
+    box-shadow: 13px 15px 9px 3px  #c2c2a3;
+}
