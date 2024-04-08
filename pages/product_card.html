@@ -69,26 +69,52 @@
     </p>  
     <div class="d-inline">
      <div><img  src="./../imgs/product-card/choco2.png" id="choco2" alt="choco2"/> </div>
-     <div class="ice-des d-block text-start fs-5"> <h1>Cereal And Milk</h1> <h3>only at ₹60/-</h3>
+     <div class="ice-des d-block text-start fs-5"> <h1 id="name">Cereal And Milk</h1> <h3 id="price">only at ₹60/-</h3>
         Things You Need To Know Ice cream is a good choice when you need instant energy after a series of activities or if you need to gain weight, remember that being too thin can make you 
         as unattractive as being overweight. Ice cream is also a rich source of nutrients...
     </div>
     </div>
          <div class="product-container">
-     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco3.png')" alt="choco3"/>
-     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco4.png')" alt="choco4"/>
-     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco3.png')" alt="choco3"/>
-     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco4.png')" alt="choco4"/>
-     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco3.png')" alt="choco3"/>
-     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('./../imgs/product-card/choco4.png')" alt="choco4"/>
+     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('Cereal And Milk')" alt="choco3"/>
+     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('Choco berry')" alt="choco4"/>
+     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('Pineapple')" alt="choco3"/>
+     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('Chikoo')" alt="choco4"/>
+     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('Apple')" alt="choco3"/>
+     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('Ice-Cream')" alt="choco4"/>
          </div>
 
          <script>
-            function changeimage(imagename){
-                const mainimage = document.getElementById('choco2');
-                mainimage.src = imagename;
-
-            }
+           function changeimage(b)
+            {
+                const flavour = document.getElementById('choco2');
+                const price =  document.getElementById('price');
+                if(b=='Cereal And Milk')
+                {
+                flavour.src = './../imgs/product-card/choco3.png';
+                price.innerText ='only at ₹60/-'
+                }
+                else if(b=='Choco berry')
+                 {
+                     flavour.src = './../imgs/product-card/choco4.png';
+                     price.innerText ='only at ₹70/-'
+                 }
+                 else if(b=='Fruit')
+                 {
+                     flavour.src = './img/fruit2.png';
+                 }
+                 else if(b=='Oreo')
+                 {
+                     flavour.src = './img/oreo-cake2.png ';
+                 }
+                 else if(b=='pineApple')
+                 {
+                     flavour.src = './img/pineApple2.png';
+                 }
+                 const choice=document.getElementById("name");
+     
+     choice.innerText=`\n ${b}`; 
+         }
+           
          </script>
        
     </body>
