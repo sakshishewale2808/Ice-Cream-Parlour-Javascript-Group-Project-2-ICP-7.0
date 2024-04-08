@@ -42,28 +42,32 @@
 </head>
 
 <body>
-    <section>
-        <div class="container">
+    
+        <section>
             <h1 class="text-center mt-3 display-3 fw-bold">Our services</h1>
             <hr class="mx-auto fs-bold">
             <p class="text-center text-muted">we provide best services to our customers.</p>
 
             <div class="time m-4 p-1 d-block mx-auto border-0 rounded-5 shadow">
                 <div class="text-danger text-center fs-3 pt-2">
-                    <span  class="p-1" id="hrs">00</span>
-                    <span class="p-1" >:</span>
-                    <span class="p-1"  id="min">00</span>
-                    <span class="p-1" >:</span>
-                    <span class="p-1"  id="sec">00</span>
-                    <span class="p-1"  id="ampm"></span>
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                    <span id="ampm"></span>
                 </div>
                 <p class="text-center text-danger fs-bolder m-1" id="openclose"></p>
                 <p class="text-center text-muted">Open : 07:00 AM TO 06:00 PM</p>
             </div>
 
+            <h4 class="text-center fs-2">Offers</h4>
+            <hr class="mx-auto fs-bold">
+          
+
             <div class="row my-5">
                 <div class="col-12 col-sm-6 col-md-4 m-auto">
-                    <div class="card border-0 shadow text-center my-3 mx-2">
+                    <div class="card border-0 shadow text-center my-3 mx-4">
                         <div class="card-body">
                             <img src="./../png/delivery.png" alt="icon" width="60px">
                             <h3>Free Delivery</h3>
@@ -75,7 +79,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 m-auto">
-                    <div class="card border-0 shadow text-center my-3 mx-2">
+                    <div class="card border-0 shadow text-center my-3 mx-4">
                         <div class="card-body">
                             <img src="./../png/healthy-food.png" alt="icon" width="60px">
                             <h3>Fresh And Organic</h3>
@@ -87,7 +91,7 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-md-4 m-auto">
-                    <div class="card border-0 shadow text-center my-3 mx-2">
+                    <div class="card border-0 shadow text-center my-3 mx-4">
                         <div class="card-body">
                             <img src="./../png/payment.png" alt="icon" width="60px">
                             <h3>Easy Payments</h3>
@@ -98,8 +102,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+  
     <script>
         function clock() {
             const hrs = document.getElementById('hrs');
