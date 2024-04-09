@@ -15,6 +15,9 @@
             padding: 0px;
             font-family: "Space Grotesk", sans-serif;
         }
+        body{
+            background-color:aliceblue;
+        }
 
         hr {
             width: 200px;
@@ -24,6 +27,16 @@
         .card{
             height: 300px;
             width: 350px;
+            transition: linear;
+            transition: 1s;
+ 
+        }
+        .card:hover{
+            background-color: #ca6c98;
+            /* height: 350px;
+            width: 400px; */
+            transform:scaleZ(1.85);
+
         }
     </style>
 </head>
@@ -35,7 +48,7 @@
             <hr class="mx-auto fs-bold">
             <p class="text-center text-muted">we provide best services to our customers.</p>
             <div class="row my-5">
-                <div class="col-12 col-sm-6 col-md-4 m-auto">
+                <div class="col-12 col-sm-6 col-md-4 m-auto container">
                     <div class="card border-0 shadow text-center my-3 mx-2">
                         <div class="card-body">
                             <img src="./../png/delivery.png" alt="icon" width="60px">
@@ -47,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 m-auto">
+                <div class="col-12 col-sm-6 col-md-4 m-auto container">
                     <div class="card border-0 shadow text-center my-3 mx-2">
                         <div class="card-body">
                             <img src="./../png/healthy-food.png" alt="icon" width="60px">
@@ -59,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-4 m-auto">
+                <div class="col-12 col-sm-6 col-md-4 m-auto container">
                     <div class="card border-0 shadow text-center my-3 mx-2">
                         <div class="card-body">
                             <img src="./../png/payment.png" alt="icon" width="60px">
