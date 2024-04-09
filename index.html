@@ -1,89 +1,97 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./css/header.css">
-        <script src="./JS/header.js"></script>
-       
-    </head>
-    <body>
-        <header>
-            <div class="nav-container flex" id="nav">
-                <div class="right-flex">
-                    <h1>LOGO</h1>
-                </div>
-                <div class="mid-flex">
-                    <ul  class="menu-list flex" type="none">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#aboutus">About Us</a></li>
-                        <li><a href="#contactus">Contact Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                    </ul>
-                </div>
-                <div class="left-flex">
-                    <img src="./icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
-                    <img src="./icons/add-contact.png" class="nav-icons"  alt="" >
-                    <img src="./icons/heart.png" class="nav-icons"  alt="">
-                    <img src="./icons/shopping-bag.png" class="nav-icons"  alt="" onclick="openCart()">
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="./JS/header.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-container flex" id="nav">
+            <div class="right-flex">
+                <h1>LOGO</h1>
             </div>
-            <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
-                <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
-                <h2 class="search-title">And Hit Enter...</h2>
-                <div class="overlay-content">
-                  <form action="action_page.php">
+            <div class="mid-flex">
+                <ul class="menu-list flex" type="none">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <div class="left-flex">
+                <img src="./icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
+                <img src="./icons/add-contact.png" class="nav-icons" alt="">
+                <img src="./icons/heart.png" class="nav-icons" alt="">
+                <img src="./icons/shopping-bag.png" class="nav-icons" alt="" onclick="openCart()">
+            </div>
+        </div>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
+            <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
+            <h2 class="search-title">And Hit Enter...</h2>
+            <div class="overlay-content">
+                <form action="action_page.php">
                     <input type="text" placeholder="Search Your Favorite Ice-Cream Here..." name="search">
                     <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-                  </form>
-                </div>
-              </div>
-              <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <p class="cart">Shopping Cart</p>
-                <hr>
-              </div>
-              
-            <div class="bg-img" id="bg-img">
-                <div  class="text-overlay">
-                    <span class="heading">Style Destination</span>
-                    <h1>Taste From The </h1>
-                    <h1>Good Old  Days.</h1>
-                    <button class="buyNow-btn">SHOP NOW</button>
-                </div>
-
+                </form>
             </div>
-            <div class="slide-btn-comtain" onclick="changeBg()">
-            <img src="./icons/new-moon.png" alt="" class="slide-btn" id="slide-btn" onclick="changeSlideBtn('./imgs/s5.jpg')" >
-            <img src="./icons/oval.png" alt="" class="slide-btn btn-2"  id="slide-btn1"  onclick="changeSlideBtn('./imgs/s6.jpg')" > 
         </div>
-   
-            
-        </header>
-      <!-- ----------------------Nav-Bar-End-------------------------------- -->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <p class="cart">Shopping Cart</p>
+            <hr>
+        </div>
 
-<div  class="visit">
-  <span class="headings">VISIT OUR STORE</span>
-  <div class="visit-images-containere">
-      <img src="./imgs/ba20.webp" class="visit-img" alt="">
-      <img src="./imgs/ba21.webp" class="visit-img" alt="">
-      <img src="./imgs/ba22.webp" class="visit-img" alt="">
-      <img src="./imgs/ba19.webp" class="visit-img" alt="">
+        <div class="bg-img" id="bg-img">
+            <div class="text-overlay">
+                <span class="heading">Style Destination</span>
+                <h1>Taste From The </h1>
+                <h1>Good Old Days.</h1>
+                <button class="buyNow-btn">SHOP NOW</button>
+            </div>
 
-  </div>
-</div>
-    <div class="Seller-container">
-        <span class="headings">Our Best Seller</span>
-        <div>
-            
+        </div>
+        <div class="slide-btn-comtain" onclick="changeBg()">
+            <img src="./icons/new-moon.png" alt="" class="slide-btn" id="slide-btn"
+                onclick="changeSlideBtn('./imgs/s5.jpg')">
+            <img src="./icons/oval.png" alt="" class="slide-btn btn-2" id="slide-btn1"
+                onclick="changeSlideBtn('./imgs/s6.jpg')">
+        </div>
+
+
+    </header>
+    <!-- ----------------------Nav-Bar-End-------------------------------- -->
+
+    <div class="visit">
+        <span class="headings">VISIT OUR STORE</span>
+        <div class="visit-images-containere">
+            <img src="./imgs/ba20.webp" class="visit-img" alt="">
+            <img src="./imgs/ba21.webp" class="visit-img" alt="">
+            <img src="./imgs/ba22.webp" class="visit-img" alt="">
+            <img src="./imgs/ba19.webp" class="visit-img" alt="">
+
         </div>
     </div>
-      
-    </body>
+    <div class="Seller-container">
+       <center> <span class="headings">Our Best Seller</span>
+        <div class="flex seller-heading">
+            <span>NEW ARRIVALS</span>
+            <SPan>BEST SELLER</SPan>
+            <span>TOP RATES</span>
+
+        </div></center>
+    </div>
+
+</body>
+
 </html>
