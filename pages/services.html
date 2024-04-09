@@ -18,6 +18,10 @@
         }
 
         body {
+            background-color: aliceblue;
+        }
+
+        body {
             background-color: lightpink;
         }
 
@@ -32,29 +36,31 @@
             background-color: #fff;
 
         }
-        .offer-card{
+
+        .offer-card {
             width: 400px;
             height: 550px;
         }
+
         .blue-moon {
             background: url(./../imgs/services/blueMoon.jpg) no-repeat;
             background-size: cover;
-            background-position: center;           
+            background-position: center;
             color: #4dc1be;
-            border: 1px solid red;
         }
         .neapolitan{
             background: url(./../imgs/services/Neapolitan.jpg) no-repeat;
             background-size: cover;
-            background-position: center;           
+            background-position: center;
             color: #d3d07f;
         }
         .lucuma{
-            background: url(./../imgs/services/Lucuma.webp) no-repeat;
+            background: url(./../imgs/services/Neapolitan.jpg) no-repeat;
             background-size: cover;
             background-position: center;
             color: #938700;
         }
+
 
         /* Media Query */
 
@@ -70,7 +76,7 @@
 <body>
 
     <section>
-        <h1 class="text-center text-danger  display-3 fw-bold">Our services</h1>
+        <h1 class="text-center text-danger mt-3 display-3 fw-bold">Our services</h1>
         <hr class="mx-auto fs-bold">
         <p class="text-center text-muted">we provide best services to our customers.</p>
 
@@ -92,7 +98,7 @@
         <h1 class="text-center text-muted fs-2">Buy any ice cream @ get One Free</h1>
 
         <div class="row mx-4">
-            <div class="col-12 col-sm-12 col-md-4  m-auto">
+            <div class="col-12 col-sm-12 col-md-4 m-auto">
                 <div class="card border-0 shadow text-center mt-5 offer-card blue-moon">
                     <div class="card-body">
                         <p class="fs-4">Raspberry Flavour</p>
@@ -122,9 +128,7 @@
                 </div>
             </div>
         </div>
-        </div>
-
-
+      
         <div class="row my-5">
             <div class="col-12 col-sm-6 col-md-4 m-auto">
                 <div class="card border-0 shadow text-center my-3 mx-4">
@@ -150,8 +154,8 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 m-auto">
-                <div class="card border-0 shadow text-center my-3 mx-4">
+            <div class="col-12 col-sm-6 col-md-4 m-auto container">
+                <div class="card border-0 shadow text-center my-3 mx-2">
                     <div class="card-body">
                         <img src="./../png/payment.png" alt="icon" width="60px">
                         <h3>Easy Payments</h3>
@@ -162,6 +166,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <script>
