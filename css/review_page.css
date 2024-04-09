@@ -48,3 +48,11 @@ textarea{
     border:1px solid #ccc;
     border-radius: 4px;
 }
+button{
+    background-color: #007BFF;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+}
