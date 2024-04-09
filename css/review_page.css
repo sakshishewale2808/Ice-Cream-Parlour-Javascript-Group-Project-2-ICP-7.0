@@ -1,0 +1,9 @@
+body{
+    font-family:Arial,sans-serif;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStACfxvqd2o0umQk4IYv7LDMw5tVfWwThH1_PEGBCfMachJ1eNUrxoEK9TdhXCXDmQERE&usqp=CAU");
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
