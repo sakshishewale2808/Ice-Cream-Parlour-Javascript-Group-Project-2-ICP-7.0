@@ -1,6 +1,8 @@
 body{
     font-family:Arial,sans-serif;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStACfxvqd2o0umQk4IYv7LDMw5tVfWwThH1_PEGBCfMachJ1eNUrxoEK9TdhXCXDmQERE&usqp=CAU");
+    background: url(./../imgs/review_page/icecreamparlour.jpg) no-repeat;
+    background-size: cover;
+    background-position: cover;
     margin:0;
     display:flex;
     justify-content:center;
@@ -49,7 +51,7 @@ textarea{
     border-radius: 4px;
 }
 button{
-    background-color: #007BFF;
+    background-color: red;
     color:white;
     padding:10px 20px;
     border:none;
