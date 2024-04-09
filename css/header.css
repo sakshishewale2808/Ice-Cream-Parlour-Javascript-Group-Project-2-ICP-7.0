@@ -4,9 +4,10 @@ header{
     font-optical-sizing: auto;
 }
 .bg-img{
-    background-image: url("./../imgs/s5.jpg");  /* The image used as the background */
-    min-height: 100vh;
+    background-image: url("./../png/s1.png");  /* The image used as the background */
+    min-height: 80vh;
     position: relative;
+    background-size:cover;
     /* width: 100%;                     Set the type of gradient (linear or radial) */
 }
 .flex{
@@ -63,12 +64,12 @@ header{
     margin-bottom: -2px;
 }
 .text-overlay{
-    text-align: right;
-    color: #fff;
+    text-align: left;
+    color: #000;
     width: 46%;
-    float: right;
-    margin-top: 200px;
-    margin-right: 10%;
+    float: left;
+    margin-top: 180px;
+    margin-left: 10%;
     font-size: 30px;
     transition: ease-in;
 }
@@ -76,8 +77,8 @@ header{
     border: 1px solid black;
     margin: 20px;
     padding: 15px 30px;
-    background-color: #fff;
-    color: black;
+    background-color:#000;
+    color: #fff;
     border-radius: 60px;
     font-weight: bold;
     font-family: "Space Grotesk", sans-serif;
@@ -85,8 +86,8 @@ header{
     transition: all .3s ease-out;
 }
 .buyNow-btn:hover{
-    background-color:#000;
-    color: white;
+    background-color:#fff;
+    color: black;
 }
 .slide-btn-comtain{
     display: flex;
