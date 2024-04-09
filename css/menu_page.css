@@ -317,3 +317,6 @@ header{
     display: block;
     margin: 20px auto;
   }
+  #liked{
+    cursor: pointer;
+  }
