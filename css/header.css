@@ -4,9 +4,10 @@ header{
     font-optical-sizing: auto;
 }
 .bg-img{
-    background-image: url("./../imgs/s-1.webp");  /* The image used as the background */
+    background-image: url("./../png/s1.png");  /* The image used as the background */
     min-height: 80vh;
     position: relative;
+    background-size:cover;
     /* width: 100%;                     Set the type of gradient (linear or radial) */
 }
 .flex{
