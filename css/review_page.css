@@ -42,3 +42,9 @@ h1{
 .five{
     color:gold;
 }
+textarea{
+    width:90%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+}
