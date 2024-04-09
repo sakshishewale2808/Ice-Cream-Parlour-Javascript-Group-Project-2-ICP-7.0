@@ -129,7 +129,16 @@ visibility: hidden;
 .img-size1{
     height: 500px;
     transition: 2s;
+    cursor: pointer;
+}
+.img-size2{
+    height: 570px;
+    transition: 2s;
+    cursor: pointer;
 }
 .img-size1:hover{
     height: 700px;
+}
+.margin-top{
+    margin-top: 12%;
 }
