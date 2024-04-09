@@ -123,3 +123,13 @@ visibility: hidden;
    font-family: "Space Grotesk", sans-serif;
    font-optical-sizing: auto;
 }
+.img-size{
+    height: 500px;
+}
+.img-size1{
+    height: 500px;
+    transition: 2s;
+}
+.img-size1:hover{
+    height: 700px;
+}
