@@ -1,6 +1,6 @@
 body {
     
-    background: url(./img/login-img.webp); 
+    background: url(/imgs/about-page-img/login-img.webp); 
 
 backdrop-filter: blur(4px);
     margin: 0;
