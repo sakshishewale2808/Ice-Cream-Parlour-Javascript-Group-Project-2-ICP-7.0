@@ -102,7 +102,9 @@
    </div>
 </marquee>
  </div>
- 
+  <div class="filter-container">
+    <img src="./../icons/menupage-icons/filter.png" height="20px" alt="">Filter
+  </div>
 
   <div class="flavour-container">
 <div class="row  ">
@@ -113,7 +115,7 @@
         <div class="effect-hover">
             <img src="./../icons/menupage-icons/shopping-bag.png" height="20px">
             <img src="./../icons/menupage-icons/search.png" height="20px" alt="">
-            <img src="./../icons/menupage-icons/wishlist.png" height="20px" alt="">
+            <img src="./../icons/menupage-icons/wishlist.png" height="20px"  id="liked" onclick="likedfunction(lk)" alt="">
         </div>
         <div class="flavour-description">
             Cereal And Milk <br>
@@ -212,6 +214,20 @@
   <footer>
     <p >&copy; 2024 Ice Cream Parlor</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="script.js">
+    function likedfunction(){
+        let likeimg=document.getElementById("liked");
+        if(lk==liked)
+        {
+            likeimg.src="./../icons/menupage-icons/liked-red-heart.png";
+            lk=unlike
+        }
+        else{
+            likeimg.src="./../icons/menupage-icons/whishlist";
+            lk=liked;
+        }
+       
+    }
+  </script>
 </body>
 </html>
