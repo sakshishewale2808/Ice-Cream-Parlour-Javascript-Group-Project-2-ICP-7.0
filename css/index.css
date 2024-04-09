@@ -97,3 +97,9 @@ visibility: hidden;
   
 }
 }
+.menu{
+    background-image: url(./../imgs/home/menu-bg.png);
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
