@@ -109,3 +109,14 @@ visibility: hidden;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.about-section-dis{
+    width: 45%;
+    margin-left: 6%;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+.description{
+   font-size: 15px;
+   font-family: "Space Grotesk", sans-serif;
+   font-optical-sizing: auto;
+}
