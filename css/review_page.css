@@ -23,3 +23,7 @@ h1{
     font-size:20px;
     margin:10px 0;
 }
+.star{
+    cursor:pointer;
+    margin:0 5px;
+}
