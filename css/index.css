@@ -6,11 +6,17 @@ body{
     font-optical-sizing: auto;
     background-color: #fff;
 }
+.flex{
+    display: flex;
+}
 .visit{
     display: block;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+}
+.prev-btn{
+    color: black;
 }
 .headings{
     font-family: "Space Grotesk", sans-serif;
@@ -98,8 +104,8 @@ visibility: hidden;
 }
 }
 .menu{
-    background-image: url(./../imgs/home/menu-bg.png);
-    height: 80vh;
+    background-image: url(./../imgs/home/menu-bg1.png);
+    height: 95vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
