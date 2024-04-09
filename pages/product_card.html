@@ -10,7 +10,13 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <style>
-            
+            body{
+                margin: 0;
+                padding:0;
+                font-family: "Space Grotesk", sans-serif;
+                font-optical-sizing: auto;
+                background-color: aliceblue;
+            }
             .main-img{
                 width:100%;
                 margin-left:10px;
@@ -31,26 +37,41 @@
                 text-align:center;
             }
             #choco2{
-                width:400px;
-                height:400px;
+                width:350px;
+                height:380px;
                 object-fit:cover;
                 border:1px solid black;
                 border-radius:20px;
                 box-shadow:0px 0px 10px rgba(0,0,0,25);
                 margin:auto 130px;
+                
+            }
+            #choco2:hover{
+                border: 3px solid  #e83e8c;
             }
             .product-image{
-                height:200px;
+                height:160px;
                 cursor:pointer;
-                margin-top:500px;
+                justify-content:space-around;
             }
+             .product-image:hover{
+                border: 3px solid  #e83e8c;
+                opacity: .8;
+                border-radius:10px;
+             }
             .info{
                 width:450px;
             }
             .ice-des{
                 width:400px;
-             
-                margin:-380px 800px;
+                margin:-350px 700px;
+            }
+            .products{
+                margin:-10px;
+                margin-top:50px 10px;
+            }
+            .product-container{
+                margin:400px 22px;
             }
            
            
@@ -74,13 +95,34 @@
         as unattractive as being overweight. Ice cream is also a rich source of nutrients...
     </div>
     </div>
-         <div class="product-container">
-     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('Cereal And Milk')" alt="choco3"/>
-     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('Choco berry')" alt="choco4"/>
-     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('Pineapple')" alt="choco3"/>
-     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('Chikoo')" alt="choco4"/>
-     <img src="./../imgs/product-card/choco3.png" class="product-image" onclick="changeimage('Apple')" alt="choco3"/>
-     <img src="./../imgs/product-card/choco4.png" class="product-image" onclick="changeimage('Ice-Cream')" alt="choco4"/>
+          <div class="product-container row">
+           
+                
+    <div class=" products col col-lg-3 col-md-4 col-sm-2 my-1">
+        <img src="./../imgs/product-card/choco2.png" class="col product-image" onclick="changeimage('Cereal And Milk')" alt="choco3"/>
+    </div>
+          <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/choco3.png" class="col product-image" onclick="changeimage('Choco berry')" alt="choco4"/>
+          </div>
+           <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/choco4.png" class="col product-image" onclick="changeimage('Creamy Cream')" alt="choco3"/>
+    </div>
+          <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/chocolate wafer.png" class="col product-image" onclick="changeimage('Chocolate wafer')" alt="choco4"/>
+    </div>
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/Creamy Strawberry.png" class="col product-image" onclick="changeimage('Creamy Strawberry')" alt="choco3"/>
+    </div>
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/Ice cone.png" class="col product-image" onclick="changeimage('Ice cone')" alt="choco4"/>
+    </div>
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/Milk Shake 2.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
+    </div>
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/Choco Cream2.png" class="col product-image" onclick="changeimage('Choco Cream2')" alt="choco4"/>
+    </div>
+           
          </div>
 
          <script>
@@ -90,25 +132,43 @@
                 const price =  document.getElementById('price');
                 if(b=='Cereal And Milk')
                 {
-                flavour.src = './../imgs/product-card/choco3.png';
+                flavour.src = './../imgs/product-card/choco2.png';
                 price.innerText ='only at ₹60/-'
                 }
                 else if(b=='Choco berry')
                  {
-                     flavour.src = './../imgs/product-card/choco4.png';
+                     flavour.src = './../imgs/product-card/choco3.png';
                      price.innerText ='only at ₹70/-'
                  }
-                 else if(b=='Fruit')
+                 else if(b=='Creamy Cream')
                  {
-                     flavour.src = './img/fruit2.png';
+                     flavour.src = './../imgs/product-card/choco4.png';
+                     price.innerText ='only at ₹65/-'
                  }
-                 else if(b=='Oreo')
+                 else if(b=='Chocolate wafer')
                  {
-                     flavour.src = './img/oreo-cake2.png ';
+                     flavour.src = './../imgs/product-card/chocolate wafer.png ';
+                     price.innerText ='only at ₹50/-'
                  }
-                 else if(b=='pineApple')``
+                 else if(b=='Creamy Strawberry')
                  {
-                     flavour.src = './img/pineApple2.png';
+                     flavour.src = './../imgs/product-card/Creamy Strawberry.png';
+                     price.innerText ='only at ₹60/-'
+                 }
+                 else if(b=='Ice cone')
+                 {
+                     flavour.src = './../imgs/product-card/Ice cone.png';
+                     price.innerText ='only at ₹60/-'
+                 }
+                 else if(b=='Milk Shake')
+                 {
+                     flavour.src = './../imgs/product-card/Milk Shake.png';
+                     price.innerText ='only at ₹60/-'
+                 }
+                 else if(b=='Choco Cream2')
+                 {
+                     flavour.src = './../imgs/product-card/Choco Cream2.png';
+                     price.innerText ='only at ₹60/-'
                  }
                  const choice=document.getElementById("name");
      
