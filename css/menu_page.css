@@ -259,6 +259,14 @@ header{
     color: #fff;
     background-color:#000;
   }
+  .darkBody{
+    background-color: black;
+    color:white;
+  }
+  .lightBody{
+    background-color: aliceblue;
+  
+  }
  
   .name-container{
     background-image: url(./../imgs/menu-card/background-image.jpg);
