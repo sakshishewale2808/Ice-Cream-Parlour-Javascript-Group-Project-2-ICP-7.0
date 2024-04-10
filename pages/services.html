@@ -36,27 +36,37 @@
             background-color: #fff;
 
         }
-
-        
-        .blue-moon {
-            background: url(./../imgs/services/blueMoon.jpg) no-repeat;
-            background-size: cover;
-            background-position: center;
-            color: #4dc1be;
-        }
-        .neapolitan{
-            background: url(./../imgs/services/Neapolitan.jpg) no-repeat;
-            background-size: cover;
-            background-position: center;
-            color: #d3d07f;
-        }
-        .lucuma{
-            background: url(./../imgs/services/Lucuma.webp) no-repeat;
-            background-size: cover;
-            background-position: center;
-            color: #938700;
+        .banner1 {
+            background: linear-gradient(-55deg, #ff7675 29%, #d63031 29.1%, #d63031 68%, #ff7675 68.1%);
         }
 
+        .banner2 {
+            background-color: #FF9A8B;
+            background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+        }
+        .banner2-badge{
+            border: none;
+            border-radius: 50px 30px 50px  0 ;
+        }
+        .banner3{
+            background-color: #FBDA61;
+            background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+        }
+        .banner-flex {
+            flex: 1 1 250px;
+
+        }
+
+        .banner-container .banner .content .btn {
+            display: block;
+            height: 40px;
+            width: 150px;
+            line-height: 40px;
+            background: #fff;
+            color: #d63031;
+            margin: 5px auto;
+            text-decoration: none;
+        }
 
         /* Media Query */
 
@@ -65,6 +75,12 @@
                 width: 80%;
             }
 
+        }
+
+        @media (max-width:768px) {
+            .women {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -91,40 +107,96 @@
 
         <h4 class="text-center text-danger fs-2">Find Your Test</h4>
         <hr class="mx-auto fs-bold">
-        <h1 class="text-center text-muted fs-2">Buy any ice cream @ get One Free</h1>
+        <h1 class="text-center text-muted fs-2">OFFER</h1>
 
-        <div class="row mx-4">
-            <div class="col-12 col-sm-12 col-md-4 m-auto">
-                <div class="card border-0 shadow text-center mt-5  blue-moon ">
-                    <div class="card-body pb-5 ">
-                        <p class="fs-4">Raspberry Flavour</p>
-                        <p class="fs-2 fw-bold  text-dark ">Blue Moon</p>
-                        <a href="#"> <button type="button" class="btn btn-danger px-5 rounded-5 fs-4">Buy</button></a>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <div
+                            class="banner1 rounded-5 mt-3 mx-5 d-flex justify-content-center align-items-center flex-wrap shadow overflow-hidden ">
+                            <div class=" text-center p-5  banner-flex ">
+                                <img src="./../imgs/services/ban.png" class="border rounded-5 " alt="banner"
+                                    width="80%">
+                            </div>
+                            <div class="banner-flex text-center p-3 text-uppercase">
+                                <span class="text-light fs-2">Enjoy</span>
+                                <h3 class="text-light"> 25% OFF</h3>
+                                <p class="text-light fs-3 px-4">on all items</p>
+                                <a href="#" class="btn"> <button type="button"
+                                        class="btn btn-danger px-5 mb-5 rounded-5 fs-4">Buy Now</button></a>
+                            </div>
+                            <div class="women position-relative bottom-50 banner-flex">
+                                <img src="./../imgs/services/girl.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <div class="banner2 rounded-5 mt-3 mx-5 d-flex justify-content-center align-items-center flex-wrap shadow overflow-hidden ">
+                            <div class=" text-center p-5  banner-flex"> 
+                                <img src="./../imgs/services/chokobar.png" class="border border-danger rounded-5 " alt="banner"
+                                    width="100%">
+                            </div>
+                            <div class="banner-flex text-center p-3 text-uppercase">
+                                <span class="text-light fs-2">delicious</span>
+                                <h3 class="text-light fw-bolder">ice cream</h3>
+                                <p class="text-light fs-6 px-4">offer ends after 5 days</p>
+                                <button type="button" class="btn btn-danger px-5 mb-5 rounded-5 fs-4 position-relative">
+                                    Buy Now
+                                    <span class="banner2-badge position-absolute top-0 start-100 translate-middle badge p-2 bg-warning">
+                                      $ 8 only
+                                    </span>
+                                  </button>
+                            </div>
+                            <div class="women position-relative bottom-50 banner-flex">
+                                <img src="./../imgs/services/chokobar-boy.png" alt="banner" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class=" d-flex justify-content-center align-items-center">
+                        <div
+                            class="banner3 rounded-5 mt-3 mx-5 d-flex justify-content-center align-items-center flex-wrap shadow overflow-hidden ">
+                            <div class=" text-center p-5 banner-flex">
+                                <img src="./../imgs/services/vanila.png" class="border border-danger rounded-5 " alt="banner" width="80%">
+                            </div>
+                            <div class="banner-flex text-center p-3 text-uppercase">
+                                <span class="text-light fs-1 fw-bolder">Buy Two</span>
+                                <h3 class="text-light">Get 1 </h3>
+                                <p class="text-light fs-6 px-4">offer ends after 10 days</p>
+                                <a href="#" class="btn"> <button type="button"
+                                        class="btn btn-danger px-5 mb-5 rounded-5 fs-4">Buy Now</button></a>
+                            </div>
+                            <div class="women position-relative bottom-50 banner-flex">
+                                <img src="./../imgs/services/free.png" alt="" width="80%">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-12 col-sm-12 col-md-4 m-auto">
-                <div class="card border-0 shadow text-center  mt-5  neapolitan">
-                    <div class="card-body  pb-5">
-                        <p class="fs-4">Meld of Flavor</p>
-                        <p class="fs-2 fw-bold  text-dark "> Neapolitan</p>
-                        <a href="#"> <button type="button" class="btn btn-danger px-5 rounded-5 fs-4">Buy</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-4 m-auto">
-                <div class="card border-0 shadow text-center  mt-5  lucuma ">
-                    <div class="card-body  pb-5">
-                        <p class="fs-4">Natural Sweetness </p>
-                        <p class="fs-2 fw-bold  text-dark ">Lucuma</p>
-                        <a href="#"> <button type="button" class="btn btn-danger px-5 rounded-5 fs-4">Buy</button></a>
-                    </div>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-      
+
         <div class="row my-5">
             <div class="col-12 col-sm-6 col-md-4 m-auto">
                 <div class="card border-0 shadow text-center my-3 mx-4">
@@ -176,10 +248,10 @@
             hrs.innerText = (date.getHours() < 10 ? "0" : "") + date.getHours() % 12 || 12;
             min.innerText = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
             sec.innerText = (date.getSeconds() < 10 ? "0" : "") + date.getSeconds();
-            ampm.innerText = hrs >= 12 ? 'PM' : 'AM';
+            ampm.innerText = date.getHours() >= 12 ? 'PM' : 'AM';
 
             const openclose = document.getElementById('openclose');
-            if (date.getHours() >= 7 && date.getHours() <= 18) {
+            if (date.getHours() >= 7 && date.getHours() < 18) {
                 openclose.innerText = "OPENED";
             }
             else {
