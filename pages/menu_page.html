@@ -11,14 +11,7 @@
 <body style="background-color:aliceblue;">
   <header>
     <h1>Ice Cream Parlor</h1>
-<div class="themeParent">
-    <div  id="mode-Container" class="mode-container lightMode">
-        <img src="./../png/menu-Card/dark-mode.png" id="mode" height="20px" onclick="Darkmode()">
-    </div>
-    <div  id="mode-Container" class="mode-container lightMode">
-        <img src="./../png/menu-Card/light-mode.png" id="mode" height="20px" onclick="Lightmode()">
-    </div>
-</div>
+
   </header>
  <div class="name-container text-light ">
    <h2 class="page-heading text-center "> Products</h2>
@@ -113,6 +106,13 @@
   <div class="filter-container">
     <img src="./../icons/menupage-icons/filter.png" height="20px" alt="">Filter
   </div>
+
+  <div>
+
+  </div>
+  
+
+  </iframe>
 
   <div class="flavour-container" >
 <div class="row  ">
@@ -225,39 +225,19 @@
   <script >
     function likedfunction(){
         let likeimg=document.getElementById("liked");
-        if(lk==liked)
+        if(liked==lk)
         {
             likeimg.src="./../icons/menupage-icons/liked-red-heart.png";
-            lk=unlike
+            
         }
         else{
             likeimg.src="./../icons/menupage-icons/whishlist";
-            lk=liked;
+            
         }
        
     }
 
-    function Darkmode()
-    {
-        let modeImg = document.getElementById("mode");
-        let modeContainer = document.getElementById("mode-Container");
-        modeImg.src = "./../png/menu-Card/dark-mode.png";
-        modeContainer.classList.add = "darkMode";
-        modeContainer.classList.remove = "lightMode";
-        modeContainer.className= "darkBody"
-        alert(`Now You are in Dark Mode`)
-    }
-        
-       
-    function Lightmode(){
-           let modeImg = document.getElementById("mode");
-            let modeContainer = document.getElementById("mode-Container")
-            modeImg.src = "./../png/menu-Card/light-mode.png";
-            modeContainer.classList.add = "lightMode";
-            modeContainer.classList.remove = "darkMode";
-            alert(`Now You are in light Mode`)
-        }
-    
+   
   </script>
   <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
 </body>
