@@ -103,12 +103,7 @@ visibility: hidden;
   
 }
 }
-.menu{
-    background-image: url(./../imgs/home/menu-bg1.png);
-    height: 95vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .about-section-dis{
     width: 45%;
     margin-left: 6%;
@@ -200,3 +195,9 @@ visibility: hidden;
     background-color: transparent;
     color: #000;
 }
+/* .menu{
+    background-image: url(./../imgs/home/menu-bg1.png);
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
