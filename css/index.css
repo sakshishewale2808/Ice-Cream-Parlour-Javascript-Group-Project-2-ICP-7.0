@@ -224,3 +224,10 @@ visibility: hidden;
     position: relative;
     top: 450px;
 }
+.card-img{
+    margin-left: 14%;
+    transition: .4s;
+}
+.card-img:hover{
+    transform: scaleY(1);
+}
