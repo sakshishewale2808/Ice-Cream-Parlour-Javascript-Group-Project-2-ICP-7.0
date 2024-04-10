@@ -49,24 +49,41 @@
                 <input type="email" id="EMAIL" required placeholder="Email" class="name-customer"><br><br>
                 <label for="mess"></label>
                 <input type="text" id="mess" complete placeholder="Message" required class="message-customer"><br><br>
-                <button class="button">Send</button><br><br>
+                <button class="button" onclick="messageAlert()">Send</button><br><br>
             </form>
         </div>
     </div><br>
     <center><div><p style="font-size: 30px; font-weight:600; margin-left:10px">Follow Us</p>
             
-            <a href="https://www.instagram.com/roadtocode4u" class="a"
-            target="_blank"><i class="fa-brands fa-instagram"></i></a>&emsp;<a
-            href="https://www.linkedin.com/company/roadtocode4u/" class="a" target="_blank"><i
-                class="fa-brands fa-linkedin"></i></a>&emsp;<a href="https://wa.me/8805803087" class="a"
+            <a href="https://www.instagram.com/roadtocode4u" onclick="return ready()" class="a"
+            target="_blank" ><i class="fa-brands fa-instagram" ></i></a>&emsp;<a
+            href="https://www.linkedin.com/company/roadtocode4u/" class="a" onclick="return ready()" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>&emsp;<a href="https://wa.me/8805803087" class="a" onclick="return ready()"
             target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        &emsp;<a href="https://github.com/roadtocode4u" class="a" target="_blank"><i
+        &emsp;<a href="https://github.com/roadtocode4u" class="a"  onclick="return ready()" target="_blank"><i
                 class="fa-brands fa-github"></i></a>
             </div></center>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0dcf08ad5b.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        function ready(){
+             let confValue = confirm("Are You Sure? You want to move on another page!")
+             if (confValue == true){
+                return true;
+
+             }
+             else{
+                return false;
+             }
+        }
+        function messageAlert(){
+            alert("You are successfully send the message")
+        }
+    </script>
 </body>
 
 </html>
