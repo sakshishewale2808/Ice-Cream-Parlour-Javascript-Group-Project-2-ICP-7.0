@@ -11,7 +11,12 @@
 <body style="background-color:aliceblue;">
   <header>
     <h1>Ice Cream Parlor</h1>
-    <div  id="modeContainer" class="mode-container lightMode"><img src="./../png/menu-Card/dark-mode.png" id="mode" height="20px" onclick="mode()"></div>
+    <div  id="mode-Container" class="mode-container lightMode">
+        <img src="./../png/menu-Card/dark-mode.png" id="mode" height="20px" onclick="Darkmode()">
+    </div>
+    <div  id="mode-Container" class="mode-container">
+        <img src="./../png/menu-Card/light-mode.png" id="mode" height="20px" onclick="Lightmode()">
+    </div>
   </header>
  <div class="name-container text-light ">
    <h2 class="page-heading text-center "> Products</h2>
@@ -230,25 +235,26 @@
        
     }
 
-    function mode()
+    function Darkmode()
     {
         let modeImg = document.getElementById("mode");
-       
-        if(modeImg.src==="./../png/menu-Card/light-mode.png")
-        {
-            let modeContainer=document.getElementById("modeContainer");
-            modeImg.src="./../png/menu-Card/dark-mode.png";
-            modeContainer.classList.add="darkMode";
-            modeContainer.classList.remove="lightMode";
-            
-        }
-        else{
-            let modeContainer=document.getElementById("modeContainer")
-            modeImg.src="./../png/menu-Card/light-mode.png";
-            modeContainer.classList.add="lightMode";
-            modeContainer.classList.remove="darkMode";
-        }
+        let modeContainer = document.getElementById("mode-Container");
+        modeImg.src = "./../png/menu-Card/dark-mode.png";
+        modeContainer.classList.add = "darkMode";
+        modeContainer.classList.remove = "lightMode";
+        alert(`Now You are in Dark Mode`)
     }
+        
+       
+    function Lightmode(){
+           let modeImg = document.getElementById("mode");
+            let modeContainer = document.getElementById("mode-Container")
+            modeImg.src = "./../png/menu-Card/light-mode.png";
+            modeContainer.classList.add = "lightMode";
+            modeContainer.classList.remove = "darkMode";
+            alert(`Now You are in light Mode`)
+        }
+    
   </script>
   <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
 </body>
