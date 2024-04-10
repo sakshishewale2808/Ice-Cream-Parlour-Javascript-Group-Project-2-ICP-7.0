@@ -15,7 +15,7 @@
                 padding:0;
                 font-family: "Space Grotesk", sans-serif;
                 font-optical-sizing: auto;
-                background-color: aliceblue;
+                background-color: #fff;
             }
             .main-img{
                 width:100%;
@@ -73,6 +73,61 @@
             .product-container{
                 margin:400px 22px;
             }
+            .product-content{
+                margin:-330px 3px;
+            }
+            .card{
+                margin:5px -2px;
+                border-radius:10px;
+               
+                
+            }
+            .card:hover{
+                border: 3px solid  #e83e8c;
+                opacity:.7;
+                border-radius:10px;
+            }
+            .container{
+                margin:10px 10px;
+                justify-content:center;
+                text-align:center;
+                background-color:white;
+                border:1px solid black;
+                border-radius:20px;
+                box-shadow:1px 1px 2px black;
+                width:300px;
+                height:400px;
+                box-shadow:1px 1px 12px #021530;
+                justify-content:space-between;
+            }
+            .icecream{
+                background-color:#c3ced9;
+                width:320px;
+                margin:5px 15px;
+                border-radius:10px;
+            }
+            .icecream{
+                background-color:#c3ced9;
+                width:270px;
+                margin:2px 10px;
+                border-radius:10px;
+            }
+            .des{
+                font-size:20px;
+                margin-top:-15px;
+            }
+           .nutrient{
+                margin:10px;
+                padding:6px;
+                border-radius:10px;
+                width:240px;
+                font-size:20px;
+            }
+            .chocobar{
+                object-fit:cover;
+            }
+          
+           
            
            
             @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap')
@@ -95,8 +150,11 @@
         as unattractive as being overweight. Ice cream is also a rich source of nutrients...
     </div>
     </div>
-          <div class="product-container row">
-           
+
+    <!-- ***Product cards formation starts*** -->
+         
+    <div class="product-container row">
+         
                 
     <div class=" products col col-lg-3 col-md-4 col-sm-2 my-1">
         <img src="./../imgs/product-card/choco2.png" class="col product-image" onclick="changeimage('Cereal And Milk')" alt="choco3"/>
@@ -114,9 +172,12 @@
      <img src="./../imgs/product-card/Creamy Strawberry.png" class="col product-image" onclick="changeimage('Creamy Strawberry')" alt="choco3"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
-     <img src="./../imgs/product-card/Ice cone.png" class="col product-image" onclick="changeimage('Ice cone')" alt="choco4"/>
+     <img src="./../imgs/product-card/Ice-pink.png" class="col product-image"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors""/>
+     <p class=" mx-4 my-auto ">
+        <img src="./../imgs/product-card/pink.png"class="mx-1 my-0" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-3" onclick="ice('yellow')">
+     </p>
     </div>
-     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1"> 
      <img src="./../imgs/product-card/Milk Shake 2.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
@@ -124,7 +185,122 @@
     </div>
            
          </div>
+         <!-- ***Product cards formation ends*** -->
 
+         <!-- ***adding new info cards*** -->
+    <div class="row product-content" alt="first-img" style="background-image:url('./../imgs/product-card/blurr.png');background-repeat:no-repeat;background-size:cover;";>>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC1.png" alt="IC1" onclick="icecream()" ondblclick="store()" >
+         </div>
+         <div class=" card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC2.png" alt="IC2">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC3.png" alt="IC3">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC4.png" alt="IC4">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC5.png" alt="IC5">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC6.png" alt="IC6">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC7.png" alt="IC7">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC8.png" alt="IC8">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC9.png" alt="IC9">
+         </div>
+         
+         
+     </div></div>
+     <!--Cards are started-->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <u> <h1 class="fs-1 text-center">More about our products</h1></u>
+     
+<!-- Card making-->
+
+    <div class="row">
+     <div  class=container col col-lg-4 col-md-2 col-sm-1 m-4">
+        <img class="icecream" src="./../imgs/product-card/Wafer-Ice-Cream.jpg" height="200" alt="bottle"/>
+         <div class="description">
+           <h2>Wafer Ice-Cream
+
+           </h2>
+      <p class="des">
+        Price:40₹/-
+      </p>
+      <p>
+20 products are available
+      </p>
+      <button class="nutrient" type="button">more about product</button>
+   
+    </div>
+</div>
+
+<!-- Card making-->
+     <div class=container col col-lg-4 col-md-2 col-sm-1 m-4">
+        <img class="icecream chocobar" src="./../imgs/product-card/Chokobar.jpg" height="200" alt="bottle"/>
+         <div class="description">
+           <h2>Chocobar
+
+           </h2>
+      <p class="des">
+        Price:30₹/-
+      </p>
+      <p>
+50 products are available
+      </p>
+      <button class="nutrient" type="button">more about product</button>
+   
+    </div>
+</div>
+
+<!-- Card making-->
+     <div  class=container col col-lg-4 col-md-2 col-sm-1 m-4">
+        <img class="icecream" src="./../imgs/product-card/Creamy-Cake.jpg" height="200" alt="bottle"/>
+         <div class="description">
+           <h2>Creamy Cake
+
+           </h2>
+      <p class="des">
+        Price:70₹/-
+      </p>
+      <p>
+15 products are available
+      </p>
+      <button class="nutrient" type="button">more about product</button>
+   
+    </div>
+</div>
+
+<!-- Card making-->
+     <div class=container col col-lg-4 col-md-2 col-sm-1">
+        <img class="icecream1" src="./../imgs/product-card/fashion-cat.webp" height="200" alt="bottle"/>
+         <div class="description">
+           <h2>Fashion cat
+
+           </h2>
+      <p class="des">
+        Price:80₹/-
+      </p>
+      <p>
+No products are available.
+      </p>
+      <button class="nutrient" type="button">more about product</button>
+   
+    </div>
+</div>
+</div>
+
+
+
+    
          <script>
            function changeimage(b)
             {
@@ -157,8 +333,8 @@
                  }
                  else if(b=='Ice cone')
                  {
-                     flavour.src = './../imgs/product-card/Ice cone.png';
-                     price.innerText ='only at ₹60/-'
+                     flavour.src ="./../imgs/product-card/Ice-pink.png";
+                     price.innerText ='only at ₹45/-'
                  }
                  else if(b=='Milk Shake')
                  {
@@ -173,6 +349,18 @@
                  const choice=document.getElementById("name");
      
      choice.innerText=`\n ${b}`; 
+         }
+         function icecream(){
+            alert("Thank you for visit our shop..! Price:₹40/-Creamy ice-cream");
+         }
+         function store(){
+            alert("awesome")
+
+         }
+         function ice(state){
+            const choose = document.getElementById("colors");
+            choose.src=`./../imgs/product-card/Ice-${state}.png`;
+           
          }
            
          </script>
