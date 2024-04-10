@@ -15,7 +15,7 @@
                 padding:0;
                 font-family: "Space Grotesk", sans-serif;
                 font-optical-sizing: auto;
-                background-color: aliceblue;
+                background-color: #fff;
             }
             .main-img{
                 width:100%;
@@ -79,11 +79,12 @@
             .card{
                 margin:5px -2px;
                 border-radius:10px;
+               
                 
             }
             .card:hover{
                 border: 3px solid  #e83e8c;
-                opacity: .8;
+                opacity:.7;
                 border-radius:10px;
             }
             .container{
@@ -125,6 +126,8 @@
             .chocobar{
                 object-fit:cover;
             }
+          
+           
            
            
             @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap')
@@ -169,9 +172,12 @@
      <img src="./../imgs/product-card/Creamy Strawberry.png" class="col product-image" onclick="changeimage('Creamy Strawberry')" alt="choco3"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
-     <img src="./../imgs/product-card/Ice cone.png" class="col product-image" onclick="changeimage('Ice cone')" alt="choco4"/>
+     <img src="./../imgs/product-card/Ice-pink.png" class="col product-image"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors""/>
+     <p class=" mx-4 my-auto ">
+        <img src="./../imgs/product-card/pink.png"class="mx-1 my-0" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-3" onclick="ice('yellow')">
+     </p>
     </div>
-     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1"> 
      <img src="./../imgs/product-card/Milk Shake 2.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
@@ -215,7 +221,8 @@
      </div></div>
      <!--Cards are started-->
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-     <h1 class="fs-1 text-center">More about our products</h1>
+    <u> <h1 class="fs-1 text-center">More about our products</h1></u>
+     
 <!-- Card making-->
 
     <div class="row">
@@ -290,6 +297,9 @@ No products are available.
     </div>
 </div>
 </div>
+
+
+
     
          <script>
            function changeimage(b)
@@ -323,8 +333,8 @@ No products are available.
                  }
                  else if(b=='Ice cone')
                  {
-                     flavour.src = './../imgs/product-card/Ice cone.png';
-                     price.innerText ='only at ₹40/-'
+                     flavour.src ="./../imgs/product-card/Ice-pink.png";
+                     price.innerText ='only at ₹45/-'
                  }
                  else if(b=='Milk Shake')
                  {
@@ -346,6 +356,11 @@ No products are available.
          function store(){
             alert("awesome")
 
+         }
+         function ice(state){
+            const choose = document.getElementById("colors");
+            choose.src=`./../imgs/product-card/Ice-${state}.png`;
+           
          }
            
          </script>
