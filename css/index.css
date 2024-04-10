@@ -162,3 +162,17 @@ visibility: hidden;
 .margin-bottom{
     margin-bottom: 12%;
 }
+.buyNow-btn2{
+    border: 1px solid black;
+    margin: 25px 30px;
+    padding: 10px 20px;
+    background-color:#000;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 60px;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .3s ease-out;
+}
