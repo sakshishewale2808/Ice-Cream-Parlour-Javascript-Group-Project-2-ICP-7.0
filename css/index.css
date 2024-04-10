@@ -4,7 +4,7 @@ body{
     padding:0;
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
-    background-color: #fff;
+    background-color: #efa1c5;
 }
 .flex{
     display: flex;
@@ -230,4 +230,7 @@ visibility: hidden;
 }
 .card-img:hover{
     transform: scaleY(1);
+}
+@media screen (max-width:1200px)  {
+    
 }
