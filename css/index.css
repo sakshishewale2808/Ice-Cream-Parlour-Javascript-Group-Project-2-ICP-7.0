@@ -8,6 +8,7 @@ body{
 }
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 .visit{
     display: block;
@@ -119,24 +120,24 @@ visibility: hidden;
    font-optical-sizing: auto;
 }
 .img-size{
-    height: 500px;
+    height:  536px;
     overflow: hidden;
-    width: 500px;
+    width:  536px;
 }
 .img-size1{
-    height: 500px;
+    height:  536px;
     transition: 2s;
-    width: 500px;
+    width: 536px;
     cursor: pointer;
 }
 .image-size{
-    height: 536px;
+    height: 600px;
     transition: 2s;
     cursor: pointer;
     overflow: hidden;
 }
 .img-size2{
-    height: 536px;
+    height: 630px;
     transition: 2s;
     cursor: pointer;
   
@@ -195,9 +196,12 @@ visibility: hidden;
     background-color: transparent;
     color: #000;
 }
-/* .menu{
+.menu{
     background-image: url(./../imgs/home/menu-bg1.png);
     height: 95vh;
     background-repeat: no-repeat;
     background-size: cover;
-} */
+}
+.menu-dis{
+    text-align: center;
+}
