@@ -240,7 +240,21 @@ header{
     .sidenav a {font-size: 18px;}
     .name-container{background-position: left;}
   }
+  .mode-container{
+    width: 25px;
+    border-radius: 5px;
+  }
+
+  .lightMode{
+   border:#000 1px solid;
+   background-color: #fff;
+  }
   
+  .darkMode{ 
+    border: #fff 1px solid;
+    background-color: #fff;
+  }
+ 
   .name-container{
     background-image: url(./../imgs/menu-card/background-image.jpg);
     background-position: center;
