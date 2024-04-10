@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding:0;
+    
 }
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap');
 header{
@@ -279,6 +280,7 @@ header{
   .flavour-container{
     justify-content: space-between;
     margin-left: 100px;
+    background-color:aliceblue;
   }
   .flavour-img{
     height: 300px;
