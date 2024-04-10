@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(254, 210, 217);
+    background-image: url(./../imgs/bg-ice-cream.png);
+    background-size: cover;
   }
   form {
     max-width: 300px;
