@@ -1,84 +1,432 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./css/header.css">
-        <script src="./JS/header.js"></script>
-       
-    </head>
-    <body>
-        <header>
-            <div class="nav-container flex" id="nav">
-                <div class="right-flex">
-                    <h1>LOGO</h1>
-                </div>
-                <div class="mid-flex">
-                    <ul  class="menu-list flex" type="none">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#aboutus">About Us</a></li>
-                        <li><a href="#contactus">Contact Us</a></li>
-                        <li><a href="#services">Services</a></li>
-                    </ul>
-                </div>
-                <div class="left-flex">
-                    <img src="./icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
-                    <img src="./icons/add-contact.png" class="nav-icons"  alt="" >
-                    <img src="./icons/heart.png" class="nav-icons"  alt="">
-                    <img src="./icons/shopping-bag.png" class="nav-icons"  alt="" onclick="openCart()">
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <script src="./JS/header.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container flex" id="nav">
+            <div class="right-flex">
+                <h1>LOGO</h1>
             </div>
-            <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
-                <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
-                <h2 class="search-title">And Hit Enter...</h2>
-                <div class="overlay-content">
-                  <form action="action_page.php">
+            <div class="mid-flex">
+                <ul class="menu-list flex" type="none">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <div class="left-flex">
+                <img src="./icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
+                <img src="./icons/add-contact.png" class="nav-icons" alt="">
+                <img src="./icons/heart.png" class="nav-icons" alt="">
+                <img src="./icons/shopping-bag.png" class="nav-icons" alt="" onclick="openCart()">
+            </div>
+        </div>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
+            <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
+            <h2 class="search-title">And Hit Enter...</h2>
+            <div class="overlay-content">
+                <form action="action_page.php">
                     <input type="text" placeholder="Search Your Favorite Ice-Cream Here..." name="search">
                     <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-                  </form>
+                </form>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <p class="cart">Shopping Cart</p>
+            <hr>
+        </div>
+
+        <div class="bg-img" id="bg-img">
+            <div class="text-overlay">
+                <span class="heading">Style Destination</span>
+                <h1>Taste From The </h1>
+                <h1>Good Old Days.</h1>
+                <button class="buyNow-btn1">SHOP NOW</button>
+            </div>
+
+        </div>
+        <div class="slide-btn-comtain" onclick="changeBg()">
+            <img src="./icons/new-moon.png" alt="" class="slide-btn" id="slide-btn"
+                onclick="changeSlideBtn('./imgs/s5.jpg')">
+            <img src="./icons/oval.png" alt="" class="slide-btn btn-2" id="slide-btn1"
+                onclick="changeSlideBtn('./imgs/s6.jpg')">
+        </div>
+
+
+    </header>
+    <!-- ----------------------Nav-Bar-End-------------------------------- -->
+
+    <div class="visit">
+        <span class="headings">VISIT OUR STORE</span>
+        <div class="visit-images-containere">
+            <img src="./imgs/ba20.webp" class="visit-img" alt="">
+            <img src="./imgs/ba21.webp" class="visit-img" alt="">
+            <img src="./imgs/ba22.webp" class="visit-img" alt="">
+            <img src="./imgs/ba19.webp" class="visit-img" alt="">
+
+        </div>
+    </div>
+    <div class="Seller-container">
+        <span class="headings ">Our Best Seller</span>
+        <div class="flex seller-heading">
+            <span>NEW ARRIVALS</span>
+            <SPan>BEST SELLER</SPan>
+            <span>TOP RATES</span>
+
+        </div>
+
+        <!-- <div class="product-container">
+            <img src="./imgs/home/choco cherry.webp" class="products" alt="">\i
+            <div class="product-info">
+                <span class="product-name">Chocolate Cherry Cake</span>
+                <span class="price">$8.99</span>
+            </div>
+        </div> -->
+        <div class="flavour-container">
+            <div class="row  ">
+                <div class=" flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Cereal-And-Milk.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Cereal And Milk <br>
+                        <p class="flavour-price">₹ 200.00 </p>
+                    </div>
                 </div>
-              </div>
-              <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <p class="cart">Shopping Cart</p>
-                <hr>
-              </div>
-              
-            <div class="bg-img" id="bg-img">
-                <div  class="text-overlay">
-                    <span class="heading">Style Destination</span>
-                    <h1>Taste From The </h1>
-                    <h1>Good Old  Days.</h1>
-                    <button class="buyNow-btn">SHOP NOW</button>
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Choco-Cherry.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Choco Cherry
+                        <br>
+                        <p class="flavour-price">₹ 360.00 </p>
+                    </div>
                 </div>
+
+                <div class=" flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Chokobar.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Chokobar
+                        <br>
+                        <p class="flavour-price">₹ 150.00 </p>
+                    </div>
+                </div>
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/chocolate-Wafer.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        chocolate Wafer
+                        <br>
+                        <p class="flavour-price">₹ 320.00 </p>
+                    </div>
+                </div>
+
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Cookie.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Cookie
+                        <br>
+                        <p class="flavour-price">₹ 480.00 </p>
+                    </div>
+                </div>
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Cookies-Cream.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Cookies Cream
+                        <br>
+                        <p class="flavour-price">₹ 260.00 </p>
+                    </div>
+                </div>
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Cookies-Dough.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Cookies Dough
+                        <br>
+                        <p class="flavour-price">₹ 260.00 </p>
+                    </div>
+                </div>
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Creamy Cake
+                        <br>
+                        <p class="flavour-price">₹ 260.00 </p>
+                    </div>
+                </div>
+
 
             </div>
-            <div class="slide-btn-comtain" onclick="changeBg()">
-            <img src="./icons/new-moon.png" alt="" class="slide-btn" id="slide-btn" onclick="changeSlideBtn('./imgs/s5.jpg')" >
-            <img src="./icons/oval.png" alt="" class="slide-btn btn-2"  id="slide-btn1"  onclick="changeSlideBtn('./imgs/s6.jpg')" > 
         </div>
-   
-            
-        </header>
-      <!-- ----------------------Nav-Bar-End-------------------------------- -->
 
-<div  class="visit">
-  <span class="headings">VISIT OUR STORE</span>
-  <div class="visit-images-containere">
-      <img src="./imgs/ba20.webp" class="visit-img" alt="">
-      <img src="./imgs/ba21.webp" class="visit-img" alt="">
-      <img src="./imgs/ba22.webp" class="visit-img" alt="">
-      <img src="./imgs/ba19.webp" class="visit-img" alt="">
+<!-- 
+        <div class="menu">
+            <span class="ms-5 mt-6">ICE CREAM MENU</span>
+            <h2>Take The Experience Of Our Delightful</h2>
+            <h2>Ice Cream Menu
+            </h2>
 
-  </div>
-</div>
-    
-      
-    </body>
+        </div> -->
+        <div class="margin-top">
+            <div class="flex ">
+                <div  class="img-size">
+                    <img src="./imgs/ba16.webp" class="img-size1" alt="">
+                </div>
+                <div  style="margin: auto;">
+                    <iframe width="874" height="492" src="https://www.youtube.com/embed/DWzXg_TcMnY?autoplay=1&loop=1
+                    <table id="icecreamTable" class="table table-striped text-center">  </iframe>
+
+                </div>
+                <div>
+                    <img src="./imgs/ba18.webp" class="img-size1" alt="">
+                </div>
+            </div>
+            <!--  -->
+            <div class="flex ">
+                <div  style="margin: auto;">
+                    <iframe width="874" height="492" src="https://www.youtube.com/embed/DWzXg_TcMnY?autoplay=1&loop=1
+                    <table id="icecreamTable" class="table table-striped text-center">  </iframe>
+
+                </div>
+                <div>
+                    <img src="./imgs/ba17.webp" class="img-size2" alt="">
+                </div>
+                <div  style="margin: auto;">
+                    <iframe width="874" height="492" src="https://www.youtube.com/embed/DWzXg_TcMnY?autoplay=1&loop=1
+                    <table id="icecreamTable" class="table table-striped text-center">  </iframe>
+
+                </div>
+              
+            </div>
+        </div>
+
+
+
+
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active flex">
+                    <img src="./imgs/ba20.webp" class=" w-10 visit-img" alt="...">
+                    <img src="./imgs/ba21.webp" class=" w-10 visit-img" alt="...">
+                    <img src="./imgs/ba21.webp" class=" w-10 visit-img" alt="...">
+                    <img src="./imgs/ba21.webp" class=" w-10 visit-img" alt="...">
+                    <img src="./imgs/ba21.webp" class=" w-10 visit-img" alt="...">
+                </div>
+                <div class="carousel-item flex">
+                    <img src="./imgs/ba21.webp" class=" w-10 visit-img" alt="...">
+                    <img src="./imgs/ba22.webp" class=" w-10 visit-img" alt="...">
+                    <img src="./imgs/ba22.webp" class=" w-10 visit-img" alt="...">
+                    <img src="./imgs/ba22.webp" class=" w-10 visit-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/ba22.webp" class=" w-10 visit-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/ba19.webp" class=" w-10 visit-img" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/ba20.webp" class=" w-10 visit-img" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev prev-btn" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next prev-btn" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="about-section flex">
+            <div class="about-section-dis">
+                <p class="mb-4 description">OUR ABOUT US</p>
+                <h3 class="mb-4">Ice Cream Drinks</h3>
+                <p class="mb-4 description">Summer brings with it the terrible heat, making everyone feel sluggish and
+                    <br> uncomfortable. In that
+                    weather, a glass of soft drink or a few ice cream cones is a <br> choice not to be missed
+                    <br>
+                    <br>
+                    However, not everyone knows all about that beverage. Let's climb the "time machine" <br> and
+                    discover all
+                    the history of cool ice cream!
+                    <br><br>
+
+                    Roman Emperor Nero was the first to eat ice cream. At a great party in 54, he came <br> up with an
+                    extremely strange dessert with the name "sweet snow". This dish is a <br> precursor to today's
+                    modern ice
+                    cream, it is made from the snow on the top of the <br> Apennine mountains and marinated many times
+                    with
+                    fruit and honey.
+                </p>
+
+            </div>
+            <div>
+                <img src="./imgs/ba-1.webp" alt="">
+            </div>
+        </div>
+
+
+
+
+        <div class="trending mt-4">
+            <h3 class="trend-label"> HOT DEALS</h3>
+            <div class="row  ">
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Creamy Cake
+                        <br>
+                        <p class="flavour-price">₹ 260.00 </p>
+                    </div>
+                </div>
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Creamy Cake
+                        <br>
+                        <p class="flavour-price">₹ 260.00 </p>
+                    </div>
+                </div>
+
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Creamy Cake
+                        <br>
+                        <p class="flavour-price">₹ 260.00 </p>
+                    </div>
+                </div>
+
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Creamy Cake
+                        <br>
+                        <p class="flavour-price">₹ 260.00 </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
 </html>
