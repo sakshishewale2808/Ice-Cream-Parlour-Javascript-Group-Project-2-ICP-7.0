@@ -30,10 +30,10 @@ h1{
     margin:0 5px;
 }
 .one{
-    color:gold;
+    color:rgb(255,0,0);
 }
 .two{
-    color:gold;
+    color:;
 }
 .three{
     color:gold;
@@ -59,7 +59,7 @@ button{
     cursor:pointer;
 }
 button:hover{
-    background-color: #0056b3;
+    background-color:#ff7675;
 }
 .reviews{
     margin-top:20px;
