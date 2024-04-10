@@ -202,6 +202,32 @@ visibility: hidden;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.menu-dis{
+.menu-discripton{
     text-align: center;
+    position: relative;
+    top: 450px;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.menu-card-icons{
+    margin-left: 10%;
+    cursor: pointer;
+    transition: .3s;
+}
+.menu-card-icons:hover{
+    color: #e83e8c;
+}
+.menu-product{
+    position: relative;
+    top: 450px;
+}
+.card-img{
+    margin-left: 14%;
+    transition: .4s;
+}
+.card-img:hover{
+    transform: scaleY(1);
 }
