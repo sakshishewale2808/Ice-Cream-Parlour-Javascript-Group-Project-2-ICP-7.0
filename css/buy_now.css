@@ -22,11 +22,12 @@ body {
   }
   button {
     background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    color:white;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 90px;
   }
   button:hover {
     background-color: #45a049;
