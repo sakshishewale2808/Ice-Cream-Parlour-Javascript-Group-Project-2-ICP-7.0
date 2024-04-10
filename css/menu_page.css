@@ -124,7 +124,7 @@ header{
     left: 0;
     transition: 0.5s; 
     background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255); /* Black with a little bit see-through */
+    /* Black with a little bit see-through */
   }
   
   /* The content */
@@ -281,6 +281,7 @@ header{
     justify-content: space-between;
     margin-left: 100px;
    
+   
   }
   .flavour-img{
     height: 300px;
@@ -299,12 +300,20 @@ header{
     cursor: pointer;
   }
   .effect-hover{
-    width:200px;
-    padding: 5px 10px;
-    padding-left: 70px;
+    width:450px; 
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly;
     visibility: hidden;
+    text-align: center;
+    
+
+  }
+  .flavour-card{
+    border-radius: 20px;
+    display: block;
+    justify-content: center;
+    margin :10px auto;
+    text-align: center;
 
   }
   
@@ -314,6 +323,7 @@ header{
         transition:1.25s;
       
     }
+    border: 3px solid  #e83e8c ; 
   }
   .load-more-btn{
     display: block;
