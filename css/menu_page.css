@@ -247,6 +247,10 @@ header{
     padding: 3px 5px;
     margin: 5px 20px;
   }
+  .themeParent{
+    display: flex;
+    flex-direction: row;
+  }
 
   .lightMode{
    border:#000 1px solid;
@@ -333,8 +337,6 @@ header{
     visibility: hidden;
     text-align: center;
   
-    
-
   }
   .flavour-card{
     border-radius: 20px;
