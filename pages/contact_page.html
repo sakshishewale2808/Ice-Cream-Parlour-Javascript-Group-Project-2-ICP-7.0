@@ -22,7 +22,7 @@
 
         <div class="contact">
             <p style="font-size: 30px; font-weight:600; margin-left:10px">Connect With Us</p>
-            <p style="font-size: 18px; margin-left:10px; text-align:justify">If you would like to know more about our policies,
+            <p style="font-size: 18px; margin-left:10px; margin-right:10px; text-align:justify">If you would like to know more about our policies,
                 you can consult our Terms and Conditions. You will also be able to
                 follow your order (tracking number will be provided in an e-mail after ordering).</p><br>
 
@@ -39,14 +39,14 @@
 
         </div>
 
-        <div class="ms-4">
+        <div class="ms-4 me-4 ">
             <form>
                 <p style="font-size: 30px; font-weight:600">Send Us An Message</p>
                 <label for="name"></label>
                 <input type="text" id="name" complete placeholder="Name" required class="name-customer">
-                <br><br>
+                <br>
                 <label for="EMAIL"></label>
-                <input type="email" id="EMAIL" required placeholder="Email" class="name-customer"><br><br>
+                <input type="email" id="EMAIL" required placeholder="Email" class="name-customer"><br>
                 <label for="mess"></label>
                 <input type="text" id="mess" complete placeholder="Message" required class="message-customer"><br><br>
                 <button class="button" onclick="messageAlert()">Send</button><br><br>
@@ -71,7 +71,7 @@
 
     <script>
         function ready(){
-             let confValue = confirm("Are You Sure? You want to move on another page!")
+             let confValue = confirm("Are You Sure? You want to move to another page!")
              if (confValue == true){
                 return true;
 
@@ -81,8 +81,9 @@
              }
         }
         function messageAlert(){
-            alert("You are successfully send the message")
-        }
+            
+                alert("You are successfully send the message")}
+        
     </script>
 </body>
 
