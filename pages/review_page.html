@@ -31,6 +31,35 @@
 		<div class="reviews" id="reviews">
 		</div>
 	</div>
+	<script>
+		const stars=document.querySelectorAll(".star");
+		const rating=document.getElementById("rating");
+		const reviewText=document.getElementById("review");
+		const submitBtn=document.getElementById("submit");
+		const reviewsContainer=document.getElementById("reviews");
+		stars.forEach((star) => {
+			star.addEventListener("click",()=>{
+				const value=parseInt(star.getAttribut("data-value"));
+				rating.innerText=value;
+				// remove all existing classes from stars
+				stars.forEach((s)=> s.classList.remove("one",
+			"two","three","four","five"
+		));
+		//Add the appropriate class to
+		//each star based on the selected star's value
+		stars.forEach((s,index)=> {
+			if(index<value){
+				s.classList.add(getstarColorClass(value));
+			}
+		});
+		//remove "selected"class from all stars
+		stars.forEach((s)=>s.classList.remove("selected"));
+		//Add "selected" class to the clicked star
+		star.classList.add("selected");
+	});
+});
+
+	</script>
 </body>
 </html>
 
