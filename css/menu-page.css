@@ -264,7 +264,7 @@ header{
     background-color:#000;
   }
   .darkBody{
-    background-color: black;
+    
     color:white;
   }
   .lightBody{
@@ -367,6 +367,4 @@ header{
   #liked{
     cursor: pointer;
   }
-  .category-div{
-    
-  }
+  
