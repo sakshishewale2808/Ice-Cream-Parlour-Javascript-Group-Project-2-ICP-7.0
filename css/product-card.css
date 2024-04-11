@@ -152,10 +152,6 @@ body{
     #plus{
         cursor:pointer;
     }
-    #plus:hover{
-        color:red;
-        background-color:white;
-    }
     #minus{
         cursor:pointer;
     }
