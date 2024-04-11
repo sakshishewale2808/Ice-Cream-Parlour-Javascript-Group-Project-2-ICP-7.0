@@ -4,10 +4,11 @@ body{
     padding:0;
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
-    background-color: #fff;
+    background-color: #efa1c5;
 }
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 .visit{
     display: block;
@@ -33,11 +34,11 @@ body{
     margin-top: 50px;
 }
 .visit-img{
-    height: 260px;
+    height: 300px;
     margin: 2%;
     border-radius: 50%;
-    padding: 18px;
-    border: 3px dashed #e83e8c;
+    padding: 12px;
+    border: 3px dashed #efa1c5;
     cursor: pointer;
 
 }
@@ -50,8 +51,11 @@ body{
 }
 .seller-heading{
     margin: 50px 38%;
-    flex-direction: row;
-    gap: 100px;
+    /* flex-direction: row;
+    gap: 100px; */
+    display: block;
+    justify-content: space-between;
+    word-spacing: 0rem;
     font-size: 20px;
 }
 .product-container{
@@ -59,6 +63,18 @@ body{
 }
 .products{
     height: 300px;
+}
+.hover-image{
+    background-color: #fff;
+    box-shadow: 0 2px 5px black;
+    padding: 10px;
+    border-radius: 30px;
+    height: 40px;
+    cursor: pointer;
+    margin: 4px;
+}
+.hover-image:hover{
+    background-color: #e83e8c;
 }
 /* background-color: #e83e8c;
 color: white;
@@ -103,12 +119,7 @@ visibility: hidden;
   
 }
 }
-.menu{
-    background-image: url(./../imgs/home/menu-bg1.png);
-    height: 95vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .about-section-dis{
     width: 45%;
     margin-left: 6%;
@@ -124,24 +135,24 @@ visibility: hidden;
    font-optical-sizing: auto;
 }
 .img-size{
-    height: 500px;
+    height:  536px;
     overflow: hidden;
-    width: 500px;
+    width:  536px;
 }
 .img-size1{
-    height: 500px;
+    height:  536px;
     transition: 2s;
-    width: 500px;
+    width: 536px;
     cursor: pointer;
 }
 .image-size{
-    height: 536px;
+    height: 600px;
     transition: 2s;
     cursor: pointer;
     overflow: hidden;
 }
 .img-size2{
-    height: 536px;
+    height: 630px;
     transition: 2s;
     cursor: pointer;
   
@@ -178,4 +189,109 @@ visibility: hidden;
 .buyNow-btn2:hover{
     background-color:transparent;
     color: #000;
+}
+.margin-left{
+    margin-left: 3%;
+}
+.prev-btn{
+    background-color: white;
+}
+.product-btn{
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    border: 2px solid black;
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 20px 45%;
+    transition: .8s;
+    font-weight: bold;
+}
+.product-btn:hover{
+    background-color: transparent;
+    color: #000;
+}
+.menu{
+    background-image: url(./../imgs/home/menu-bg1.png);
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-discripton{
+    text-align: center;
+    position: relative;
+    top: 450px;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.menu-card-icons{
+    margin-left: 10%;
+    cursor: pointer;
+    transition: .3s;
+}
+.menu-card-icons:hover{
+    color: #e83e8c;
+}
+.menu-product{
+    position: relative;
+    top: 450px;
+}
+.card-img{
+    margin-left: 14%;
+    transition: .4s;
+}
+.card-img:hover{
+    transform: scaleY(1);
+}
+@media screen and (max-width:1300px) {
+    .visit-img{
+        height: 230px;
+    }
+
+}
+@media screen and (max-width:1200px) {
+    .visit-img{
+        height: 200px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .visit-img3{
+        display: none;
+    }
+
+}
+@media screen and (max-width:718px) {
+    .visit-img{
+       margin: 1%;
+    }
+
+    
+}
+@media screen and (max-width:670px) {
+    .visit-img{
+       height:  150px;
+    }
+
+}
+@media screen and (max-width:512px) {
+    .visit-img2{
+       display: none;
+    }
+    .visit-img{
+        margin: 3%;
+    }
+
+
+}
+@media screen and (max-width:364px) {
+    .visit-img1{
+       display: none;
+    }
+    .visit-img{
+        margin-left: 10%;
+    }
+
 }

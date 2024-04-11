@@ -15,7 +15,7 @@
                 padding:0;
                 font-family: "Space Grotesk", sans-serif;
                 font-optical-sizing: auto;
-                background-color: aliceblue;
+                background-color: #fff;
             }
             .main-img{
                 width:100%;
@@ -79,11 +79,12 @@
             .card{
                 margin:5px -2px;
                 border-radius:10px;
+               
                 
             }
             .card:hover{
                 border: 3px solid  #e83e8c;
-                opacity: .8;
+                opacity:.7;
                 border-radius:10px;
             }
             .container{
@@ -125,6 +126,36 @@
             .chocobar{
                 object-fit:cover;
             }
+            .rv{
+                display: flex;
+                flex-direction: row;
+            }
+            .main .rv .rv-d{
+                width: 300px;
+                height: 390px;
+                font-family: 'Lora', serif;
+                margin: 10px 15px;
+                border: 2px solid rgb(51, 49, 49);
+                padding: 20px 20px;
+                font-size: 18px;
+                text-align: center;
+                color:#3E2922;
+            }
+            .main .rv .rv-d .rv-des{
+                font-size: 14px;
+                text-align: start;
+            }
+            .main .rv .rv-d .rv-d2{
+                margin-bottom: -500px;
+            }
+            .main .rv .rv-d:hover{
+                transition: 1.5s;
+                margin-top: -15px;
+                box-shadow: 0 0 6px 3px #3E2922;
+            }
+            
+          
+           
            
            
             @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap')
@@ -169,9 +200,12 @@
      <img src="./../imgs/product-card/Creamy Strawberry.png" class="col product-image" onclick="changeimage('Creamy Strawberry')" alt="choco3"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
-     <img src="./../imgs/product-card/Ice cone.png" class="col product-image" onclick="changeimage('Ice cone')" alt="choco4"/>
+     <img src="./../imgs/product-card/Ice-pink.png" class="col product-image"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors""/>
+     <p class=" mx-4 my-auto ">
+        <img src="./../imgs/product-card/pink.png"class="mx-1 my-0" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-3" onclick="ice('yellow')">
+     </p>
     </div>
-     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1"> 
      <img src="./../imgs/product-card/Milk Shake 2.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
@@ -215,7 +249,8 @@
      </div></div>
      <!--Cards are started-->
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-     <h1 class="fs-1 text-center">More about our products</h1>
+    <u> <h1 class="fs-1 text-center">More about our products</h1></u>
+     
 <!-- Card making-->
 
     <div class="row">
@@ -290,6 +325,15 @@ No products are available.
     </div>
 </div>
 </div>
+
+<h1 class="heading3">Review</h1>
+<div class="rv">
+    <div class="rv-d"><img src="./../imgs/review-page/client1.avif" width="300px"><br/><b>Joseph</b><br/><span class="rv-des">Eating ice cream makes me happy. It’s a mouth-watering dessert for everyone. They many flavors in India that offers ice creams in form of cone, cup, stick etc.</span><br/><img src="./../imgs/review-page/5rating.png" height="45px"/></div>
+    <div class="rv-d"><img src="./../imgs/review-page/client2.webp" width="300px"><br/><b>Daisy</b><br/><span class="rv-des">HI today I toking about five best ice cream I really like all ice cream but I mostly like to eat vanauala ice cream is too for eat and it is not so costly vanauala ice cream given good value of money and second name is carnato ice cream given a best ice cream to eat and third name is chocabar ice cream is really good for eat I really enjoy to eat</span><br/><img src="./../imgs/review-page/4rating.png" height="45px"/></div>
+    <div class="rv-d"><img src="./../imgs/review-page/client3.webp" width="300px"><br/><b>Grace</b><br/><span class="rv-des">Hello friends I am a great fan of eating ice creams and I have came here to share one of my marvelous experience of eating ice creams.well, before starting my experience let me tell you that my favorite flavor of icecream is'vanilla'.i eat it whenever I feel sad or whenever I am angry.i am in a habit o eating ice creams all over the year except when I have cold or cough.</span><br/><img src="./../imgs/review-page/5rating.png" height="45px"/></div>
+    <div class="rv-d rv-d2"><img src="./../imgs/review-page/client4-1.jpg" width="300px"><br/><b>Justin</b><br/><span class="rv-des">Creamy desert icecream service was a masterpiece. They skillfully transformed our venue into a fairy tale setting, with every element thoughtfully curated.Grateful for their expertise in turning dreams into reality.</span><br/><img src="./../imgs/review-page/4rating.png" height="45px"/></div>
+</div>
+
     
          <script>
            function changeimage(b)
@@ -323,8 +367,8 @@ No products are available.
                  }
                  else if(b=='Ice cone')
                  {
-                     flavour.src = './../imgs/product-card/Ice cone.png';
-                     price.innerText ='only at ₹40/-'
+                     flavour.src ="./../imgs/product-card/Ice-pink.png";
+                     price.innerText ='only at ₹45/-'
                  }
                  else if(b=='Milk Shake')
                  {
@@ -346,6 +390,11 @@ No products are available.
          function store(){
             alert("awesome")
 
+         }
+         function ice(state){
+            const choose = document.getElementById("colors");
+            choose.src=`./../imgs/product-card/Ice-${state}.png`;
+           
          }
            
          </script>
