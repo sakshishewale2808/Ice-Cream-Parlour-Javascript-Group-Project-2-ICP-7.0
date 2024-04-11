@@ -81,7 +81,7 @@
      <img src="./../imgs/product-card/Milk Shake.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
-     <img src="./../imgs/product-card/Choco Cream2.png" class="col product-image" onclick="changeimage('Choco Cream2')" alt="choco4"/>
+     <img src="./../imgs/product-card/Choco-Cream2.png" class="col product-image" onclick="changeimage('Choco Cream2')" alt="choco4"/>
     </div>
            
          </div>
@@ -212,6 +212,12 @@ No products are available.
        <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Choco('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Choco('2')">
     
    </div>
+   <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+    <img src="./../imgs/product-card/Cookies-Dough1.png" class="col icecones"  onclick="changeimage('Cookies-Dough')" alt="choco" id="dough"/>
+    
+       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Cookies('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Cookies('2')">
+    
+   </div>
 </div>
 <!--product section ends-->
    
@@ -267,7 +273,7 @@ No products are available.
                  }
                  else if(b=='Choco Cream2')
                  {
-                     flavour.src = './../imgs/product-card/Choco Cream2.png';
+                     flavour.src = './../imgs/product-card/Choco-Cream2.png';
                      price.innerText ='only at ₹210/-'
                       total.innerText=`Total amount ${quantity * price}`;
                  }
@@ -290,6 +296,11 @@ No products are available.
          function Choco(state){
             const choose = document.getElementById("themes");
             choose.src=`./../imgs/product-card/Choco-Cream${state}.png`;
+           
+         }
+         function Cookies(state){
+            const choose = document.getElementById("dough");
+            choose.src=`./../imgs/product-card/Cookies-Dough${state}.png`;
            
          }
 
