@@ -23,7 +23,7 @@
        <p class="text-center text-black fs-2">
         Enjoy our flavoursome <br/>range<br/> of gorgeous ice cream
     </p>  
-    <div class="d-flex mx-5 justify-content-center">
+    <div class="d-flex mx-5 justify-content-center first">
         <div><img  src="./../imgs/product-card/choco2.png" class="mx-5" id="choco2" alt="choco2"/> </div>
      <div class="ice-des d-inline-block text-start fs-5 mx-5"> <h1 id="name">Cereal And Milk</h1> <h3 id="price">only at ₹160/-</h3>
         <div class="id">
@@ -35,7 +35,7 @@
     </div>
         <p id="order">You Order:<p>
             <p id="total">Total amount:</p>
-        <p class="my-4">
+        <p class="my-4 things">
         Things You Need To Know Ice cream <br>is a good choice when you need instant<br> energy after a series of activities or if <br>you need to gain weight.
       
         </p>
@@ -75,7 +75,7 @@
      <img src="./../imgs/product-card/Creamy Strawberry.png" class="col product-image" onclick="changeimage('Creamy Strawberry')" alt="choco3"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
-     <img src="./../imgs/product-card/Cookies-Dough.jpg" class="col product-image"  onclick="changeimage('Cookies-Dough')" alt="choco4"/>
+     <img src="./../imgs/product-card/Cookies-Dough1.png" class="col product-image"  onclick="changeimage('Cookies-Dough')" alt="choco4"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1"> 
      <img src="./../imgs/product-card/Milk Shake.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
@@ -199,20 +199,20 @@ No products are available.
 </div>
 <!--product section starts-->
 <h1 class="fs-1 text-center my-5">More Variety</h1>
-<div class="d-flex">
-<div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+<div class=" row d-flex justify-content-center m-5">
+<div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
     <img src="./../imgs/product-card/Ice-pink.png" class="col icecones"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors"/>
     
        <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-5" onclick="ice('yellow')">
     
    </div>
-   <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+   <div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
     <img src="./../imgs/product-card/Choco-Cream1.png" class="col icecones"  onclick="changeimage('Choco Cream')" alt="choco" id="themes"/>
     
        <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Choco('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Choco('2')">
     
    </div>
-   <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+   <div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
     <img src="./../imgs/product-card/Cookies-Dough1.png" class="col icecones"  onclick="changeimage('Cookies-Dough')" alt="choco" id="dough"/>
     
        <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Cookies('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Cookies('2')">
@@ -261,7 +261,7 @@ No products are available.
                  }
                  else if(b=='Cookies-Dough')
                  {
-                     flavour.src ="./../imgs/product-card/Cookies-Dough.jpg";
+                     flavour.src ="./../imgs/product-card/Cookies-Dough1.png";
                      price.innerText ='only at ₹145/-'
                      total.innerText=`Total amount ${quantity * price}`;
                  }
