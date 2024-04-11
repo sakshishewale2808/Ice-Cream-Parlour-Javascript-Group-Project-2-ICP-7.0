@@ -51,12 +51,15 @@
         }
 
         .banner1 {
-            background: linear-gradient(-55deg, #ff7675 29%, #d63031 29.1%, #d63031 68%, #ff7675 68.1%);
+            background-color: #FF9A8B;
+            background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+            width:90%;
         }
 
         .banner2 {
             background-color: #FF9A8B;
             background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+            width: 90%;
         }
 
         .banner2-badge {
@@ -67,6 +70,7 @@
         .banner3 {
             background-color: #FBDA61;
             background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+            width: 90%;
         }
 
         .banner-flex {
@@ -97,6 +101,9 @@
         @media (max-width:768px) {
             .women {
                 display: none;
+            }
+            .heading1{
+                font-size: 10px;
             }
         }
     </style>
@@ -139,19 +146,38 @@
                 <div class="carousel-item active" data-bs-interval="10000">
                     <div class=" d-flex justify-content-center align-items-center">
                         <div
-                            class="banner1 rounded-5 mt-3 mx-5 d-flex justify-content-center align-items-center flex-wrap shadow overflow-hidden ">
-                            <div class=" text-center p-5  banner-flex ">
-                                <img src="./../imgs/services/ban.png" class="border rounded-5 " alt="banner"
-                                    width="80%">
+                            class="banner1 rounded-5 mt-3  d-flex justify-content-center align-items-center flex-wrap shadow overflow-hidden ">
+
+                            <div class=" text-center p-5 banner-flex">
+                                <img src="./../imgs/services/Mega-Sale-Discount.png" alt="" width="80%">
                             </div>
                             <div class="banner-flex text-center p-3 text-uppercase">
-                                <span class="text-light fs-2">Enjoy</span>
-                                <h3 class="text-light"> 25% OFF</h3>
-                                <p class="text-light fs-3 px-4">on all items</p>
-                                <a href="#"> <button type="button" class="buyNow-btn1">Buy Now</button></a>
+                                <h2 class="heading1 fs-1 pb-3 fw-bold  text-decoration-underline text-danger">Grand
+                                    Discount </h2>
+                                <h2 class="heading1 fs-1 text-primary text-decoration-underline">Coming Soon!</h2>
+                                <div class="coming  d-flex justify-content-center align-items-center flex-column">
+                                    <div class="countdown   d-flex justify-content-around text-center">
+                                        <div class="main-day p-5 ">
+                                            <h2 class="day fs-3" id="day">Time</h2>
+                                            <h2>Day</h2>
+                                        </div>
+                                        <div class="main-hour p-5  ">
+                                            <h2 class="hour fs-3" id="hour">Time</h2>
+                                            <h2>Hour</h2>
+                                        </div>
+                                        <div class="main-min p-5  ">
+                                            <h2 class="min fs-3" id="min">Time</h2>
+                                            <h2>Min</h2>
+                                        </div>
+                                        <div class="main-sec  p-5 ">
+                                            <h2 class="sec fs-3" id="sec">Time</h2>
+                                            <h2>Sec</h2>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="women position-relative bottom-50 banner-flex">
-                                <img src="./../imgs/services/girl.png" alt="" width="100%">
+                            <div class="women position-relative bottom-50 me-5 mt-5 banner-flex">
+                                <img src="./../imgs/services/girl-pointing.webp" alt="girl" width="100%">
                             </div>
                         </div>
                     </div>
@@ -184,20 +210,19 @@
                 <div class="carousel-item">
                     <div class=" d-flex justify-content-center align-items-center">
                         <div
-                            class="banner3 rounded-5 mt-3 mx-5 d-flex justify-content-center align-items-center flex-wrap shadow overflow-hidden ">
-                            <div class=" text-center p-5 ms-5 banner-flex">
-                                <img src="./../imgs/services/vanila.png" class="border border-danger rounded-5 "
-                                    alt="banner" width="80%">
+                            class="banner1 rounded-5 mt-3 mx-5 d-flex justify-content-center align-items-center flex-wrap shadow overflow-hidden ">
+                            <div class=" text-center p-5  banner-flex ">
+                                <img src="./../imgs/services/ban.png" class="border rounded-5 " alt="banner"
+                                    width="80%">
                             </div>
                             <div class="banner-flex text-center p-3 text-uppercase">
-                                <span class="text-light fs-1 fw-bolder">Buy Two</span>
-                                <h3 class="text-light">Get 1 </h3>
-                                <p class="text-light fs-6 px-4">offer ends after 10 days</p>
-                                <a href="#"> <button type="button"
-                                        class="buyNow-btn1">Buy Now</button></a>
+                                <span class="text-light fs-2">Enjoy</span>
+                                <h3 class="text-light"> 25% OFF</h3>
+                                <p class="text-light fs-3 px-4">on all items</p>
+                                <a href="#"> <button type="button" class="buyNow-btn1">Buy Now</button></a>
                             </div>
                             <div class="women position-relative bottom-50 banner-flex">
-                                <img src="./../imgs/services/free.png" alt="" width="100%" height="100%">
+                                <img src="./../imgs/services/girl.png" alt="" width="100%">
                             </div>
                         </div>
                     </div>
