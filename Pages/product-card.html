@@ -199,7 +199,7 @@ No products are available.
 </div>
 <!--product section starts-->
 <h1 class="fs-1 text-center my-5">More Variety</h1>
-<div>
+<div class="d-flex">
 <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
     <img src="./../imgs/product-card/Ice-pink.png" class="col icecones"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors"/>
     
@@ -207,9 +207,9 @@ No products are available.
     
    </div>
    <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
-    <img src="./../imgs/product-card/Ice-pink.png" class="col icecones"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors"/>
+    <img src="./../imgs/product-card/Choco-Cream1.png" class="col icecones"  onclick="changeimage('Choco Cream')" alt="choco" id="themes"/>
     
-       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-5" onclick="ice('yellow')">
+       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Choco('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Choco('2')">
     
    </div>
 </div>
@@ -227,8 +227,6 @@ No products are available.
                 {
                 flavour.src = './../imgs/product-card/choco2.png';
                 price.innerText ='only at ₹160/-'
-                order.innertext=
-                total
 
                 }
                 else if(b=='Choco berry')
@@ -289,6 +287,12 @@ No products are available.
             choose.src=`./../imgs/product-card/Ice-${state}.png`;
            
          }
+         function Choco(state){
+            const choose = document.getElementById("themes");
+            choose.src=`./../imgs/product-card/Choco-Cream${state}.png`;
+           
+         }
+
 
         
          function inc(){
