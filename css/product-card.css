@@ -58,6 +58,7 @@ body{
 .products{
     margin:-10px;
     margin-top:50px 10px;
+    justify-content:space-between;
 }
 .product-container{
     margin:400px 22px;

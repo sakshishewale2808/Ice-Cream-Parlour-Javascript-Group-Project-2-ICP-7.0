@@ -50,13 +50,10 @@
      <img src="./../imgs/product-card/Creamy Strawberry.png" class="col product-image" onclick="changeimage('Creamy Strawberry')" alt="choco3"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
-     <img src="./../imgs/product-card/Ice-pink.png" class="col product-image"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors""/>
-     <p class=" mx-4 my-auto ">
-        <img src="./../imgs/product-card/pink.png"class="mx-1 my-0" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-3" onclick="ice('yellow')">
-     </p>
+     <img src="./../imgs/product-card/Cookies-Dough.jpg" class="col product-image"  onclick="changeimage('Cookies-Dough')" alt="choco4"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1"> 
-     <img src="./../imgs/product-card/Milk Shake 2.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
+     <img src="./../imgs/product-card/Milk Shake.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
     </div>
      <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
      <img src="./../imgs/product-card/Choco Cream2.png" class="col product-image" onclick="changeimage('Choco Cream2')" alt="choco4"/>
@@ -104,7 +101,7 @@
 <!-- Card making-->
 
     <div class="row">
-     <div  class=container col col-lg-4 col-md-2 col-sm-1 m-4">
+     <div  class="container col col-lg-4 col-md-2 col-sm-1 m-4">
         <img class="icecream" src="./../imgs/product-card/Wafer-Ice-Cream.jpg" height="200" alt="bottle"/>
          <div class="description">
            <h2>Wafer Ice-Cream
@@ -122,7 +119,7 @@
 </div>
 
 <!-- Card making-->
-     <div class=container col col-lg-4 col-md-2 col-sm-1 m-4">
+     <div class="container col col-lg-4 col-md-2 col-sm-1 m-4">
         <img class="icecream chocobar" src="./../imgs/product-card/Chokobar.jpg" height="200" alt="bottle"/>
          <div class="description">
            <h2>Chocobar
@@ -175,6 +172,13 @@ No products are available.
     </div>
 </div>
 </div>
+
+<div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+    <img src="./../imgs/product-card/Ice-pink.png" class="col product-image"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors"/>
+    <p class=" mx-4 my-auto ">
+       <img src="./../imgs/product-card/pink.png"class="mx-1 my-0" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-3" onclick="ice('yellow')">
+    </p>
+   </div>
 <script>
            function changeimage(b)
             {
@@ -205,9 +209,9 @@ No products are available.
                      flavour.src = './../imgs/product-card/Creamy Strawberry.png';
                      price.innerText ='only at ₹60/-'
                  }
-                 else if(b=='Ice cone')
+                 else if(b=='Cookies-Dough')
                  {
-                     flavour.src ="./../imgs/product-card/Ice-pink.png";
+                     flavour.src ="./../imgs/product-card/Cookies-Dough.jpg";
                      price.innerText ='only at ₹45/-'
                  }
                  else if(b=='Milk Shake')
