@@ -288,6 +288,7 @@ header{
   }
   .decoration{
     text-decoration: none;
+  
   }
   .filter-container{
     width:100px;
@@ -367,4 +368,28 @@ header{
   #liked{
     cursor: pointer;
   }
-  
+  .category-heading{
+    font-weight: bolder;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+  }
+  .parent-card{
+     display: flex;
+     flex-direction: row;
+
+  }
+
+  .category-div{
+      width: 200px;
+      background-color: #a3a3a3;
+      margin: 60px auto;
+      display: block;
+      text-align: center;
+      padding: 10px 0px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  .deco-text{
+    color: #000;
+  }
