@@ -24,9 +24,17 @@
     <div class="d-flex mx-5 justify-content-center">
         <div><img  src="./../imgs/product-card/choco2.png" class="mx-5" id="choco2" alt="choco2"/> </div>
      <div class="ice-des d-inline-block text-start fs-5 mx-5"> <h1 id="name">Cereal And Milk</h1> <h3 id="price">only at ₹60/-</h3>
+        <div class="id">
+            <img class="minus" src="./../imgs/product-card/minus.png" height="35" onclick="dec()">
+            <span class="one" id="one">1 </span>
+            <img class="plus" src="./../imgs/product-card/add.png" height="45" onclick="inc()">
+
+    </div>
+        <p id="order">You Order:<p>
+            <p id="total">Total amount:</p>
         <p class="my-4">
-        Things You Need To Know Ice cream <br>is a good choice when you need instant<br> energy after a series of activities or if <br>you need to gain weight, remember <br>that being too thin can make you 
-        as<br> unattractive as being overweight. <br>Ice cream is also a rich source of nutrients...
+        Things You Need To Know Ice cream <br>is a good choice when you need instant<br> energy after a series of activities or if <br>you need to gain weight.
+      
         </p>
     </div>
    
@@ -185,49 +193,62 @@ No products are available.
 <!--product section ends-->
    
 <script>
+   
            function changeimage(b)
             {
                 const flavour = document.getElementById('choco2');
                 const price =  document.getElementById('price');
+                let quantity = document.getElementById("order");
+                let total = document.getElementById("total");
                 if(b=='Cereal And Milk')
                 {
                 flavour.src = './../imgs/product-card/choco2.png';
                 price.innerText ='only at ₹60/-'
+                order.innertext=
+                total
+
                 }
                 else if(b=='Choco berry')
                  {
                      flavour.src = './../imgs/product-card/choco3.png';
                      price.innerText ='only at ₹70/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Creamy Cream')
                  {
                      flavour.src = './../imgs/product-card/choco4.png';
                      price.innerText ='only at ₹65/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Chocolate wafer')
                  {
                      flavour.src = './../imgs/product-card/chocolate wafer.png ';
                      price.innerText ='only at ₹50/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Creamy Strawberry')
                  {
                      flavour.src = './../imgs/product-card/Creamy Strawberry.png';
                      price.innerText ='only at ₹60/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Cookies-Dough')
                  {
                      flavour.src ="./../imgs/product-card/Cookies-Dough.jpg";
                      price.innerText ='only at ₹45/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Milk Shake')
                  {
                      flavour.src = './../imgs/product-card/Milk Shake.png';
                      price.innerText ='only at ₹60/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Choco Cream2')
                  {
                      flavour.src = './../imgs/product-card/Choco Cream2.png';
                      price.innerText ='only at ₹60/-'
+                      total.innerText=`Total amount ${quantity * price}`;
                  }
                  const choice=document.getElementById("name");
      
@@ -245,8 +266,77 @@ No products are available.
             choose.src=`./../imgs/product-card/Ice-${state}.png`;
            
          }
+
+        
+         function inc(){
+            let quantity = parseInt(one.innerText);
+            if(quantity<10){
+              one.innerText = ++quantity;
+            }
+            else{
+
+                alert("Can't cart more than this")
+            }
+            settotalamout(quantity);
+            totalamt(quantity*price);
+        }
+        function dec(){
+            let quantity = parseInt(one.innerText);
+            if(quantity>1){
+                one.innerText = --quantity;
+            }
+            else{
+                alert("Not less than one quantity!")
+            }
+            settotalamout(quantity);
+        }
+        function  settotalamout(quantity){
+            order.innerText = `You order ${quantity} products`;
+            total.innerText = `Total amount ${quantity * 139}`;
+           }
+
+         
+     
            
          </script>
+         <!-- 
+         let num=parseInt(prompt('enter your number :'))
+         switch(num)
+         {
+             case 0:
+             alert.log("order cancelled!")
+             break;
+             case 1:
+             alert.log("You ordered one product")
+             break;
+             case 2:
+             alert.log("You ordered two product")
+             break;
+             case 3:
+             alert.log("You ordered three product")
+             break;
+             case 4:
+             alert.log("You ordered four product")
+             break;
+             case 5:
+             alert.log("You ordered five product")
+             break;
+             case 6:
+             alert.log("You ordered six product")
+             break;
+             case 7:
+             alert.log("You ordered seven product")
+             break;
+             case 8:
+             alert.log("You ordered eight product")
+             break;
+             case 9:
+             alert.log("You ordered nine product")
+             break;
+             default:
+             alert.log("can't order more than this..!")
+             
+         }-->
        
     </body>
 </html>
