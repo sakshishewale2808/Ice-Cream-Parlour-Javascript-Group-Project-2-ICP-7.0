@@ -130,3 +130,41 @@ body{
     color: #000;
     border :1px solid black;
 }
+.effect-hover{
+    width:200px;
+    padding: 5px 10px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-around;
+    visibility: visible;
+    margin-left:-100px;
+    cursor:pointer;
+    
+    }
+    
+    .flavour-card:hover{
+    .effect-hover{
+        visibility: visible;
+        transition:1.25s;
+      
+    }
+    }
+    #plus{
+        height:35px;
+        cursor:pointer;
+    }
+    #minus{
+        cursor:pointer;
+    }
+    .btn1{
+        background:transparent;
+        border:none;
+        font-size: 20px;
+        outline:none;
+        color:black;
+        margin-top:-5px;
+    }
+    .btn i:hover{
+        cursor:pointer;
+    }
+   
