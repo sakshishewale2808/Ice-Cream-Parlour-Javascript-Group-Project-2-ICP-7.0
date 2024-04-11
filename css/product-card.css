@@ -171,4 +171,8 @@ body{
     .btn i:hover{
         cursor:pointer;
     }
+    .icecones{
+        height:300px;
+        box-shadow:0px 0px 1px #e83e8c;
+    }
    
