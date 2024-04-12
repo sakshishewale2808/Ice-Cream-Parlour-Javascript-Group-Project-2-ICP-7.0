@@ -121,7 +121,8 @@ visibility: hidden;
 }
 
 .about-section-dis{
-    width: 45%;
+    /* width: 45%; */
+    text-wrap: wrap;
     margin-left: 6%;
     margin-top: 10%;
     flex-wrap: wrap;
