@@ -53,9 +53,7 @@ body{
     margin: 50px 38%;
     /* flex-direction: row;
     gap: 100px; */
-    display: block;
-    justify-content: space-between;
-    word-spacing: 0rem;
+
     font-size: 20px;
 }
 .product-container{
@@ -85,12 +83,21 @@ text-decoration: none;
 #newArrival{
     color: #e83e8c;
     cursor:grab;
+    margin: 10px;
+    font-size: 20px;
 }
 #bestSeller{
     cursor:grab;
+    margin: 10px;
+    font-size: 20px;
 }
 #topRates{
     cursor:grab;
+    margin: 10px;
+    font-size: 20px;
+}
+center{
+   margin: 5% 0;
 }
 .flavour-container{
 
@@ -130,6 +137,7 @@ visibility: hidden;
 }
 }
 
+
 .about-section-dis{
     /* width: 45%; */
     text-wrap: wrap;
@@ -145,15 +153,19 @@ visibility: hidden;
    font-family: "Space Grotesk", sans-serif;
    font-optical-sizing: auto;
 }
+.white-bg{
+    background-image: url(./../imgs/home/white-bg.png);
+    width:  20vh;
+}
 .img-size{
-    height:  536px;
+    height:  500px;
     overflow: hidden;
-    width:  536px;
+    width:  500px;
 }
 .img-size1{
-    height:  536px;
+    height:  500px;
     transition: 2s;
-    width: 536px;
+    width: 500px;
     cursor: pointer;
 }
 .image-size{
@@ -163,8 +175,9 @@ visibility: hidden;
     overflow: hidden;
 }
 .img-size2{
-    height: 630px;
+    height:  500px;
     transition: 2s;
+    width: 500px;
     cursor: pointer;
   
 }
