@@ -51,9 +51,12 @@
 }
 
 .card{
-    box-shadow: 0 0 20px 1px #e1e1d0;
-    background-color: #ffe6ff;
-    margin: 30px;
+    box-shadow: 10px 10px 20px 2px #e1e1d0;
+   padding: 4px;
+
+}
+.card:hover{
+    border: 1px solid #e83e8c;
 }
 
 .color{
