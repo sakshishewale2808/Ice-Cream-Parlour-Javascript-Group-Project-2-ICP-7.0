@@ -73,7 +73,7 @@
 
 
         <div class="ms-4 me-4 ">
-            <form>
+            <form  onsubmit="messageAlert()" >
                 <p style="font-size: 30px; font-weight:600">Send Us An Message</p>
                 <label for="name"></label>
                 <input type="text" id="name" complete placeholder="Name" required class="name-customer">
@@ -83,7 +83,7 @@
                 <label for="mess"></label>
                 <textarea name="text" id="mess" cols="30" rows="10" complete placeholder="Message" required
                     class="message-customer"></textarea><br><br>
-                <button class="button" onclick="messageAlert()">Send</button><br><br>
+                <button type="submit"  class="button" value="button">Send</button><br><br>
             </form>
         </div>
 
@@ -145,12 +145,12 @@
             <div class="footer "><i class="fa-solid fa-envelope fa-sol"></i>&nbsp;&nbsp;<a
                     href="mailto: bhushanpotdar3@gmail.com" class="b"> bhushanpotdar3@gmail.com</a></div>
 
-            <div class="footer mt-4">&nbsp;&nbsp;<a href="https://www.instagram.com/bhushan_potdar_19" class="b"
+            <div class="footer mt-4">&nbsp;&nbsp;<a href="https://www.instagram.com/bhushan_potdar_19" onclick="return ready()" class="b"
                     target="_blank"><i class="fa-brands fa-instagram fa-brand"></i></a>&emsp;<a
-                    href="https://www.linkedin.com/in/bhushan-potdar-62283a2a7/" class="a" target="_blank"><i
-                        class="fa-brands fa-linkedin fa-brand"></i></a>&emsp;<a href="https://wa.me/7744049590"
+                    href="https://www.linkedin.com/in/bhushan-potdar-62283a2a7/" onclick="return ready()" class="a" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-brand"></i></a>&emsp;<a href="https://wa.me/7744049590" onclick="return ready()"
                     class="b" target="_blank"><i class="fa-brands fa-whatsapp fa-brand"></i></a>
-                &emsp;<a href="https://github.com/bhushanpotdar19" class="b" target="_blank"><i
+                &emsp;<a href="https://github.com/bhushanpotdar19" onclick="return ready()" class="b" target="_blank"><i
                         class="fa-brands fa-github fa-brand"></i></a></div>
             <br>
 
@@ -198,8 +198,7 @@
         }
     }
     function messageAlert() {
-
-        alert("You are successfully send the message.")
+        alert("You are successfully send the message!")
     }
 
 </script>
