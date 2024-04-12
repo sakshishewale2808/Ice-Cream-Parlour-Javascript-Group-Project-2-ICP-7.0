@@ -23,12 +23,13 @@
        <p class="text-center text-black fs-2">
         Enjoy our flavoursome <br/>range<br/> of gorgeous ice cream
     </p>  
-    <div class="d-flex mx-5 justify-content-center row">
-        <div class="col col-lg-2 col-md-1 col-sm-1"><img  src="./../imgs/product-card/choco2.png" class="mx-5" id="choco2" alt="choco2"/> </div>
-     <div class="ice-des d-inline-block text-start fs-5 mx-5 col col-lg-2 col-md-1 col-sm-1"> 
+    <div class="d-flex justify-content-center row">
+        <div class="col col-lg-2 col-md-1 col-sm-1 mt-5"><img  src="./../imgs/product-card/choco2.png" class="mx-5" id="choco2" alt="choco2"/> </div>
+       
+     <div class="ice-des d-inline-block text-start fs-5 mt-4  col col-lg-2 col-md-1 col-sm-1"> 
         <h1 id="name">Cereal And Milk</h1> 
         <h3 id="price">only at ₹160/-</h3>
-        <p class="id">
+        <p class="id ">
              <span id="minus" onclick="dec()"><i class="fa-solid fa-circle-minus outline-hidden fs-2 mt-auto" style="background-color:white;color:#e83e8c"></i></span>
 
             <span class="one" id="one">1 </span>
@@ -36,9 +37,9 @@
 
         </p>
         <p id="order">You Order:<p>
-            <p id="total">Total amount:</p>
+            <p id="total"></p>
         <p class="my-4">
-        Things You Need To Know Ice cream <br>is a good choice when you need instant<br> energy after a series of activities or if <br>you need to gain weight.
+            It's a sweet, creamy, and rich dessert that can be enjoyed any time.Simple pleasures: ice cream and sunshine.
       
         </p>
         <section class="flavour-card mx-4" >
@@ -47,10 +48,13 @@
                 <img src="./../icons/menupage-icons/search.png" height="20px" alt="">
                 <button onclick="Toggle1()"  id="btnh1" class="btn1"><i class="fa-solid fa-heart my-0"></i></button>
             </p>
+            <button type="button" class="mb-5 btn addtocart">Add to cart</button>
+          
         </section>
    
    
     </div>
+   
    
 </div>
 
@@ -239,22 +243,27 @@ No products are available.
                 }
                 else if(b=='Choco berry')
                  {
-
+                     flavour.src = './../imgs/product-card/choco3.png';
+                     price.innerText ='only at ₹170/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Creamy Cream')
                  {
                      flavour.src = './../imgs/product-card/choco4.png';
-
+                     price.innerText ='only at ₹265/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Chocolate wafer')
                  {
                      flavour.src = './../imgs/product-card/chocolate wafer.png ';
-
+                     price.innerText ='only at ₹250/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Creamy Strawberry')
                  {
                      flavour.src = './../imgs/product-card/Creamy Strawberry.png';
-
+                     price.innerText ='only at ₹160/-'
+                     total.innerText=`Total amount ${quantity * price}`;
                  }
                  else if(b=='Cookies-Dough')
                  {

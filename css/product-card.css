@@ -25,6 +25,7 @@ body{
     color:white;
     text-align:center;
 }
+
 #choco2{
     width:350px;
     height:380px;
@@ -53,8 +54,9 @@ body{
     width:450px;
 }
 .ice-des{
-   justify-content: center;
-   align-items:center;
+  width:400px;
+  margin-left:300px;
+  height:300px;
 }
 .products{
     margin:-10px;
@@ -175,6 +177,10 @@ body{
         height:300px;
         box-shadow:0px 0px 1px #e83e8c;
     }
+    .addtocart{
+      width:300px;
+        text-align:center;
+    }
     /*media query apply*/
     @media screen and (max-width: 500px) {
         body{
@@ -186,7 +192,13 @@ body{
             background-position: center;
             object-fit: cover;
          }
-       
+       .product-card{
+        height:100px;
+       }
+       .ice-des{
+        justify-content: center;
+        align-items:center;
+     }
       
 
     }
