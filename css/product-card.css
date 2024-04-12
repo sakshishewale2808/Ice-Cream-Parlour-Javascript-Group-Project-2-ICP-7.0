@@ -42,6 +42,7 @@ body{
     height:160px;
     cursor:pointer;
     justify-content:space-around;
+    margin-left:90px;
 }
  .product-image:hover{
     border: 3px solid  #e83e8c;
@@ -52,29 +53,32 @@ body{
     width:450px;
 }
 .ice-des{
-    width:400px;
-    margin:-350px 700px;
+   justify-content: center;
+   align-items:center;
 }
 .products{
     margin:-10px;
     margin-top:50px 10px;
+    justify-content:center;
 }
 .product-container{
     margin:400px 22px;
 }
 .product-content{
-    margin:-330px 3px;
+    margin:-330px 10px;
+    justify-content: space-between;
 }
 .card{
     margin:5px -2px;
-    border-radius:10px;
    
-    
+    border:none;
+    box-shadow:0px 0px 2px #e83e8c;
+   
 }
 .card:hover{
-    border: 3px solid  #e83e8c;
+    border: 1px solid  #e83e8c;
     opacity:.7;
-    border-radius:10px;
+    border-radius:5px;
 }
 .container{
     margin:10px 10px;
@@ -105,13 +109,92 @@ body{
     font-size:20px;
     margin-top:-15px;
 }
-.nutrient{
-    margin:10px;
-    padding:6px;
-    border-radius:10px;
-    width:240px;
-    font-size:20px;
-}
 .chocobar{
     object-fit:cover;
 }
+.btn{
+    border: 1px solid black;
+    margin: 25px 1px;
+    padding: 10px 20px;
+    background-color:#e83e8c;
+    color: white;
+    border-radius: 60px;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all .3s ease-out;
+    border:none;
+}
+.btn:hover{
+    background-color:white;
+    color: #e83e8c;
+    border :1px solid #e83e8c;
+}
+.effect-hover{
+    width:200px;
+    padding: 5px 10px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-around;
+    visibility: visible;
+    margin-left:-100px;
+    cursor:pointer;
+    
+    }
+    
+    .flavour-card:hover{
+    .effect-hover{
+        visibility: visible;
+        transition:1.25s;
+      
+    }
+    }
+    #plus{
+        cursor:pointer;
+    }
+    #plus:hover{
+       
+        color:white;
+    }
+    #minus{
+        cursor:pointer;
+    }
+    .btn1{
+        background:transparent;
+        border:none;
+        font-size: 20px;
+        outline:none;
+        color:black;
+        margin-top:-5px;
+    }
+    .btn i:hover{
+        cursor:pointer;
+    }
+    .icecones{
+        height:300px;
+        box-shadow:0px 0px 1px #e83e8c;
+    }
+    /*media query apply*/
+    @media screen and (max-width: 500px) {
+        .main-img{
+            width:100%;
+            height:200px;
+            margin-left:15%;
+        }
+        .first{
+            display: block;
+        }
+        .things{
+            visibility:none;
+        }
+      
+
+    }
+
+    @media (max-width:768px) {
+        .women {
+            display: none;
+        }
+    }
+   

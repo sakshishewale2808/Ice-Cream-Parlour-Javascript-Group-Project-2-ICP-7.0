@@ -1,34 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url(./../imgs/bg-ice-cream.png);
-    background-size: cover;
-  }
-  form {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 20px;
-  }
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 3px solid black;
-    border-radius: 4px;
-  }
-  button {
-    background-color: #4CAF50;
-    color:white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 90px;
-  }
-  button:hover {
-    background-color:black;
-  }
+.shop-footer {
+  background-color: #b5b4b4;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  padding: 50px;
+}
+
+.footer-sec {
+  width: 400px;
+  margin: 10px 10px;
+  border-right: 2px solid #de1212;
+}
+
+.footer-sec-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.footer-data {
+  margin-left: 20px;
+}
