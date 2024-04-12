@@ -212,25 +212,29 @@ No products are available.
                  {
                      flavour.src = './../imgs/product-card/choco3.png';
                      price.innerText ='only at ₹70/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     quantity = parseInt(quantity.value);
+                     total = qty*70;
+                     quantity.setAttribute('max',qty+5);
+                     quantity.value='5';
+                     total.innerText=`Total amount ${total}`;
                  }
                  else if(b=='Creamy Cream')
                  {
                      flavour.src = './../imgs/product-card/choco4.png';
                      price.innerText ='only at ₹65/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`Total amount ${quantity * 65}`;
                  }
                  else if(b=='Chocolate wafer')
                  {
                      flavour.src = './../imgs/product-card/chocolate wafer.png ';
                      price.innerText ='only at ₹50/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`Total amount ${quantity * 50}`;
                  }
                  else if(b=='Creamy Strawberry')
                  {
                      flavour.src = './../imgs/product-card/Creamy Strawberry.png';
                      price.innerText ='only at ₹60/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`Total amount ${quantity * 60}`;
                  }
                  else if(b=='Cookies-Dough')
                  {
