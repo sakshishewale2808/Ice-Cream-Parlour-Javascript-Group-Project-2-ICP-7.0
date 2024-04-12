@@ -90,7 +90,7 @@ body{
     box-shadow:1px 1px 2px black;
     width:300px;
     height:400px;
-    box-shadow:1px 1px 12px #021530;
+    box-shadow:1px 1px 12px #e83e8c;
     justify-content:space-between;
 }
 .icecream{
@@ -177,17 +177,16 @@ body{
     }
     /*media query apply*/
     @media screen and (max-width: 500px) {
+        body{
+            max-width:500px;
+        }
         .main-img{
             width:100%;
             height:200px;
-            margin-left:15%;
-        }
-        .first{
-            display: block;
-        }
-        .things{
-            visibility:none;
-        }
+            background-position: center;
+            object-fit: cover;
+         }
+       
       
 
     }
