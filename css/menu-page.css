@@ -247,6 +247,10 @@ header{
     padding: 3px 5px;
     margin: 5px 20px;
   }
+  .themeParent{
+    display: flex;
+    flex-direction: row;
+  }
 
   .lightMode{
    border:#000 1px solid;
@@ -260,7 +264,7 @@ header{
     background-color:#000;
   }
   .darkBody{
-    background-color: black;
+    
     color:white;
   }
   .lightBody{
@@ -284,6 +288,7 @@ header{
   }
   .decoration{
     text-decoration: none;
+  
   }
   .filter-container{
     width:100px;
@@ -333,8 +338,6 @@ header{
     visibility: hidden;
     text-align: center;
   
-    
-
   }
   .flavour-card{
     border-radius: 20px;
@@ -364,4 +367,29 @@ header{
   }
   #liked{
     cursor: pointer;
+  }
+  .category-heading{
+    font-weight: bolder;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+  }
+  .parent-card{
+     display: flex;
+     flex-direction: row;
+
+  }
+
+  .category-div{
+      width: 200px;
+      
+      margin: 60px auto;
+      display: block;
+      text-align: center;
+      padding: 10px 0px;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  .deco-text{
+    color: #000;
   }
