@@ -22,7 +22,7 @@
 <body>
     <div class="nav-container flex" id="nav">
         <div class="right-flex flex">
-            <img src="./imgs/menu.png" height="40px" class="hamburger" onclick="openNavs()" alt="">
+            <img src="./imgs/menu.png" height="40px" class="hamburger" onclick="openNav()" alt="">
             <a href="./index.html"> <img src="./imgs/logo.png" class="logo" alt=""></a>
         </div>
         <div class="mid-flex">
@@ -54,11 +54,11 @@
                 </form>
             </div>
         </div>
-        <div id="mySidenav1" class="sidenav1">
+        <!-- <div id="mySidenav1" class="sidenav1">
             <a href="javascript:void(0)" class="closebtn1" onclick="closeNavs()">&times;</a>
             <p class="cart1">Shopping Cart</p>
             <hr>
-        </div>
+        </div> -->
 
         <div class="bg-img" id="bg-img">
             <div class="text-overlay">
@@ -77,10 +77,12 @@
         </div>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <ul class="menu-list" type="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./Pages/about-us.html">About Us</a></li>
+                <li><a href="./Pages/contact-page.html">Contact Us</a></li>
+                <li><a href="./Pages/services.html">Services</a></li>
+            </ul>
         </div>
 
 
@@ -160,9 +162,9 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search" alt="">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="white-list">
                     </div>
-                    <div id="productText1" class="flavour-description">
-                        Cereal And Milk <br>
-                        <p class="flavour-price">₹ 200.00 </p>
+                    <div  class="flavour-description">
+                        <p id="productText1">Cereal And Milk</p>
+                        <p id="price1" class="flavour-price">₹ 200.00 </p>
                     </div>
                 </div>
 
@@ -175,10 +177,9 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="white-list">
                     </div>
-                    <div id="productText2" class="flavour-description">
-                        Choco Cherry
-                        <br>
-                        <p class="flavour-price">₹ 360.00 </p>
+                    <div class="flavour-description">
+                       <p id="productText2" > Choco Cherry</p>
+                        <p id="price2" class="flavour-price">₹ 360.00 </p>
                     </div>
                 </div>
 
@@ -191,10 +192,9 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div id="productText3" class="flavour-description">
-                        Chokobar
-                        <br>
-                        <p class="flavour-price">₹ 150.00 </p>
+                    <div  class="flavour-description">
+                       <p id="productText3"> Chokobar</p>
+                        <p id="price3" class="flavour-price">₹ 150.00 </p>
                     </div>
                 </div>
 
@@ -207,10 +207,9 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div id="productText4" class="flavour-description">
-                        chocolate Wafer
-                        <br>
-                        <p class="flavour-price">₹ 320.00 </p>
+                    <div  class="flavour-description">
+                        <p id="productText4">chocolate Wafer</p>
+                        <p id="price4" class="flavour-price">₹ 320.00 </p>
                     </div>
                 </div>
 
@@ -224,10 +223,9 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div id="productText5" class="flavour-description">
-                        Cookie
-                        <br>
-                        <p class="flavour-price">₹ 480.00 </p>
+                    <div  class="flavour-description">
+                        <p id="productText5">Cookie</p>
+                        <p id="price5" class="flavour-price">₹ 480.00 </p>
                     </div>
                 </div>
 
@@ -240,10 +238,9 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div id="productText6" class="flavour-description">
-                        Cookies Cream
-                        <br>
-                        <p class="flavour-price">₹ 260.00 </p>
+                    <div  class="flavour-description">
+                        <p id="productText6">Cookies Cream</p>
+                        <p id="price6" class="flavour-price">₹ 260.00 </p>
                     </div>
                 </div>
 
@@ -256,10 +253,9 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div id="productText7" class="flavour-description">
-                        Cookies Dough
-                        <br>
-                        <p class="flavour-price">₹ 260.00 </p>
+                    <div  class="flavour-description">
+                       <p id="productText7">Cookies Dough</p>
+                        <p id="price7" class="flavour-price">₹ 260.00 </p>
                     </div>
                 </div>
 
@@ -272,10 +268,9 @@
                         <img src="./icons/magnifying-glass.png" class="hover-image" title="search ">
                         <img src="./icons/heart.png" class="hover-image" title="wishlist">
                     </div>
-                    <div id="productText8" class="flavour-description">
-                        Creamy Cake
-                        <br>
-                        <p id="price" class="flavour-price">₹ 260.00 </p>
+                    <div  class="flavour-description">
+                        <p id="productText8" >Creamy Cake</p>
+                        <p id="price8" class="flavour-price">₹ 260.00 </p>
                     </div>
                 </div>
 

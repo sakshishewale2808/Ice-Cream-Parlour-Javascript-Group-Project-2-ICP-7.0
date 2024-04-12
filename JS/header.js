@@ -13,18 +13,13 @@ function openSearch() {
   function closeSearch() {
     document.getElementById("myOverlay").style.display = "none";
   }
-  function openCarts() {
-    document.getElementById("mySidenav").style.width = "400px";
-    document.getElementById("main").style.marginLeft = "400px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  }
-  
-  
-  function closeNavs() {
+  function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
   }
-  function openNavs() {
-    document.getElementById("mySidenav").style.width = "250px";
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginRight = "300px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }

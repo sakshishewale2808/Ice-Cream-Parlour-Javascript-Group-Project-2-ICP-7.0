@@ -93,12 +93,6 @@ body{
 .hover-image:hover{
     background-color: #e83e8c;
 }
-/* background-color: #e83e8c;
-color: white;
-border:#e83e8c 1px solid;
-text-decoration: none;
-
-} */
 #newArrival{
     color: #e83e8c;
     cursor:grab;
