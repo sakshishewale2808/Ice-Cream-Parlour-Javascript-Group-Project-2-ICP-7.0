@@ -199,6 +199,12 @@ body{
         justify-content: center;
         align-items:center;
      }
+     .product-content{
+       visibility:hidden;
+    }
+    .addtocart{
+        visibility:hidden;
+    }
       
 
     }
