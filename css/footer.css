@@ -1,34 +1,107 @@
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+.foot {
+    font-size: 30px;
+    color: #ffb860;
+    padding: 15px;
 
 
-body{
-    background: #eef3f7;
-    font-family: 'Poppins', sans-serif;
 }
-.bag{
-    background-color: #fb5f04;
+
+
+.footer {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
 }
-.bod{
-    border: 1px solid #fb5f04;
+
+.a{
+    text-decoration: none;
+    color:white;
+    font-weight:100;
 }
-.wdt{
-    width: 50px;
-    height: 50px;
+
+.contact {
+    position: absolute;
+    left: 40%;
+    font-size: 30px;
+    color: #ffb860;
+    padding: 15px;
 }
-.c-bag{
-    background-color: rgba(198, 196, 196, 0.213);
+
+.main {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: rgb(87, 79, 84);
+    width: 100%;
+
 }
-.r-bag{
-    background-color: #eef3f7;
+
+.location {
+    position: absolute;
+    right: 1%;
+    font-size: 30px;
+    color: #ffb860;
+    padding: 15px;
 }
-.ha{
-    color: #fb5f04;
+
+.fa-solid {
+    color: white;
 }
-.img-card-1{
-    cursor: pointer;
-    transition: 0.5s;
+
+.fa-brands {
+    color: white;
+    font-size: 25px;
 }
-.img-card-1:hover {
-    transform: translateY(-10px);
+.fa-brands:hover{
+    color: #ffb860;
+    
+}
+
+.a:hover {
+    color: #ffb860;
+    text-decoration: underline;
+}
+
+.fa-fort-awesome{
+    font-size: larger;
+}
+.fa-fort-awesome:hover{
+color: white;
+
+}
+@media screen and (max-width:600px){
+    
+    .contact{
+        display: block;
+        position: static;
+    }
+    .location{
+        display: block;
+        position: static;
+    }
+}
+@media screen and (min-width:601px) and (max-width:931px){
+    .contact{
+        display: block;
+        position: static;
+        margin-left: 30%;
+  
+        }
+    .location{
+        display: block;
+        position: static;
+        
+        
+    }
+}
+@media screen and (min-width:930px) and (max-width:1200px){
+    .contact{
+        display: block;
+        position: static;
+        }
+    .location{
+        display: block;
+        position: static;
+        
+    }
 }
