@@ -15,7 +15,7 @@
        
     </head>
     <body>
-     <div class="main-img" alt="first-img" style="background-image:url('./../imgs/product-card/pro-main-img.jpg');background-repeat:no-repeat;background-size:cover;";>
+     <div class="main-img img-fluid" alt="first-img" style="background-image:url('./../imgs/product-card/pro-main-img.jpg');background-repeat:no-repeat;background-size:cover;";>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <p class="text-start text-white fs-1 m-5">Enjoy our Creamy <br/>and <br/>tasty products</p><br/><br/><br/><br/><br/><br/><br/><br/>
      </div>
@@ -24,10 +24,11 @@
         Enjoy our flavoursome <br/>range<br/> of gorgeous ice cream
     </p>  
     <div class="d-flex justify-content-center row">
-        <div class="col col-lg-2 col-md-1 col-sm-1 mt-5 chocolate"><img  src="./../imgs/product-card/choco2.png" class="mx-5" id="choco2" alt="choco2"/> </div>
+        <div class="col col-lg-2 col-md-1 col-sm-1 mt-5 img-fluid"><img  src="./../imgs/product-card/choco2.png" class="mx-5" id="choco2" alt="choco2"/> </div>
        
-     <div class="ice-des d-inline-block text-start fs-5 mt-4  col col-lg-2 col-md-1 col-sm-1"> 
+     <div class="ice-des d-inline-block text-start fs-5 mt-4 col col-lg-2 col-md-1 col-sm-1"> 
         <h1 id="name">Cereal And Milk</h1> 
+        <span style="color:#e83e8c";> ━━━━━━━━━━    </span>
         <h3 id="price">only at ₹160/-</h3>
         <p class="id mx-5">
              <span id="minus" onclick="dec()"><i class="fa-solid fa-circle-minus outline-hidden fs-1 mt-auto" style="background-color:white;color:#e83e8c"></i></span>
@@ -36,19 +37,23 @@
             <span id="plus" onclick="inc()"><i class="fa-solid fa-circle-plus outline-hidden fs-1 mt-auto" style="color:#e83e8c;"></i></span>
 
         </p>
-        <p id="order">You Order:<p>
-            <p id="total">Total amount</p>
+       
+            <span>
+                <span  id="order">You ordered products</span>
+                <span id="total">at amount</span>
+            </span>
         <!--<p class="my-4">
             It's a sweet, creamy, and rich dessert that can be enjoyed any time.<br>Simple pleasures: <br>ice cream and sunshine.
       
         </p>-->
-        <section class="flavour-card mx-4" >
-            <p class="effect-hover">
-                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px">
-                <img src="./../icons/menupage-icons/search.png" height="20px" alt="">
-                <button onclick="Toggle1()"  id="btnh1" class="btn1"><i class="fa-solid fa-heart my-0"></i></button>
+        <section class="flavour-card mx-4">
+            <p class="effect-hover justify-content-center">
+                <img src="./../icons/menupage-icons/shopping-bag.png" height="35px">
+                <img src="./../icons/menupage-icons/search.png" class="mt-1 mx-2" height="25px" alt="">
+                <button onclick="Toggle1()"  id="btnh1" class="btn1"><i class="fa-solid fa-heart mt-1 fs-2"></i></button>
+               <p> <button type="button" class="mb-5 btn addtocart">Add to cart</button></p>
             </p>
-            <button type="button" class="mb-5 btn addtocart">Add to cart</button>
+          
           
         </section>
    
@@ -206,22 +211,22 @@ No products are available.
 <!--product section starts-->
 <h1 class="fs-1 text-center my-5">More Varieties</h1>
 <div class=" row d-flex justify-content-center m-5">
-<div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
-    <img src="./../imgs/product-card/Ice-pink.png" class="col icecones"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors"/>
+<div class=" col col-lg-3 col-md-1 col-sm-1  m-3 my-1">
+    <img src="./../imgs/product-card/Ice-pink.png" class="col icecones "  onclick="changeimage('Ice Cone')" alt="choco4" id="colors"/>
     
-       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-5" onclick="ice('yellow')">
+       <img src="./../imgs/product-card/pink.png"class="point mx-5 mb-1 " alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="point mx-5" onclick="ice('yellow')">
     
    </div>
-   <div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
+   <div class="products col col-lg-3 col-md-1 col-sm-1   m-3 my-1">
     <img src="./../imgs/product-card/Choco-Cream1.png" class="col icecones"  onclick="changeimage('Choco Cream')" alt="choco" id="themes"/>
     
-       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Choco('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Choco('2')">
+       <img src="./../imgs/product-card/pink.png"class="point mx-5 mb-1" alt="pinks" height="35" onclick="Choco('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class=" point mx-5" onclick="Choco('2')">
     
    </div>
-   <div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
+   <div class="products col col-lg-3 col-md-1 col-sm-1   m-3 my-1">
     <img src="./../imgs/product-card/Cookies-Dough1.png" class="col icecones"  onclick="changeimage('Cookies-Dough')" alt="choco" id="dough"/>
     
-       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Cookies('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Cookies('2')">
+       <img src="./../imgs/product-card/pink.png"class="point mx-5 mb-1" alt="pinks" height="35" onclick="Cookies('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="point mx-5" onclick="Cookies('2')">
     
    </div>
 </div>
@@ -245,7 +250,7 @@ No products are available.
                  {
                      flavour.src = './../imgs/product-card/choco3.png';
                      price.innerText ='only at ₹170/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`at ₹${quantity * price}`;
                  }
                  else if(b=='Creamy Cream')
                  {
@@ -336,7 +341,7 @@ No products are available.
         }
         function  settotalamout(quantity){
             order.innerText = `You order ${quantity} products`;
-            total.innerText = `Total amount ${quantity * 139}`;
+            total.innerText = `at ₹${quantity * 139} /-`;
            }
 
            var btnvar1 = document.getElementById("btnh1");
