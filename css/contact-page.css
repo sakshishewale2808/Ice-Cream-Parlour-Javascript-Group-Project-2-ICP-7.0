@@ -3,10 +3,6 @@ body{
     padding:0;
     
 }
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap');
-header{
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
 }
 .bg-img{
     background-image: url("./../imgs/s5.jpg");  /* The image used as the background */
@@ -26,20 +22,7 @@ header{
     position: absolute;
     right: 50px;
 }
-.mid-flex{
-    position: absolute;
-    left:  30%;
-    text-align: center;
-    display: block;
-    justify-content: space-around;
-    z-index: 999;
-}
-.menu-list li a{
-    font-size: 18px;
-    text-decoration: none;
-    color: #000;
-    margin: 20px;
-    transition: .5s;
+
 }
 .menu-list li a:hover{
     color: #e83e8c;;
@@ -93,12 +76,7 @@ header{
     background-color:#000;
     color: white;
 }
-.slide-btn-comtain{
-    display: flex;
-    position: absolute;
-    bottom: 1px;
-    left: 60%;
-   
+
 }
 .slide-btn{
     height: 20px;
