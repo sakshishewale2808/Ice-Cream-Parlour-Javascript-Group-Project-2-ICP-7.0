@@ -30,10 +30,10 @@
         <h1 id="name">Cereal And Milk</h1> 
         <h3 id="price">only at ₹160/-</h3>
         <p class="id mx-5">
-             <span id="minus" onclick="dec()"><i class="fa-solid fa-circle-minus outline-hidden fs-2 mt-auto" style="background-color:white;color:#e83e8c"></i></span>
+             <span id="minus" onclick="dec()"><i class="fa-solid fa-circle-minus outline-hidden fs-1 mt-auto" style="background-color:white;color:#e83e8c"></i></span>
 
-            <span class="one" id="one">1 </span>
-            <span id="plus" onclick="inc()"><i class="fa-solid fa-circle-plus outline-hidden fs-2 mt-auto" style="color:#e83e8c;"></i></span>
+            <span class="one fs-2" id="one">1 </span>
+            <span id="plus" onclick="inc()"><i class="fa-solid fa-circle-plus outline-hidden fs-1 mt-auto" style="color:#e83e8c;"></i></span>
 
         </p>
         <p id="order">You Order:<p>
@@ -342,11 +342,17 @@ No products are available.
            var btnvar1 = document.getElementById("btnh1");
            function Toggle1(){
             if (btnvar1.style.color =="red"){
-                btnvar1.style.color = "grey"
+                btnvar1.style.color = "grey";
+                alert("deleted from wishlist!");
+              
             }
             else{
+                alert("added in wishlist!");
                 btnvar1.style.color = "red"
+               
             }
+           
+            
            }
 
            
