@@ -49,3 +49,13 @@
     transition: 0.3s;
     box-shadow: 0 0 15px 9px #c2c2a3;
 }
+
+.card{
+    box-shadow: 0 0 20px 1px #e1e1d0;
+    background-color: #ffe6ff;
+    margin: 30px;
+}
+
+.color{
+    color: #e83e8c;
+}

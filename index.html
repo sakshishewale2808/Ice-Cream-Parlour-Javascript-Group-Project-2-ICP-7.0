@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/header.css">
     <script src="./JS/header.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -74,7 +76,7 @@
             <a href="#">Services</a>
             <a href="#">Clients</a>
             <a href="#">Contact</a>
-          </div>
+        </div>
 
 
     </header>
@@ -107,12 +109,16 @@
                 </div>
                 <button class="carousel-control-prev prev-btn" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon"
+                        style="color: black; background-color: rgb(90, 88, 88); border-radius: 10px; padding: 10px; "
+                        aria-label="Next"></span>
+                    <!-- <span class="visually-visual">Previous</span> -->
                 </button>
                 <button class="carousel-control-next prev-btn" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon"
+                        style="color: black; background-color: rgb(90, 88, 88); border-radius: 10px; padding: 10px; "
+                        aria-label="Next"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -122,16 +128,16 @@
     <div class="Seller-container">
         <span class="headings ">Our Best Seller</span>
         <div class="flex seller-heading">
-            <span>NEW ARRIVALS</span>
-            <SPan>BEST SELLER</SPan>
-            <span>TOP RATES</span>
+            <h4 onclick="newArrival()">NEW ARRIVALS</h4>
+            <h4 onclick="bestSeller()">BEST SELLER</h4>
+            <h4 onclick="topRates()">TOP RATES</h4>
 
         </div>
         <div class="flavour-container">
             <div class="row  ">
                 <div class=" flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Cereal-And-Milk.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Cereal-And-Milk.jpg" class="flavour-img img-fluid" id="productImage1" alt="" />
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" class="hover-image" title="add to cart">
@@ -146,12 +152,12 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Choco-Cherry.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Choco-Cherry.jpg" class="flavour-img img-fluid" id="productImage1" alt="">
                     </div>
                     <div class="effect-hover">
-                        <img src="./icons/menupage-icons/shopping-bag.png"  class="hover-image" title="add to cart">
-                        <img src="./icons/menupage-icons/search.png"  class="hover-image" title="search">
-                        <img src="./icons/menupage-icons/wishlist.png"  class="hover-image" title="white-list">
+                        <img src="./icons/menupage-icons/shopping-bag.png" class="hover-image" title="add to cart">
+                        <img src="./icons/menupage-icons/search.png" class="hover-image" title="search">
+                        <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="white-list">
                     </div>
                     <div class="flavour-description">
                         Choco Cherry
@@ -162,7 +168,7 @@
 
                 <div class=" flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Chokobar.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Chokobar.jpg" class="flavour-img img-fluid" id="productImage1" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" class="hover-image" title="add to cart">
@@ -178,7 +184,7 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/chocolate-Wafer.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/chocolate-Wafer.jpg" class="flavour-img img-fluid" id="productImage1" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" class="hover-image" title="add to cart">
@@ -195,7 +201,7 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Cookie.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Cookie.jpg" class="flavour-img img-fluid" id="productImage1" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" class="hover-image" title="add to cart">
@@ -211,7 +217,7 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Cookies-Cream.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Cookies-Cream.jpg" class="flavour-img img-fluid" id="productImage1" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" class="hover-image" title="add to cart">
@@ -227,7 +233,7 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Cookies-Dough.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Cookies-Dough.jpg" class="flavour-img img-fluid" id="productImage1" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" class="hover-image" title="add to cart">
@@ -243,7 +249,7 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" id="productImage1" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/shopping-bag.png" class="hover-image" title="add to cart">
@@ -260,7 +266,7 @@
 
             </div>
         </div>
-<!-- image zoom hover -->
+        <!-- image zoom hover -->
         <div class="margin-top margin-bottom">
             <div class="flex img-cont">
                 <div class="img-size">
@@ -302,7 +308,7 @@
             <div class="about-section-dis">
                 <p class="mb-4 description">OUR ABOUT US</p>
                 <h3 class="mb-4">Ice Cream Drinks</h3>
-                <p class="mb-4 description " >Summer brings with it the terrible heat, making everyone feel sluggish and
+                <p class="mb-4 description ">Summer brings with it the terrible heat, making everyone feel sluggish and
                     <br> uncomfortable. In that
                     weather, a glass of soft drink or a few ice cream cones is a <br> choice not to be missed
                     <br>
@@ -335,7 +341,7 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
@@ -351,24 +357,7 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
-                    </div>
-                    <div class="effect-hover">
-                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
-                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
-                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
-                    </div>
-                    <div class="flavour-description">
-                        Creamy Cake
-                        <br>
-                        <p class="flavour-price">₹ 260.00 </p>
-                    </div>
-                </div>
-
-
-                <div class="flavour-card col col-md-2 col-lg-3">
-                    <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
@@ -385,7 +374,24 @@
 
                 <div class="flavour-card col col-md-2 col-lg-3">
                     <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
+                    </div>
+                    <div class="effect-hover">
+                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                    </div>
+                    <div class="flavour-description">
+                        Creamy Cake
+                        <br>
+                        <p class="flavour-price">₹ 260.00 </p>
+                    </div>
+                </div>
+
+
+                <div class="flavour-card col col-md-2 col-lg-3">
+                    <div>
+                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
                     </div>
                     <div class="effect-hover">
                         <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
@@ -419,7 +425,7 @@
                 </div>
                 <div class=" menu-card-icons">
                     <div class="card-img">
-                        <img src="./icons/stick-ice.png" width="150px" class="img-fluid"  alt="">
+                        <img src="./icons/stick-ice.png" width="150px" class="img-fluid" alt="">
                     </div>
                     <div>
                         <h2>Ice Cream Stick</h2>
@@ -428,7 +434,7 @@
                 <div class=" menu-card-icons">
                     <div class="card-img">
                         <img src="./icons/cup.png" width="150px" class="img-fluid" alt="">
-                    </div> 
+                    </div>
                     <div>
                         <h2>Ice Cream Cup</h2>
                     </div>
@@ -444,10 +450,56 @@
             </div>
         </div>
 
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active flex">
+                <img src="./imgs/home/instagram1.webp" class=" w-10 img-fluid"  height="275px" alt="...">
+                <img src="./imgs/home/instagram2.webp" class=" w-10 img-fluid"  height="275px" alt="...">
+                <img src="./imgs/home/instagram3.webp" class=" w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram4.webp" class=" w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram5.webp" class="w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram6.webp" class=" w-10 img-fluid"  height="275px"alt="...">
+              </div>
+              <div class="carousel-item flex">
+                <img src="./imgs/home/instagram2.webp" class=" w-10 img-fluid"  height="275px" alt="...">
+                <img src="./imgs/home/instagram3.webp" class=" w-10 img-fluid"  height="275px" alt="...">
+                <img src="./imgs/home/instagram4.webp" class=" w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram5.webp" class=" w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram6.webp" class=" w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram1.webp" class=" w-10 img-fluid"  height="275px"alt="...">
+              </div>
+              <div class="carousel-item flex">
+                <img src="./imgs/home/instagram3.webp" class=" w-10 img-fluid"  height="275px" alt="...">
+                <img src="./imgs/home/instagram4.webp" class=" w-10 img-fluid"  height="275px" alt="...">
+                <img src="./imgs/home/instagram5.webp" class=" w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram6.webp" class=" w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram1.webp" class=" w-10 img-fluid" height="275px" alt="...">
+                <img src="./imgs/home/instagram2.webp" class=" w-10 img-fluid"  height="275px"alt="...">
+              </div>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col col-md-2 col-lg-3">
+                <div>
+                    <img src="./imgs/home/instagram1.webp" height="100px" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="./imgs/home/instagram2.webp" height="100px" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="./imgs/home/instagram3.webp" height="100px" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="./imgs/home/instagram4.webp" height="100px" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="./imgs/home/instagram5.webp" height="100px" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <img src="./imgs/home/instagram6.webp" height="100px" class="img-fluid" alt="">
+                </div>
 
-        <div>
-            <div>
-                <img src="" alt="">
+
             </div>
         </div>
 
