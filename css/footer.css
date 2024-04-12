@@ -84,8 +84,13 @@ hr{
         position: static;
     }
     .location{
+
         display: block;
         position: static;
+    }
+    .mapl{
+        height: 200px;
+        width: 230px;
     }
 }
 @media screen and (min-width:601px) and (max-width:931px){

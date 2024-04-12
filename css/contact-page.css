@@ -14,7 +14,9 @@
 }
 
 iframe {
-    margin-top: 5px;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     /* box-shadow: 1px 1px 20px 3px rgb(14, 13, 13);  */
 }
 
