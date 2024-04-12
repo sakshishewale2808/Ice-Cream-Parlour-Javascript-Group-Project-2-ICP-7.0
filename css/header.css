@@ -10,6 +10,10 @@ header{
     background-size:cover;
     /* width: 100%;                     Set the type of gradient (linear or radial) */
 }
+.logo{
+  height: 130px;
+
+}
 .hamburger{
   display: none;
 }
@@ -292,7 +296,8 @@ header{
   @media screen and (max-width:1200px) {
     .logo{
       position: absolute;
-      left: 300%;
+      top: -100%;
+      left: 1000%;
     }
     .hamburger{
       display:  inline-block;
