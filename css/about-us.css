@@ -51,7 +51,7 @@
 }
 
 .gradient{
-    background-image: url(/img/gradient.png);
+    background-image: url(./../icons/about-us/img/gradient.png);
     height: 520px;
 }
 
