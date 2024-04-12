@@ -82,6 +82,16 @@ border:#e83e8c 1px solid;
 text-decoration: none;
 
 } */
+#newArrival{
+    color: #e83e8c;
+    cursor:grab;
+}
+#bestSeller{
+    cursor:grab;
+}
+#topRates{
+    cursor:grab;
+}
 .flavour-container{
 
 margin-left: 50px;
@@ -247,6 +257,47 @@ visibility: hidden;
 .card-img:hover{
     transform: scaleY(1);
 }
+/* .container1 {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+.image {
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: black;
+  }
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .icon {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .fa-user:hover {
+    color: #e83e8c;
+  } */
+
+  .slide{
+    display: none;
+  }
 @media screen and (max-width:1300px) {
     .visit-img{
         height: 230px;
