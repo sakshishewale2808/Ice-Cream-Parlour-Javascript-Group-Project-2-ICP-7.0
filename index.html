@@ -23,7 +23,7 @@
     <div class="nav-container flex" id="nav">
         <div class="right-flex flex">
             <img src="./imgs/menu.png" height="40px" class="hamburger" onclick="openNavs()" alt="">
-           <a href="./index.html"> <img src="./imgs/logo.png" class="logo" alt=""></a>
+            <a href="./index.html"> <img src="./imgs/logo.png" class="logo" alt=""></a>
         </div>
         <div class="mid-flex">
             <ul class="menu-list flex" type="none">
@@ -35,19 +35,21 @@
         </div>
         <div class="left-flex">
             <img src="./icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
-            <a href="./Pages/login-page.html"><img src="./icons/add-contact.png" class="nav-icons login-icon" alt=""></a>
+            <a href="./Pages/login-page.html"><img src="./icons/add-contact.png" class="nav-icons login-icon"
+                    alt=""></a>
             <img src="./icons/heart.png" class="nav-icons  heart-icon" alt="">
-            <a href="./Pages/add-to-cart.html"><img src="./icons/shopping-bag.png" class="nav-icons" alt="" onclick="openCarts()"></a>
+            <a href="./Pages/add-to-cart.html"><img src="./icons/shopping-bag.png" class="nav-icons" alt=""
+                    onclick="openCarts()"></a>
         </div>
     </div>
     <header>
-       
+
         <div id="myOverlay" class="overlay">
             <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
             <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
             <h2 class="search-title">And Hit Enter...</h2>
             <div class="overlay-content">
-                <form >
+                <form>
                     <input type="text" placeholder="Search Your Favorite Ice-Cream Here..." name="search">
                 </form>
             </div>
@@ -84,7 +86,7 @@
 
     </header>
     <!-- ----------------------Nav-Bar-End-------------------------------- -->
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="visit">
         <span class="headings">VISIT OUR STORE</span>
         <!-- slider -->
@@ -93,21 +95,31 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active flex">
                         <a href="./Pages/menu-page.html"><img src="./imgs/ba20.webp" class="visit-img" alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba21.webp" class="visit-img visit-img1 " alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba22.webp" class="visit-img visit-img2" alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba19.webp" class="visit-img visit-img3" alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba21.webp" class="visit-img visit-img1 "
+                                alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba22.webp" class="visit-img visit-img2"
+                                alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba19.webp" class="visit-img visit-img3"
+                                alt=""></a>
                     </div>
                     <div class="carousel-item active flex">
                         <a href="./Pages/menu-page.html"><img src="./imgs/home/ba23.jpg" class="visit-img" alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba20.webp" class="visit-img visit-img1" alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba21.webp" class="visit-img visit-img2" alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba22.webp" class="visit-img visit-img3" alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba20.webp" class="visit-img visit-img1"
+                                alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba21.webp" class="visit-img visit-img2"
+                                alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba22.webp" class="visit-img visit-img3"
+                                alt=""></a>
                     </div>
                     <div class="carousel-item active flex">
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba22.webp" class="visit-img visit-img" alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/home/ba23.jpg" class="visit-img visit-img1" alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba20.webp" class="visit-img visit-img2" alt=""></a>
-                        <a href="./Pages/menu-page.html"><img src="./imgs/ba21.webp" class="visit-img visit-img3" alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba22.webp" class="visit-img visit-img"
+                                alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/home/ba23.jpg" class="visit-img visit-img1"
+                                alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba20.webp" class="visit-img visit-img2"
+                                alt=""></a>
+                        <a href="./Pages/menu-page.html"><img src="./imgs/ba21.webp" class="visit-img visit-img3"
+                                alt=""></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev prev-btn" type="button" data-bs-target="#carouselExample"
@@ -270,292 +282,207 @@
 
             </div>
         </div>
-        <!-- image zoom hover -->
-        <div class="margin-top margin-bottom">
-            <div class="flex img-cont">
-                <div class="img-size">
-                    <img src="./imgs/ba16.webp" class="img-size1 img-fluid float-start" alt="">
-                </div>
-                <div class="white-bg" style="margin: auto;">
-                    <img src="./imgs/home/white-bg.png" width="500px" alt="">
-                    <h2>Ice Cream Cone</h2>
-                    <h5 style="margin-left: 10%;">Save up to 40% off</h5>
-                    <button class="buyNow-btn2" style="margin-left:5%;">SHOP NOW</button>
-
-                </div>
-                <div class="img-size">
-                    <img src="./imgs/ba18.webp" class="img-size1 img-fluid float-end" alt="">
-                </div>
+    </div>
+    <!-- image zoom hover -->
+    <div class="margin-top margin-bottom">
+        <div class="flex img-cont">
+            <div class="img-size">
+                <img src="./imgs/ba16.webp" class="img-size1 img-fluid float-start" alt="">
             </div>
-            <!--  -->
-            <div class="flex ">
-                <div class="white-bg" style="margin: auto;">
-                    <h2>Ice Cream Cone</h2>
-                    <h5 style="margin-left: 10%;">Save up to 40% off</h5>
-                    <button class="buyNow-btn2" style="margin-left:5%;">SHOP NOW</button>
+            <div class="white-bg" style="margin: auto;">
+                <img src="./imgs/home/white-bg.png" width="500px" alt="">
+                <h2>Ice Cream Cone</h2>
+                <h5 style="margin-left: 10%;">Save up to 40% off</h5>
+                <button class="buyNow-btn2" style="margin-left:5%;">SHOP NOW</button>
 
-                </div>
-                <div class="image-size text-center">
-                    <img src="./imgs/ba17.webp" class="img-size2 img-fluid" alt="">
-                </div>
-                <div class="white-bg" style="margin: auto;">
-
-                    <h2>Ice Cream Cone</h2>
-                    <h5 style="margin-left: 10%;">Save up to 40% off</h5>
-                    <button class="buyNow-btn2" style="margin-left:5%;">SHOP NOW</button>
-
-                </div>
-
+            </div>
+            <div class="img-size">
+                <img src="./imgs/ba18.webp" class="img-size1 img-fluid float-end" alt="">
             </div>
         </div>
-        <!-- end hover -->
-        <div class="about-section flex">
-            <div class="about-section-dis">
-                <p class="mb-4 description">OUR ABOUT US</p>
-                <h3 class="mb-4">Ice Cream Drinks</h3>
-                <p class="mb-4 description ">Summer brings with it the terrible heat, making everyone feel sluggish and
-                    <br> uncomfortable. In that
-                    weather, a glass of soft drink or a few ice cream cones is a <br> choice not to be missed
+        <!--  -->
+        <div class="flex ">
+            <div class="white-bg" style="margin: auto;">
+                <h2>Ice Cream Cone</h2>
+                <h5 style="margin-left: 10%;">Save up to 40% off</h5>
+                <button class="buyNow-btn2" style="margin-left:5%;">SHOP NOW</button>
+
+            </div>
+            <div class="image-size text-center">
+                <img src="./imgs/ba17.webp" class="img-size2 img-fluid" alt="">
+            </div>
+            <div class="white-bg" style="margin: auto;">
+
+                <h2>Ice Cream Cone</h2>
+                <h5 style="margin-left: 10%;">Save up to 40% off</h5>
+                <button class="buyNow-btn2" style="margin-left:5%;">SHOP NOW</button>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- end hover -->
+    <div class="about-section flex">
+        <div class="about-section-dis">
+            <p class="mb-4 description">OUR ABOUT US</p>
+            <h3 class="mb-4">Ice Cream Drinks</h3>
+            <p class="mb-4 description ">Summer brings with it the terrible heat, making everyone feel sluggish and
+                <br> uncomfortable. In that
+                weather, a glass of soft drink or a few ice cream cones is a <br> choice not to be missed
+                <br>
+                <br>
+                However, not everyone knows all about that beverage. Let's climb the "time machine" <br> and
+                discover all
+                the history of cool ice cream!
+                <br><br>
+
+                Roman Emperor Nero was the first to eat ice cream. At a great party in 54, he came <br> up with an
+                extremely strange dessert with the name "sweet snow". This dish is a <br> precursor to today's
+                modern ice
+                cream, it is made from the snow on the top of the <br> Apennine mountains and marinated many times
+                with
+                fruit and honey.
+            </p>
+
+        </div>
+        <div>
+            <img src="./imgs/ba-1.webp" class="img-fluid" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div class="trending mt-4">
+        <h3 class="trend-label"> HOT DEALS</h3>
+        <div class="row ">
+
+            <div class="flavour-card col col-md-2 col-lg-3">
+                <div>
+                    <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
+                </div>
+                <div class="effect-hover">
+                    <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                    <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                    <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                </div>
+                <div class="flavour-description">
+                    Creamy Cake
                     <br>
+                    <p class="flavour-price">₹ 260.00 </p>
+                </div>
+            </div>
+
+            <div class="flavour-card col col-md-2 col-lg-3">
+                <div>
+                    <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
+                </div>
+                <div class="effect-hover">
+                    <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                    <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                    <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                </div>
+                <div class="flavour-description">
+                    Creamy Cake
                     <br>
-                    However, not everyone knows all about that beverage. Let's climb the "time machine" <br> and
-                    discover all
-                    the history of cool ice cream!
-                    <br><br>
-
-                    Roman Emperor Nero was the first to eat ice cream. At a great party in 54, he came <br> up with an
-                    extremely strange dessert with the name "sweet snow". This dish is a <br> precursor to today's
-                    modern ice
-                    cream, it is made from the snow on the top of the <br> Apennine mountains and marinated many times
-                    with
-                    fruit and honey.
-                </p>
-
+                    <p class="flavour-price">₹ 260.00 </p>
+                </div>
             </div>
-            <div>
-                <img src="./imgs/ba-1.webp" class="img-fluid" alt="">
+
+
+            <div class="flavour-card col col-md-2 col-lg-3">
+                <div>
+                    <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
+                </div>
+                <div class="effect-hover">
+                    <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                    <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                    <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                </div>
+                <div class="flavour-description">
+                    Creamy Cake
+                    <br>
+                    <p class="flavour-price">₹ 260.00 </p>
+                </div>
             </div>
+
+
+            <div class="flavour-card col col-md-2 col-lg-3">
+                <div>
+                    <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
+                </div>
+                <div class="effect-hover">
+                    <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
+                    <img src="./icons/menupage-icons/search.png" height="20px" alt="">
+                    <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
+                </div>
+                <div class="flavour-description">
+                    Creamy Cake
+                    <br>
+                    <p class="flavour-price">₹ 260.00 </p>
+                </div>
+            </div>
+
         </div>
-
-
-
-
-        <div class="trending mt-4">
-            <h3 class="trend-label"> HOT DEALS</h3>
-            <div class="row ">
-
-                <div class="flavour-card col col-md-2 col-lg-3">
-                    <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
-                    </div>
-                    <div class="effect-hover">
-                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
-                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
-                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
-                    </div>
-                    <div class="flavour-description">
-                        Creamy Cake
-                        <br>
-                        <p class="flavour-price">₹ 260.00 </p>
-                    </div>
-                </div>
-
-                <div class="flavour-card col col-md-2 col-lg-3">
-                    <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
-                    </div>
-                    <div class="effect-hover">
-                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
-                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
-                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
-                    </div>
-                    <div class="flavour-description">
-                        Creamy Cake
-                        <br>
-                        <p class="flavour-price">₹ 260.00 </p>
-                    </div>
-                </div>
-
-
-                <div class="flavour-card col col-md-2 col-lg-3">
-                    <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
-                    </div>
-                    <div class="effect-hover">
-                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
-                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
-                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
-                    </div>
-                    <div class="flavour-description">
-                        Creamy Cake
-                        <br>
-                        <p class="flavour-price">₹ 260.00 </p>
-                    </div>
-                </div>
-
-
-                <div class="flavour-card col col-md-2 col-lg-3">
-                    <div>
-                        <img src="./imgs/menu-card/Creamy-Cake.jpg" class="flavour-img img-fluid" alt="">
-                    </div>
-                    <div class="effect-hover">
-                        <img src="./icons/menupage-icons/shopping-bag.png" height="20px">
-                        <img src="./icons/menupage-icons/search.png" height="20px" alt="">
-                        <img src="./icons/menupage-icons/wishlist.png" height="20px" alt="">
-                    </div>
-                    <div class="flavour-description">
-                        Creamy Cake
-                        <br>
-                        <p class="flavour-price">₹ 260.00 </p>
-                    </div>
-                </div>
-
-            </div>
-            <button class="product-btn">ALL PRODUCTS</button>
+        <button class="product-btn">ALL PRODUCTS</button>
+    </div>
+    <div class="menu">
+        <div class="menu-discripton">
+            <h3>ICE CREAM MENU</h3>
+            <h1>Take The Experience Of Our Delightful</h1>
+            <h1>Ice Cream Menu</h1>
         </div>
-        <div class="menu">
-            <div class="menu-discripton">
-                <h3>ICE CREAM MENU</h3>
-                <h1>Take The Experience Of Our Delightful</h1>
-                <h1>Ice Cream Menu</h1>
+        <div class="flex menu-product">
+            <div class=" menu-card-icons">
+                <div class="card-img">
+                    <img src="./icons/cone.png" width="150px" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <h2>Ice Cream Cone</h2>
+                </div>
             </div>
-            <div class="flex menu-product">
-                <div class=" menu-card-icons">
-                    <div class="card-img">
-                        <img src="./icons/cone.png" width="150px" class="img-fluid" alt="">
-                    </div>
-                    <div>
-                        <h2>Ice Cream Cone</h2>
-                    </div>
+            <div class=" menu-card-icons">
+                <div class="card-img">
+                    <img src="./icons/stick-ice.png" width="150px" class="img-fluid" alt="">
                 </div>
-                <div class=" menu-card-icons">
-                    <div class="card-img">
-                        <img src="./icons/stick-ice.png" width="150px" class="img-fluid" alt="">
-                    </div>
-                    <div>
-                        <h2>Ice Cream Stick</h2>
-                    </div>
+                <div>
+                    <h2>Ice Cream Stick</h2>
                 </div>
-                <div class=" menu-card-icons">
-                    <div class="card-img">
-                        <img src="./icons/cup.png" width="150px" class="img-fluid" alt="">
-                    </div>
-                    <div>
-                        <h2>Ice Cream Cup</h2>
-                    </div>
+            </div>
+            <div class=" menu-card-icons">
+                <div class="card-img">
+                    <img src="./icons/cup.png" width="150px" class="img-fluid" alt="">
                 </div>
-                <div class=" menu-card-icons">
-                    <div class="card-img">
-                        <img src="./icons/box.png" width="150px" class="img-fluid" alt="">
-                    </div>
-                    <div>
-                        <h2>Box Ice Cream</h2>
-                    </div>
+                <div>
+                    <h2>Ice Cream Cup</h2>
+                </div>
+            </div>
+            <div class=" menu-card-icons">
+                <div class="card-img">
+                    <img src="./icons/box.png" width="150px" class="img-fluid" alt="">
+                </div>
+                <div>
+                    <h2>Box Ice Cream</h2>
                 </div>
             </div>
         </div>
-
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active flex">
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram1.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-
-                        <img src="./imgs/home/instagram2.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram3.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram4.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram5.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram6.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-
-                </div>
-                <div class="carousel-item flex">
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram2.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-
-                        <img src="./imgs/home/instagram3.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram4.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram5.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram6.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram1.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                </div>
-                <div class="carousel-item flex">
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram3.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-
-                        <img src="./imgs/home/instagram4.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram5.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram6.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram1.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                    <div class="insta-image-div img-fluid">
-                        <img src="./imgs/home/instagram2.webp" class=" w-10 insta-image " height="275px" alt="...">
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="flex">
+        <div>
+            <img src="./imgs/home/instagram2.webp" height="100px" alt="">
         </div>
-        <div class="row">
-            <div class="col col-md-2 col-lg-3">
-                <div class="container1">
-                    <img src="./imgs/home/instagram1.webp" height="100px" class=" image" alt="">
-
-                    <!-- <div class="overlay">
-                        <a href="#" class="icon" title="User Profile">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                      </div> -->
-
-                </div>
-                <div>
-                    <img src="./imgs/home/instagram2.webp" height="100px" class="img-fluid" alt="">
-                </div>
-                <div>
-                    <img src="./imgs/home/instagram3.webp" height="100px" class="img-fluid" alt="">
-                </div>
-                <div>
-                    <img src="./imgs/home/instagram4.webp" height="100px" class="img-fluid" alt="">
-                </div>
-                <div>
-                    <img src="./imgs/home/instagram5.webp" height="100px" class="img-fluid" alt="">
-                </div>
-                <div>
-                    <img src="./imgs/home/instagram6.webp" height="100px" class="img-fluid" alt="">
-                </div>
-
-
-            </div>
+        <div>
+            <img src="./imgs/home/instagram3.webp" height="100px" alt="">
         </div>
-
-
+        <div>
+            <img src="./imgs/home/instagram4.webp" height="100px" alt="">
+        </div>
+        <div>
+            <img src="./imgs/home/instagram5.webp" height="100px" alt="">
+        </div>
+        <div>
+            <img src="./imgs/home/instagram6.webp" height="100px" alt="">
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
