@@ -24,7 +24,7 @@
         <div class="nav-container flex" id="nav">
             <div class="right-flex flex">
                 <img src="./imgs/menu.png" height="40px" class="hamburger" onclick="openNavs()" alt="">
-                <h1 class="logo">LOGO</h1>
+                <img src="./imgs/logo.png" class="logo" alt="">
             </div>
             <div class="mid-flex">
                 <ul class="menu-list flex" type="none">
@@ -161,7 +161,7 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="white-list">
                     </div>
-                    <div  id="productText2" class="flavour-description">
+                    <div id="productText2" class="flavour-description">
                         Choco Cherry
                         <br>
                         <p class="flavour-price">₹ 360.00 </p>
@@ -177,7 +177,7 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div  id="productText3" class="flavour-description">
+                    <div id="productText3" class="flavour-description">
                         Chokobar
                         <br>
                         <p class="flavour-price">₹ 150.00 </p>
@@ -193,7 +193,7 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div  id="productText4" class="flavour-description">
+                    <div id="productText4" class="flavour-description">
                         chocolate Wafer
                         <br>
                         <p class="flavour-price">₹ 320.00 </p>
@@ -210,7 +210,7 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div  id="productText5" class="flavour-description">
+                    <div id="productText5" class="flavour-description">
                         Cookie
                         <br>
                         <p class="flavour-price">₹ 480.00 </p>
@@ -226,7 +226,7 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div  id="productText6" class="flavour-description">
+                    <div id="productText6" class="flavour-description">
                         Cookies Cream
                         <br>
                         <p class="flavour-price">₹ 260.00 </p>
@@ -242,7 +242,7 @@
                         <img src="./icons/menupage-icons/search.png" class="hover-image" title="search ">
                         <img src="./icons/menupage-icons/wishlist.png" class="hover-image" title="wishlist">
                     </div>
-                    <div  id="productText7" class="flavour-description">
+                    <div id="productText7" class="flavour-description">
                         Cookies Dough
                         <br>
                         <p class="flavour-price">₹ 260.00 </p>
@@ -258,7 +258,7 @@
                         <img src="./icons/magnifying-glass.png" class="hover-image" title="search ">
                         <img src="./icons/heart.png" class="hover-image" title="wishlist">
                     </div>
-                    <div  id="productText8" class="flavour-description">
+                    <div id="productText8" class="flavour-description">
                         Creamy Cake
                         <br>
                         <p id="price" class="flavour-price">₹ 260.00 </p>
@@ -454,37 +454,77 @@
 
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active flex">
-                <img src="./imgs/home/instagram1.webp" class=" w-10 "  height="275px" alt="...">
-                <img src="./imgs/home/instagram2.webp" class=" w-10 "  height="275px" alt="...">
-                <img src="./imgs/home/instagram3.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram4.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram5.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram6.webp" class=" w-10 "  height="275px"alt="...">
-              </div>
-              <div class="carousel-item flex">
-                <img src="./imgs/home/instagram2.webp" class=" w-10 "  height="275px" alt="...">
-                <img src="./imgs/home/instagram3.webp" class=" w-10 "  height="275px" alt="...">
-                <img src="./imgs/home/instagram4.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram5.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram6.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram1.webp" class=" w-10 "  height="275px"alt="...">
-              </div>
-              <div class="carousel-item flex">
-                <img src="./imgs/home/instagram3.webp" class=" w-10 "  height="275px" alt="...">
-                <img src="./imgs/home/instagram4.webp" class=" w-10 "  height="275px" alt="...">
-                <img src="./imgs/home/instagram5.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram6.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram1.webp" class=" w-10 " height="275px" alt="...">
-                <img src="./imgs/home/instagram2.webp" class=" w-10 "  height="275px"alt="...">
-              </div>
+                <div class="carousel-item active flex">
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram1.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+
+                        <img src="./imgs/home/instagram2.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram3.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram4.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram5.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram6.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+
+                </div>
+                <div class="carousel-item flex">
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram2.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+
+                        <img src="./imgs/home/instagram3.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram4.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram5.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram6.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram1.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                </div>
+                <div class="carousel-item flex">
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram3.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+
+                        <img src="./imgs/home/instagram4.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram5.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram6.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram1.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                    <div class="insta-image-div img-fluid">
+                        <img src="./imgs/home/instagram2.webp" class=" w-10 insta-image " height="275px" alt="...">
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
         <div class="row">
             <div class="col col-md-2 col-lg-3">
                 <div class="container1">
                     <img src="./imgs/home/instagram1.webp" height="100px" class=" image" alt="">
-                    
+
                     <!-- <div class="overlay">
                         <a href="#" class="icon" title="User Profile">
                             <i class="fa-brands fa-instagram"></i>
