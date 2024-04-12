@@ -147,19 +147,19 @@
                                 <div class="coming  d-flex justify-content-center align-items-center flex-column">
                                     <div class="countdown   d-flex justify-content-around text-center">
                                         <div class="main-day p-4 ">
-                                            <h2 class="day fs-3" id="day">Time</h2>
+                                            <h2 class="day fs-3 " id="b-day">Time</h2>
                                             <h2>Day</h2>
                                         </div>
                                         <div class="main-hour p-4  ">
-                                            <h2 class="hour fs-3" id="hour">Time</h2>
+                                            <h2 class="hour fs-3 " id="b-hour">Time</h2>
                                             <h2>Hour</h2>
                                         </div>
                                         <div class="main-min p-4  ">
-                                            <h2 class="min fs-3" id="min">Time</h2>
+                                            <h2 class="min fs-3 " id="b-min">Time</h2>
                                             <h2>Min</h2>
                                         </div>
                                         <div class="main-sec  p-4 ">
-                                            <h2 class="sec fs-3" id="sec">Time</h2>
+                                            <h2 class="sec fs-3 " id="b-sec">Time</h2>
                                             <h2>Sec</h2>
                                         </div>
                                     </div>
@@ -295,6 +295,38 @@
         }
         setInterval(clock, 1000);
         clock();
+
+        const dayElement = document.getElementById('b-day');
+        const hourElement = document.getElementById('b-hour');
+        const minElement = document.getElementById('b-min');
+        const secElement = document.getElementById('b-sec');
+        function countdown() {
+            const countDate = new Date('April 30, 2024 00:00:00').getTime();
+
+            const now = new Date().getTime();
+            const gap = countDate - now;
+
+            const sec = 1000;
+            const min = sec * 60;
+
+            const hour = min * 60;
+            const day = hour * 24;
+
+            const textDay = Math.floor(gap / day);
+            const textHour = Math.floor((gap % day) / hour);
+            const textMin = Math.floor((gap % hour) / min);
+            const textSec = Math.floor((gap % min) / sec);
+
+            dayElement.innerText = textDay;
+            hourElement.innerText = textHour;
+            minElement.innerText = textMin;
+            secElement.innerText = textSec;
+
+
+        }
+        setInterval(countdown, 1000);
+        countdown();
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
