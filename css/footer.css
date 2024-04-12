@@ -4,8 +4,8 @@
     margin-bottom: 30px;
     font-size: 30px;
    
-    padding: 30px;
-
+    padding-top: 30px;
+padding-left: 30px;
 
 }
 
@@ -31,7 +31,9 @@ hr{
     left: 39%;
     font-size: 30px;
     color: rgb(228, 91, 113);
-    padding: 30px;
+    padding-left: 30px;
+    padding-top:30px;
+  
 }
 
 .main {
@@ -47,7 +49,10 @@ hr{
     right: 1%;
     font-size: 30px;
     color: rgb(228, 91, 113);
-    padding: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+ 
+    
 }
 
 .fa-sol {
