@@ -7,13 +7,16 @@
 }
 
 .head {
+  color: #e83e8c;
   font-size: 50px;
   text-align: center;
   padding-top: 50px;
 }
 
 iframe {
-  margin-top: 5px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* box-shadow: 1px 1px 20px 3px rgb(14, 13, 13);  */
 }
 
