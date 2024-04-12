@@ -296,7 +296,19 @@ visibility: hidden;
   } */
 
   .slide{
-    display: none;
+    /* display: none; */
+  }
+  .insta-image-div{
+    height: 275px important!;
+    width: 275px;
+    overflow: hidden;
+  }
+  .insta-image{
+    transition: 5.3s;
+    overflow: hidden;
+  }
+  .insta-image:hover{
+    transform: scale(2.3);
   }
 @media screen and (max-width:1300px) {
     .visit-img{
