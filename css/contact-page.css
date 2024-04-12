@@ -45,15 +45,15 @@ iframe {
     border: none;
     width: 600px;
     height: 50px;
-    background-color: palevioletred;
+    background-color: #e83e8c;
     color: white;
 }
 .button:hover {
-    border: solid 1px palevioletred;;
+    border: solid 1px #e83e8c;;
     width: 600px;
     height: 50px;
     background-color: rgb(255, 254, 254);
-    color:  rgb(255, 162, 178);
+    color:  #e83e8c;
 }
 
 .fa-solid {
@@ -73,7 +73,7 @@ span {
 }
 
 a:hover {
-    color: rgb(255, 145, 0);
+    color:#e83e8c;
 }
 
 .fa-brands {
