@@ -6,6 +6,10 @@ footer {
     font-optical-sizing: auto;
 
 }
+.footer-cont{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 #footer-logo {
     height: 100px;
@@ -22,7 +26,7 @@ footer {
 
 }
 .quick-links{
-  margin-left: 5%;
+  margin-left: 0%;
   font-size: 20px;
 }
 .quick-links li a{
@@ -35,11 +39,46 @@ footer {
 }
 .quick-links li a:hover{
     color: #e83e8c;
-    margin-left: 10px;
+    margin-left: 5px;
 }
+.quick-links1{
+    margin-left: 5%;
+    font-size: 20px;
+  }
+  .quick-links1 li a{
+      font-family: "Space Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      text-decoration: none;
+      color: #000;
+      margin-top: 10%;
+      transition: all .6s ease-in-out;
+  }
+  .quick-links1 li a:hover{
+      color: #e83e8c;
+      margin-left: 10px;
+  }
+  .slogun1 {
+    text-align: left;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 3%;
+    font-size: 18px;
+
+}
+.hr{
+    width: 100%;
+    color: transparent;
+    background: #e91578;
+    height: 3px !important;
+}
+
 hr{
     width: 60px;
     color: transparent;
     background: #e91578;
     height: 3px !important;
+}
+.visa-image{
+    height: 20px;
+    margin-left: 85%;
 }
