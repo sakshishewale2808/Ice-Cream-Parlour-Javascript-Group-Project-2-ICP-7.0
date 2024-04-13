@@ -1,6 +1,6 @@
 
 .foot {
-    color: rgb(228, 91, 113);
+    color: #e83e8c;
     margin-bottom: 30px;
     font-size: 30px;
    
@@ -11,7 +11,7 @@ padding-left: 30px;
 
 hr{
     width: 80px;
-    background: rgb(255, 109, 133);
+    color: #e83e8c;
     height: 3px !important;
 }
 
@@ -23,24 +23,32 @@ hr{
 
 .b{
     text-decoration: none;
-    color:white;
+    color:rgb(0, 0, 0);
     font-weight:100;
+    transition: .5s;
+}
+.bb{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight:100;
+    transition: .5s;
 }
 
 .contact1 {
     position: absolute;
     left: 39%;
     font-size: 30px;
-    color: rgb(228, 91, 113);
+    color: #e83e8c;
     padding-left: 30px;
     padding-top:30px;
   
 }
 
 .main {
+    margin-top: 7%;
     display:flex;
     flex-wrap: wrap;
-    background-color: rgb(32, 31, 31);
+    background-color: rgb(255, 255, 255);
     width: 100%;
 
 }
@@ -49,7 +57,7 @@ hr{
     position: absolute;
     right: 1%;
     font-size: 30px;
-    color: rgb(228, 91, 113);
+    color: #e83e8c;
     padding-top: 30px;
     padding-left: 30px;
  
@@ -57,25 +65,24 @@ hr{
 }
 
 .fa-sol {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 20px;
 }
 
 
 .fa-brand {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 30px;
 }
 
 .fa-brand:hover{
-    color: rgb(228, 91, 113);
+    color: #e83e8c;
     
 }
-
-
 .b:hover {
-    color:rgb(228, 91, 113);
+    color: #e83e8c;
     text-decoration: underline;
+    margin-left: 5%;
 }
 
 
