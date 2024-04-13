@@ -9,11 +9,34 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="./../css/add-to-cart.css">
-    <link rel="stylesheet" href="./../css/header.css">
+    
     
 </head>
 <body>
-    <div class="container bg-white mt-5 px-4 py-4">
+    <div class="nav-container flex" id="nav">
+        <div class="right-flex flex">
+            <img src="./../imgs/menu.png" height="40px" class="hamburger" onclick="openNav()" alt="">
+            <a href="./../index.html"> <img src="./../imgs/logo.png" class="logo" alt=""></a>
+        </div>
+        <div class="mid-flex">
+            <ul class="menu-list flex" type="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./../Pages/about-us.html">About Us</a></li>
+                <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
+                <li><a href="./../Pages/services.html">Services</a></li>
+            </ul>
+        </div>
+        <div class="left-flex">
+            <img src="./../icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
+            <a href="./../Pages/login-page.html"><img src="./../icons/add-contact.png" class="nav-icons login-icon"
+                    alt=""></a>
+            <img src="./../icons/heart.png" class="nav-icons  heart-icon" alt="">
+            <a href="./../Pages/add-to-cart.html"><img src="./../icons/shopping-bag.png" class="nav-icons" alt=""
+                    onclick="openCarts()"></a>
+        </div>
+    </div>
+
+    <div class="container bg-white px-4 py-4">
         <h1 class="h1 mb-4">Shopping Cart</h1>
         <div class="row">
 
