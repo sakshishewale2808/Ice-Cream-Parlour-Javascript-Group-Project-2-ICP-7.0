@@ -397,7 +397,7 @@
             const ampm = document.getElementById('ampm');
 
             const date = new Date();
-            hrs.innerText = date.getHours() % 12 || 12;
+            hrs.innerText =  (date.getHours() < 10 ? "0" : "") + date.getHours() % 12 || 12;
             min.innerText = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
             sec.innerText = (date.getSeconds() < 10 ? "0" : "") + date.getSeconds();
             ampm.innerText = date.getHours() >= 12 ? 'PM' : 'AM';
