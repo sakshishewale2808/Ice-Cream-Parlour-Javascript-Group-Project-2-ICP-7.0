@@ -3,7 +3,7 @@ header{
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
 }
-.bg-img{
+.bg-img-navigation{
     background-image: url("./../png/s1.png");  /* The image used as the background */
     min-height: 80vh;
     position: relative;
@@ -72,7 +72,7 @@ header{
     font-size: 20px;
     margin-bottom: -2px;
 }
-.text-overlay{
+.text-overlay-on-image{
     text-align: left;
     color: #000;
     width: 46%;
