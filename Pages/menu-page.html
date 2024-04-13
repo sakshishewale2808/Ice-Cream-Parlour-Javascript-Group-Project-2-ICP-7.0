@@ -5,20 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu Page</title>
   <link rel="stylesheet" href="./../css/menu-page.css">
-
+  <link rel="stylesheet" href="./../css/header.css">
+  <link rel="stylesheet" href="./../css/footer1.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./../css/header.css">
+  <script src="./../JS/header.js"></script>
+  <script src="./../JS/index.js"></script>
 </head>
 <body style="background-color: #fffffb;">
-  <header >
-  <br><br>
-    <h1 >Ice Cream Parlor</h1>
-    <br>
+    <div class="nav-container-main1 flex-display" >
+        <div class="right-flex flex-display">
+            <img src="./imgs/menu.png" height="40px" class="hamburger-img-nav" onclick="openNav()" alt="">
+            <a href="./index.html"> <img src="./imgs/logo.png" class="navigationbar-logo" alt=""></a>
+        </div>
+        <div class="mid-flex">
+            <ul class="menu-list flex-display" type="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./Pages/about-us.html">About Us</a></li>
+                <li><a href="./Pages/contact-page.html">Contact Us</a></li>
+                <li><a href="./Pages/services.html">Services</a></li>
+            </ul>
+        </div>
+        <div class="left-flex">
+            <img src="./icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
+            <a href="./Pages/login-page.html"><img src="./icons/add-contact.png" class="nav-icons login-icon"
+                    alt=""></a>
+            <img src="./icons/heart.png" class="nav-icons  heart-icon" alt="">
+            <a href="./Pages/add-to-cart.html"><img src="./icons/shopping-bag.png" class="nav-icons" alt=""
+                    onclick="openCarts()"></a>
+        </div>
+    </div>
+    <header>
 
-  </header>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
+            <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
+            <h2 class="search-title">And Hit Enter...</h2>
+            <div class="overlay-content">
+                <form>
+                    <input type="text" placeholder="Search Your Favorite Ice-Cream Here..." name="search">
+                </form>
+            </div>
+        </div>
+        <!-- <div id="mySidenav1" class="sidenav1">
+            <a href="javascript:void(0)" class="closebtn1" onclick="closeNavs()">&times;</a>
+            <p class="cart1">Shopping Cart</p>
+            <hr>
+        </div> -->
+
+        
+        </div>
+        <div class="slide-btn-comtain" onclick="changeBg()">
+            <img src="./icons/new-moon.png" alt="" class="slide-btn" id="slide-btn"
+                onclick="changeSlideBtn('./imgs/s5.jpg')">
+            <img src="./icons/oval.png" alt="" class="slide-btn btn-2" id="slide-btn1"
+                onclick="changeSlideBtn('./imgs/s6.jpg')">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul class="menu-list" type="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./Pages/about-us.html">About Us</a></li>
+                <li><a href="./Pages/contact-page.html">Contact Us</a></li>
+                <li><a href="./Pages/services.html">Services</a></li>
+            </ul>
+        </div>
+
+
+    </header>
  <div class="name-container text-light text-center ">
     <br><br>
    <h2 class="page-heading text-center "> Products</h2>
-   <h6 class="text-center"><a href="./../index.html"class="decoration text-light"> Home </a> &nbsp;> &nbsp;<a href="./menu-page.html"class="decoration text-white"> Products</a> </h6>
+   <br><br>
    <br><br><br><br><br><br>
  </div>
  <div class="flavour-container" id="flavour">
@@ -28,30 +86,30 @@
   <p class="category-heading">Available Desserts</p>
   <div>
      <div class=" parent-card" >
-        <button type="button" class="category-div filter-container" onClick="all()" > All</button>
-        <button type="button" class="category-div filter-container" onClick="cookies()" > Cookies</button>
-        <button type="button" class="category-div filter-container" onClick="all()" > Ice-Cream </button>
-        <button type="button" class="category-div filter-container" onClick="all()" > Cones</button>
-        <button type="button" class="category-div filter-container" onClick="all()" > Ice-Cream Bucket</button>
-        <button type="button" class="category-div filter-container" onClick="all()" > Ice-Cream Sundae</button>
+        <button type="button" class="category-div filter-container" id="all" onClick="all()" > All</button>
+        <button type="button" class="category-div filter-container" id="chocobar" onClick="chocobar()" > Chocobar</button>
+        <button type="button" class="category-div filter-container" id="sorbet" onClick="sorbet()" > Sorbet </button>
+        <button type="button" class="category-div filter-container" id="bucket" onClick="icecreambucket()" > Ice Cream Bucket</button>
+        <button type="button" class="category-div filter-container" id="cones" onClick="cones()" > Cones</button>
+      
      </div>
-   
+
       
      </div>
      
       <div class="row  ">
           <div class=" flavour-card col col-md-2 col-lg-3">
               <div>
-                 <img src="./../imgs/menu-card/Cereal-And-Milk.jpg" class="flavour-img" alt="">
+                 <img src="./../imgs/menu-card/Cereal-And-Milk.jpg" class="flavour-img" id="img1" alt="">
               </div>
               <div class="effect-hover">
                   <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                   <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                   <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image"  alt="">
               </div>
-              <div class="flavour-description">
+              <div class="flavour-description" id="desc1">
                   Cereal And Milk <br>
-                  <p class="flavour-price">₹ 200.00 </p>
+                  <p class="flavour-price" id="price1">₹ 200.00 </p>
                   <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -60,17 +118,17 @@
       
           <div class="flavour-card col col-md-2 col-lg-3">
               <div>
-                  <img src="./../imgs/menu-card/Choco-Cherry.jpg" class="flavour-img" alt="">
+                  <img src="./../imgs/menu-card/Choco-Cherry.jpg" class="flavour-img" id="img2" alt="">
               </div>
               <div class="effect-hover">
                  <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                   <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                   <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
               </div>
-              <div class="flavour-description">
+              <div class="flavour-description" id="desc2">
                   Choco Cherry
                   <br>
-                  <p class="flavour-price">₹ 360.00 </p>
+                  <p class="flavour-price" id="price2">₹ 360.00 </p>
                   <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -79,17 +137,17 @@
       
           <div class=" flavour-card col col-md-2 col-lg-3">
               <div>
-                  <img src="./../imgs/menu-card/Chokobar.jpg" class="flavour-img" alt="">
+                  <img src="./../imgs/menu-card/Chokobar.jpg" class="flavour-img"  id="img3" alt="">
               </div>
               <div class="effect-hover">
-                  <img src="./../icons/menupage-icons/shopping-bag.png"  height="20px" class="hover-image">
+                  <img src="./../icons/menupage-icons/shopping-bag.png"  height="20px"  class="hover-image">
                   <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                   <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
               </div>
-              <div class="flavour-description">
+              <div class="flavour-description " id="desc3">
                   Chokobar
                   <br>
-                  <p class="flavour-price">₹ 150.00 </p>
+                  <p class="flavour-price" id="price3">₹ 150.00 </p>
                   <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -98,17 +156,17 @@
       
           <div class="flavour-card col col-md-2 col-lg-3">
               <div>
-                  <img src="./../imgs/menu-card/chocolate-Wafer.jpg" class="flavour-img" alt="">
+                  <img src="./../imgs/menu-card/Chokobar.jpg" class="flavour-img" id="img4" alt="">
               </div>
               <div class="effect-hover">
                  <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                   <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                   <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
               </div>
-              <div class="flavour-description">
+              <div class="flavour-description" id="desc4">
                   chocolate Wafer
                   <br>
-                  <p class="flavour-price">₹ 320.00 </p>
+                  <p class="flavour-price" id="price4">₹ 320.00 </p>
                   <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -118,17 +176,17 @@
       
           <div class="flavour-card col col-md-2 col-lg-3">
               <div>
-                  <img src="./../imgs/menu-card/Cookie.jpg" class="flavour-img" alt="">
+                  <img src="./../imgs/menu-card/Cookie.jpg" class="flavour-img" id="img5" alt="">
               </div>
               <div class="effect-hover">
                  <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                   <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                   <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
               </div>
-              <div class="flavour-description">
+              <div class="flavour-description" id="desc5">
                   Cookie
                   <br>
-                  <p class="flavour-price">₹ 480.00 </p>
+                  <p class="flavour-price" id="price5">₹ 480.00 </p>
                   <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -136,17 +194,17 @@
           </div>
           <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Cookies-Cream.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Cookies-Cream.jpg" class="flavour-img" id="img6"alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc6">
                 Cookies Cream
                 <br>
-                <p class="flavour-price">₹ 260.00 </p>
+                <p class="flavour-price" id="price6">₹ 260.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -155,17 +213,17 @@
     
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Cookies-Dough.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Cookies-Dough.jpg" class="flavour-img" id="img7" alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc7">
                 Cookies Dough
                 <br>
-                <p class="flavour-price">₹ 450.00 </p>
+                <p class="flavour-price" id="price7">₹ 450.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -174,17 +232,17 @@
     
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Cream-MilkShake.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Cream-MilkShake.jpg" class="flavour-img"id="img8" alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc8">
                 Cream MilkShake
                 <br>
-                <p class="flavour-price">₹ 380.00 </p>
+                <p class="flavour-price" id="price8 ">₹ 380.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -193,16 +251,16 @@
     
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Creamy-Cake.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Creamy-Cake.jpg" class="flavour-img"id="img9" alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt=""><img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt=""><button onclick="wishlist()"  id="btnh1" class="btn1"><i class="fa-solid fa-heart my-0"></i></button>
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc9">
                 Creamy Cake
                 <br>
-                <p class="flavour-price">₹ 460.00 </p>
+                <p class="flavour-price" id="price9">₹ 460.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -211,17 +269,17 @@
     
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Ice-Cream-Cakes.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Ice-Cream-Cakes.jpg" class="flavour-img" id="img10" alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc10">
                 Ice Cream Cakes
                 <br>
-                <p class="flavour-price">₹ 220.00 </p>
+                <p class="flavour-price" id="price10">₹ 220.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -230,17 +288,17 @@
     
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Lemon-Ice-Cream.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Lemon-Ice-Cream.jpg" class="flavour-img" id="img11" alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc11">
                 Lemon Ice Cream
                 <br>
-                <p class="flavour-price">₹ 180.00 </p>
+                <p class="flavour-price" id="price11">₹ 180.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -249,17 +307,17 @@
     
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Pretzel-Cone.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Pretzel-Cone.jpg" class="flavour-img" id="img12"alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc12">
                 Pretzel Cone
                 <br>
-                <p class="flavour-price">₹ 420.00 </p>
+                <p class="flavour-price" id="price12">₹ 420.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -268,17 +326,17 @@
     
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Toasted-Strawberry.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Toasted-Strawberry.jpg" class="flavour-img" id="img13" alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc13">
                 Toasted Strawberry
                 <br>
-                <p class="flavour-price">₹ 400.00 </p>
+                <p class="flavour-price" id="price13">₹ 400.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -287,17 +345,17 @@
     
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Vanilla.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Vanilla.jpg" class="flavour-img" id="img14" alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc14">
                 Vanilla
                 <br>
-                <p class="flavour-price">₹ 270.00 </p>
+                <p class="flavour-price" id="price14">₹ 270.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
@@ -305,68 +363,417 @@
         </div>
         <div class="flavour-card col col-md-2 col-lg-3">
             <div>
-                <img src="./../imgs/menu-card/Wafer-Ice-Cream.jpg" class="flavour-img" alt="">
+                <img src="./../imgs/menu-card/Wafer-Ice-Cream.jpg" class="flavour-img"id="img15" alt="">
             </div>
             <div class="effect-hover">
                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
                 <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
                 <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
             </div>
-            <div class="flavour-description">
+            <div class="flavour-description" id="desc15 ">
                 Wafer Ice Cream
                 <br>
-                <p class="flavour-price">₹ 180.00 </p>
+                <p class="flavour-price" id="price15">₹ 180.00 </p>
                 <div class="card-btn">
                     <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
                   </div>
             </div>
         </div>
     
-        <div class="flavour-card col col-md-2 col-lg-3">
-            <div>
-                <img src="./../imgs/menu-card/Waffle-Cones.jpg" class="flavour-img" alt="">
-            </div>
-            <div class="effect-hover">
-               <img src="./../icons/menupage-icons/shopping-bag.png" height="20px" class="hover-image">
-                <img src="./../icons/menupage-icons/search.png" height="20px" class="hover-image" alt="">
-                <img src="./../icons/menupage-icons/wishlist.png" height="20px" class="hover-image" id="wishlistImg" alt="">
-            </div>
-            <div class="flavour-description">
-                Waffle Cones
-                <br>
-                <p class="flavour-price">₹ 500.00 </p>
-                <div class="card-btn">
-                    <a href="./../Pages/buy-now.html"><button type="button"class="category-div filter-container">Buy Now</button></a>
-                  </div>
             </div>
         </div>
     
   </div>
   
+  <script >
+    let img1 = document.getElementById("img1")
+    let img2 = document.getElementById("img2")
+    let img3= document.getElementById("img3")
+    let img4= document.getElementById("img4")
+    let img5= document.getElementById("img5")
+    let img6= document.getElementById("img6")
+    let img7= document.getElementById("img7")
+    let img8= document.getElementById("img8")
+    let img9= document.getElementById("img9")
+    let img10= document.getElementById("img10")
+    let img11 = document.getElementById("img11")
+    let img12 = document.getElementById("img12")
+    let img13= document.getElementById("img13")
+    let img14 = document.getElementById("img14")
+    let img15 = document.getElementById("img15")
+    
+ 
+    let desc1 = document.getElementById("desc1")
+    let desc2 = document.getElementById("desc2")
+    let desc3 = document.getElementById("desc3")
+    let desc4 = document.getElementById("desc4")
+    let desc5 = document.getElementById("desc5")
+    let desc6 = document.getElementById("desc6")
+    let desc7 = document.getElementById("desc7")
+    let desc8 = document.getElementById("desc8")
+    let desc9 = document.getElementById("desc9")
+    let desc10 = document.getElementById("desc11")
+    let desc12 = document.getElementById("desc12")
+    let desc13 = document.getElementById("desc13")
+    let desc14 = document.getElementById("desc14")
+    let desc15 = document.getElementById("desc15")
+    
+ 
+    let price1 = document.getElementById("price1")
+    let price2 = document.getElementById("price2")
+    let price3= document.getElementById("price3")
+    let price4= document.getElementById("price4")
+    let price5= document.getElementById("price5")
+    let price6= document.getElementById("price6")
+    let price7= document.getElementById("price7")
+    let price8= document.getElementById("price8")
+    let price9= document.getElementById("price9")
+    let price10= document.getElementById("price11")
+    let price12 = document.getElementById("price12")
+    let price13= document.getElementById("price13")
+    let price14 = document.getElementById("price14")
+    let price15 = document.getElementById("price15")
+    
+    /*function all(){
+     img1.src="./../imgs/menu-card/Cereal-And-Milk.jpg"
+     img2.src="./../imgs/menu-card/Choco-Cherry.jpg"
+     img3.src="./../imgs/menu-card/Chokobar.jpg"
+     img4.src="./../imgs/menu-card/Chokobar.jpg"
+     img5.src="./../imgs/menu-card/Cookie.jpg"
+     img6.src="./../imgs/menu-card/Cookies-Cream.jpg"
+     img7.src="./../imgs/menu-card/Cookies-Dough.jpg"
+     img8.src="./../imgs/menu-card/Cream-MilkShake.jpg"
+     img9.src="./../imgs/menu-card/Creamy-Cake.jpg"
+     img10.src="./../imgs/menu-card/Ice-Cream-Cakes.jpg"
+     img11.src="./../imgs/menu-card/Lemon-Ice-Cream.jpg"
+     img12.src="./../imgs/menu-card/Pretzel-Cone.jpg"
+     img13.src="./../imgs/menu-card/Toasted-Strawberry.jpg"
+     img14.src="./../imgs/menu-card/Vanilla.jpg"
+     img15.src="./../imgs/menu-card/Wafer-Ice-Cream.jpg"
+    
+     desc1.innerText ="Cereal and milk"
+     desc2.innerText ="Choco Cherry "
+     desc3.innerText ="Chocobar"
+     desc4.innerText ="Chokobar"
+     desc5.innerText ="Cookies"
+     desc6.innerText ="Cookies Cream"
+     desc7.innerText ="Cookies Dough"
+     desc8.innerText ="Cream MilkShake"
+     desc9.innerText ="Creamy Cake"
+     desc10.innerText ="Ice Cream Cakes"
+     desc11.innerText ="Lemon Ice Cream"
+     desc12.innerText ="Pretzel Cone"
+     desc13.innerText ="Toasted Strawberry"
+     desc14.innerText ="Vanilla"
+     desc15.innerText ="Wafer Ice Cream"
+ 
+     price1.innerText="₹ 90 "
+     price2.innerText="₹ 120"
+     price3.innerText="₹ 100"
+     price4.innerText="₹ 30"
+     price5.innerText="₹ 67"
+     price6.innerText="₹ 40"
+     price7.innerText=" ₹ 100"
+     price8.innerText="₹ 170"
+     price9.innerText="₹ 50"
+     price10.innerText="₹ 60"
+     price11.innerText="₹150"
+     price12.innerText="₹ 49"
+     price13.innerText="₹ 45"
+     price14.innerText="₹ 50"
+     price15.innerText="₹ 66"
 
+
+     document.getElementById("all").style.color = "white";
+  document.getElementById("chocobar").style.color = "#e83e8c";
+  document.getElementById("sorbet").style.color = "#e83e8c";
+  document.getElementById("bucket").style.color = "#e83e8c";
+  document.getElementById("cones").style.color = "#e83e8c";
+  
+    }*/
+
+    function chocobar(){
+        
+
+        img1.src="./../imgs/menu-card/chocobar1.png"
+        img2.src="./../imgs/menu-card/chokobar2.png"
+        img3.src="./../imgs/menu-card/chocobar3.png"
+        img4.src="./../imgs/menu-card/chocobar4.jpg"
+        img5.src="./../imgs/menu-card/chocobar5.jpg"
+        img6.src="./../imgs/menu-card/chocobar6.webp"
+        img7.src=""
+        img8.src=""
+        img9.src=""
+        img10.src=""
+        img11.src=""
+        img12.src=""
+        img13.src=""
+        img14.src=""
+        img15.src=""
+       
+        desc1.innerHTML ="Chocolate"
+        desc2.innerText ="Mango "
+        desc3.innerText ="Strawberry"
+        desc4.innerText ="Walnut mixed"
+        desc5.innerText ="Chocolate"
+        desc6.innerText =`Almond`
+        desc7.innerText =``
+        desc8.innerText =``
+        desc9.innerText =``
+        desc10.innerText =``
+        desc11.innerText =``
+        desc12.innerText =``
+        desc13.innerText =``
+        desc14.innerText =``
+        desc15.innerText =``
+    
+        price1.innerText="₹ 90 "
+        price2.innerText="₹ 120"
+        price3.innerText="₹ 100"
+        price4.innerText="₹ 30"
+        price5.innerText="₹ 67"
+        price6.innerText="₹ 40"
+        price7.innerText=""
+        price8.innerText=""
+        price9.innerText=""
+        price10.innerText=""
+        price11.innerText=""
+        price12.innerText=""
+        price13.innerText=""
+        price14.innerText=""
+        price15.innerText=""
+    
+        
+    }
+
+    function sorbet(){
+
+        img1.src="./../imgs/menu-card/sorbet-banana.jpg"
+        img2.src="./../imgs/menu-card/sorbet-multiflavour.webp"
+        img3.src="./../imgs/menu-card/sorbet-redCherry.jpg"
+        img4.src="./../imgs/menu-card/sorbet-strawberry.jpg"
+        img5.src="./../imgs/menu-card/sorbet-watermelon.jpg"
+        img6.src="./../imgs/menu-card/sorbet-banana.jpg"
+        img7.src=""
+        img8.src=""
+        img9.src=""
+        img10.src=""
+        img11.src=""
+        img12.src=""
+        img13.src=""
+        img14.src=""
+        img15.src=""
+       
+        desc1.innerHTML ="banana sorbet"
+        desc2.innerText ="Multiflavoured sorbet "
+        desc3.innerText ="Red Cherry Sorbet"
+        desc4.innerText ="Strawberry Sorbet"
+        desc5.innerText ="Watermelon Sorbet"
+        desc6.innerText =`Banana Sorbet`
+        desc7.innerText =``
+        desc8.innerText =``
+        desc9.innerText =``
+        desc10.innerText =``
+        desc11.innerText =``
+        desc12.innerText =``
+        desc13.innerText =``
+        desc14.innerText =``
+        desc15.innerText =``
+    
+        price1.innerText="₹ 90 "
+        price2.innerText="₹ 120"
+        price3.innerText="₹ 100"
+        price4.innerText="₹ 30"
+        price5.innerText="₹ 67"
+        price6.innerText="₹ 40"
+        price7.innerText=""
+        price8.innerText=""
+        price9.innerText=""
+        price10.innerText=""
+        price11.innerText=""
+        price12.innerText=""
+        price13.innerText=""
+        price14.innerText=""
+        price15.innerText=""
+        
+    }
+    
+    function icecreambucket(){
+        img1.src="./../imgs/menu-card/bucket-banana.jpg"
+        img2.src="./../imgs/menu-card/bucket-chocolate.jpg"
+        img3.src="./../imgs/menu-card/bucket-mango.jpg"
+        img4.src="./../imgs/menu-card/bucket-strawberry.webp"
+        img5.src="./../imgs/menu-card/bucket-vanilla.jpg"
+        img6.src="./../imgs/menu-card/bucket-walnut.jpg"
+        img7.src=""
+        img8.src=""
+        img9.src=""
+        img10.src=""
+        img11.src=""
+        img12.src=""
+        img13.src=""
+        img14.src=""
+        img15.src=""
+       
+        desc1.innerHTML ="Banana Bucket"
+        desc2.innerText ="Chocolate Bucket "
+        desc3.innerText ="Mango Bucket"
+        desc4.innerText ="Strawberry Bucket"
+        desc5.innerText ="Vanilla Bucket"
+        desc6.innerText =`Walnut Bucket`
+        desc7.innerText =``
+        desc8.innerText =``
+        desc9.innerText =``
+        desc10.innerText =``
+        desc11.innerText =``
+        desc12.innerText =``
+        desc13.innerText =``
+        desc14.innerText =``
+        desc15.innerText =``
+    
+        price1.innerText="₹ 90 "
+        price2.innerText="₹ 120"
+        price3.innerText="₹ 100"
+        price4.innerText="₹ 30"
+        price5.innerText="₹ 67"
+        price6.innerText="₹ 40"
+        price7.innerText=""
+        price8.innerText=""
+        price9.innerText=""
+        price10.innerText=""
+        price11.innerText=""
+        price12.innerText=""
+        price13.innerText=""
+        price14.innerText=""
+        price15.innerText=""
+         
+    }
+ 
+ function cones(){
+    img1.src="./../imgs/menu-card/cone-arabianFantacy.png"
+    img2.src="./../imgs/menu-card/cone-vanilla.png"
+    img3.src="./../imgs/menu-card/cone-butterScotch.jpg"
+    img4.src="./../imgs/menu-card/cone-chocolate.jpg"
+    img5.src="./../imgs/menu-card/cone-kajuDraksh.jpg"
+    img6.src="./../imgs/menu-card/cone-rostedBadamCone.jpg"
+    img7.src=""
+    img8.src=""
+    img9.src=""
+    img10.src=""
+    img11.src=""
+    img12.src=""
+    img13.src=""
+    img14.src=""
+    img15.src=""
+   
+    desc1.innerHTML ="Arabian Fantacy"
+    desc2.innerText ="Vanilla "
+    desc3.innerText ="Butter Scotch"
+    desc4.innerText ="Chocolate"
+    desc5.innerText ="Kaju Draksh"
+    desc6.innerText =`Rosted Badam`
+    desc7.innerText =``
+    desc8.innerText =``
+    desc9.innerText =``
+    desc10.innerText =``
+    desc11.innerText =``
+    desc12.innerText =``
+    desc13.innerText =``
+    desc14.innerText =``
+    desc15.innerText =``
+
+    price1.innerText="₹ 90 "
+    price2.innerText="₹ 120"
+    price3.innerText="₹ 100"
+    price4.innerText="₹ 30"
+    price5.innerText="₹ 67"
+    price6.innerText="₹ 40"
+    price7.innerText=""
+    price8.innerText=""
+    price9.innerText=""
+    price10.innerText=""
+    price11.innerText=""
+    price12.innerText=""
+    price13.innerText=""
+    price14.innerText=""
+    price15.innerText=""
+ }
+    
+   </script>
   
 
  
-  <footer >
-<br><br><br>    <p >&copy; 2024 Ice Cream Parlor</p> <br><br><br>
-  </footer>
-  <script >
-    function likedfunction(){
-        let likeimg=document.getElementById("liked");
-        if(liked==lk)
-        {
-            likeimg.src="./../icons/menupage-icons/liked-red-heart.png";
-            
-        }
-        else{
-            likeimg.src="./../icons/menupage-icons/whishlist";
-            
-        }
-       
-    }
+   <footer>
+    <div class="flex-display footer-cont">
+        <div>
+            <img src="./imgs/logo1.png" alt="" id="footer-logo">
+            <h4 class="slogun">
+                "Scoops of joy, frozen delight,<br>
+                Taste the magic, day or night!"</h4>
+            <div class="footer mt-4">&nbsp;&nbsp;<a href="https://www.instagram.com/bhushan_potdar_19"
+                    onclick="return ready()" class="b" target="_blank"><i
+                        class="fa-brands fa-instagram fa-brand"></i></a>&emsp;<a
+                    href="https://www.linkedin.com/in/bhushan-potdar-62283a2a7/" onclick="return ready()" class="a"
+                    target="_blank"><i class="fa-brands fa-linkedin fa-brand"></i></a>&emsp;<a
+                    href="https://wa.me/7744049590" onclick="return ready()" class="b" target="_blank"><i
+                        class="fa-brands fa-whatsapp fa-brand"></i></a>
+                &emsp;<a href="https://github.com/bhushanpotdar19" onclick="return ready()" class="b"
+                    target="_blank"><i class="fa-brands fa-github fa-brand"></i></a></div>
+            <br>
 
-   
-  </script>
+
+
+        </div>
+        <div class="quick-links">
+            <UL type="none">
+                <li>Quick Links</li>
+                <hr>
+                <li>
+                    <ul type="none">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Pages/about-us.html">About Us</a></li>
+                        <li><a href="./Pages/contact-page.html">Contact Us</a></li>
+                        <li><a href="./Pages/services.html">Services</a></li>
+                        <LI><a href="./Pages/menu-page.html">Menu Card</a></LI>
+                    </ul>
+                </li>
+            </UL>
+        </div>
+        <div class="quick-links1">
+            <UL type="none">
+                <li>Help & Information</li>
+                <hr>
+                <li>
+                    <ul type="none">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Product Return</a></li>
+                        <li><a href="">Wholesale Policy</a></li>
+                        <li><a href="">Help Center</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="quick-links1">
+            <UL type="none">
+                <li>Contact Us</li>
+                <hr>
+                <li>
+                    <ul type="none">
+                        <li class="slogun1">1/2, Rachik House, <br> Yeolekar, College Road, <br> Nashik, Maharashtra
+                        </li>
+                        <li><a href="">0253 230 5411</a></li>
+                        <li><a href="" target="mailto">creamydesert@gmail.com</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr class="hr">
+    <p id="copyright" style="text-align:center;">Copyright @ Creamy Desert | All Rights Reserved.</p>
+    <img src="./icons/logoo-removebg-preview.png" class="visa-image" alt="">
+</footer>
+  
   <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
 </body>
 </html>
