@@ -8,70 +8,34 @@
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
-    <style>
-        body{
-            background-color: rgb(248, 145, 162);
-
-        }
-        .container{
-            box-shadow: 0px 0px 5px 0px rgb(90, 89, 89);
-        }
-        .h1{
-            background-color: rgb(247, 28, 112);
-            padding: 6px;
-            font-size: 31px;
-            font-weight: bolder;
-            color: white;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 2px;
-            box-shadow: 2px 2px 5px 0px rgb(48, 45, 45);
-        }
-        .product-div{
-            box-shadow: 0px 0px 5px 0px rgb(48, 45, 45);
-        }
-        .price-div{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 5px;
-        }
-        .bg-dim{
-            background: #e7e7e7;
-            text-align: center;
-            font-size: 14px;
-        }
-        .safe-logo{
-            width: 25px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./../css/add-to-cart.css">
+    <link rel="stylesheet" href="./../css/header.css">
     
 </head>
 <body>
     <div class="container bg-white mt-5 px-4 py-4">
-        <h1 class="h1">Shopping Cart</h1>
+        <h1 class="h1 mb-4">Shopping Cart</h1>
         <div class="row">
 
             <div class="col-8 product-div">
-                <h2>Product Details</h2>
+                <h2 class="fs-4 fw-bold mx-2">Product Details</h2>
             </div>
 
-            <div class="col-4">
-                <h2>Price Details</h2>
-                <div class="price-div px-1">
+            <div class="col-4 border-start">
+                <h2 class="fs-4 fw-bold mx-2 mb-3">Price Details</h2>
+                <div class="price-div px-1 fs-6">
                     <span>Total Product Price</span>
-                    <span>₹400</span>
+                    <span class="fw-bold">₹400</span>
                 </div>
-                <div class="price-div px-1">
+                <div class="price-div px-1 fs-6">
                     <span>Total Discount</span>
-                    <span>₹100</span>
+                    <span class="fw-bold">₹100</span>
                 </div>
-                <div class="price-div px-1">
+                <div class="price-div px-1 fs-6">
                     <span>Delivery Charges</span>
-                    <span>Free Delivery</span>
+                    <span class="fw-bold">Free Delivery</span>
                 </div>
-                <div class="price-div mt-5 border-top border-bottom p-1">
+                <div class="price-div mt-5 border-top border-bottom p-1 fs-6 fw-bold">
                     <span>Total Amount</span>
                     <span>₹500</span>
                 </div>
@@ -79,9 +43,9 @@
                     <img src="./../imgs/add_to_cart_imgs/safe_logo1.jpeg" class="safe-logo rounded-circle"/>
                     <span >Safe and secure payment. Easy returns. 100% guaranntee.</span>
                 </div>
-                <div>
-                    <button type="button" class="btn1">Continue Shopping</button>
-                    <button type="button" class="btn2 m">Place Order</button>
+                <div class="btn-div">
+                    <button type="button" class="btn">Continue Shopping</button>
+                    <button type="button" class="btn m">Place Order</button>
                 </div>
             </div>
         </div>

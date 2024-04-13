@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+.container{
+    box-shadow: 0px 0px 5px 0px rgb(90, 89, 89);
+    border: none;
+
+}
+.h1{
+    background-color: #e83e8c;
+    padding: 6px;
+    font-size: 31px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px 0px rgb(48, 45, 45);
+}
+.product-div{
+
+}
+.price-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+}
+.bg-dim{
+    background: #e7e7e7;
+    text-align: center;
+    font-size: 14px;
+}
+.safe-logo{
+    width: 25px;
+}
+.btn-div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn{
+    border: 1px solid black;
+    margin: 10px 10px;
+    padding: 7px 10px;
+    background-color:#e83e8c;
+    color: white;
+    border-radius: 60px;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border:none;
+}
+.btn:hover{
+    background-color:white;
+    color: #e83e8c;
+    border :1px solid #e83e8c;
+}
