@@ -266,8 +266,43 @@ body{
 }
 
     @media (max-width:768px) {
-        .women {
-            display: none;
+       body{
+        max-width:768px;
+       }
+         .main-img{
+            width:100%;
+            height:40%;
+            justify-content: center;
+         
+            margin-left: 25px;
+            object-fit: cover;
+         }
+         .iceimg{
+       width:60%;
+
+           }
+           .ice-des {
+            margin-left:141px;
+           }
+           .products{
+         height:100px;
+         margin:auto 15px;
+        }
+        .product-image{
+            height:140px;
+            cursor:pointer;
+            justify-content:center;
+            margin:auto 35px;
+        }
+        .icecones{
+         justify-content: center;
+         margin:auto -20px;
+          height:130px;
+            border:none;
+        }
+        .point{
+            visibility: hidden;
+          
         }
     }
    
