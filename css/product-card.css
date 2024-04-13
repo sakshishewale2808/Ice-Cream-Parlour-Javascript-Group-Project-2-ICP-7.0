@@ -25,6 +25,9 @@ body{
     color:white;
     text-align:center;
 }
+.point{
+    cursor: pointer;
+}
 
 #choco2{
     width:350px;
@@ -32,12 +35,12 @@ body{
     object-fit:cover;
     border:1px solid black;
     border-radius:20px;
-    box-shadow:0px 0px 10px rgba(0,0,0,25);
     margin:auto 130px;
     
 }
 #choco2:hover{
-    border: 3px solid  #e83e8c;
+    border: 1px solid  #e83e8c;
+   
 }
 .product-image{
     height:160px;
@@ -46,7 +49,7 @@ body{
     margin-left:90px;
 }
  .product-image:hover{
-    border: 3px solid  #e83e8c;
+    border: 1px solid  #e83e8c;
     opacity: .8;
     border-radius:10px;
  }
@@ -66,15 +69,10 @@ body{
 .product-container{
     margin:400px 22px;
 }
-.product-content{
-    margin:-330px 10px;
-    justify-content: space-between;
-}
 .card{
     margin:5px -2px;
    
     border:none;
-    box-shadow:0px 0px 2px #e83e8c;
    
 }
 .card:hover{
@@ -83,21 +81,22 @@ body{
     border-radius:5px;
 }
 .container{
-    margin:10px 10px;
+    margin:8px 8px;
     justify-content:center;
     text-align:center;
     background-color:white;
     border:1px solid black;
     border-radius:20px;
-    box-shadow:1px 1px 2px black;
     width:300px;
-    height:400px;
-    box-shadow:1px 1px 12px #e83e8c;
-    justify-content:space-between;
+    height:450px;
+    justify-content:space-around;
+    
+}
+.container:hover{
+    border: 1px solid  #e83e8c;
 }
 .icecream{
     background-color:#c3ced9;
-    width:320px;
     margin:5px 15px;
     border-radius:10px;
 }
@@ -116,7 +115,7 @@ body{
 }
 .btn{
     border: 1px solid black;
-    margin: 25px 1px;
+   
     padding: 10px 20px;
     background-color:#e83e8c;
     color: white;
@@ -175,12 +174,43 @@ body{
     }
     .icecones{
         height:300px;
-        box-shadow:0px 0px 1px #e83e8c;
+       border-radius: 10px;
+        border :1px solid black;
+    }
+    .icecones:hover{
+        border :1px solid #e83e8c;
+
     }
     .addtocart{
       width:300px;
-        text-align:center;
+      
+      
     }
+    /*zoom effect*/
+
+.zoom-img{
+    height:600px;
+    width:600px;
+    overflow: hidden;
+    position: relative;
+    margin:-250px 10px;
+  
+    
+}
+.text{
+    margin:-200px 200px;
+}
+
+.zoom-image {
+    transition: 3.3s;
+    
+}
+
+.zoom-image:hover {
+    transform: scale(1.3);
+    opacity: .3;
+}
+
     /*media query apply*/
     @media screen and (max-width: 500px) {
         body{
@@ -212,7 +242,7 @@ body{
         margin-bottom:30px;
     }
     .container{
-           justify-content:center;
+    justify-content:center;
     text-align:center;
     background-color:white;
     border:1px solid black;
@@ -220,7 +250,6 @@ body{
     box-shadow:1px 1px 2px black;
     width:200px;
     height:400px;
-    box-shadow:1px 1px 12px #e83e8c;
     justify-content:center;
    
 

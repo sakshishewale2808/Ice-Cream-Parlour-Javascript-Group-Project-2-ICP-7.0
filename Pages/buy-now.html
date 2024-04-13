@@ -8,59 +8,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./../css/buy-now.css">
-  <link rel="stylesheet" href="./../css/footer.css">
+  <link rel="stylesheet" href="./../css/footer1.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary mt-2">
-    <div class="container-fluid mx-5">
-      <a class="navbar-brand ms-md-5 ms-md-0 fs-3 ha" href="#">Foodzie</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link ms-md-2 ms-md-0" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle ms-md-2 ms-md-0" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Menu
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./maincourse.html">Maincourse</a></li>
-              <li><a class="dropdown-item" href="./Stater.html">Stater</a></li>
-              <li><a class="dropdown-item" href="./dessert.html">Dessert</a></li>
-          </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-md-2 ms-md-0" href="./review.html">Review</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-md-2 ms-md-0" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-md-2 ms-md-0" href="./contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-md-2 ms-md-0" href="./login.html">Login/Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-md-2 ms-md-0 me-5 rounded active border bag text-center" href="./orderNow.html">Order
-              Now</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
   <div class="mb-5">
     <div class="container">
       <div class="row d-flex my-5 ms-md-5">
         <div class="col-md-7 col-xs-12 bg-white border m-2 p-5 shadow">
-          <h3>Shipping Information</h3>
+          <h3 class="identity">Shipping Information 🚗</h3>
           <p class="my-2 mt-5">Full Name :</p>
           <input type="text" placeholder="Your first and last name" required
             class="w-100 p-2 px-3 rounded border border-black">
@@ -104,7 +61,7 @@
           </div>
         </div>
         <div class="col-md-7 col-xs-12 bg-white border m-2 p-5 shadow">
-          <h3>Payment Information</h3>
+          <h3 class="identity-2">Payment Information</h3>
           <p class="my-2 mt-5">Credit Card Number :</p>
           <input type="text" placeholder="**** **** **** ****" required
             class="w-100 p-2 px-3 rounded border border-black">
@@ -125,7 +82,7 @@
         </div>
         <div class="mt-2 d-flex">
           <button type="button" class="px-5 py-2 rounded border bag" onclick="alert('Fill Information Properly ⚠')">Place Your Order</button>
-          <h5 class="mt-2 ms-4">Need help? <a href="./contactus.html">Contact us!</a></h5>
+          <h5 class="mt-2 ms-4">Need help? <a href="./../Pages/contact-page.html">Contact us!</a></h5>
         </div>
       </div>
     </div>
@@ -143,21 +100,25 @@
               <p class="card-text">Sweet and Frozen</p>
               <p><span class="me-5">50% OFF </span><span class="ms-5 ha"> &nbsp; Rs. 499/-</span></p>
               <div class="d-flex justify-content-around">
-                <a href="#" onclick="addItem('../images/card-1.jpeg','Bread slice Avocado','499'),alert('Your Order Add Successfully 🎊🎉')">Add to Card</a>
+                <a href="#" onclick="addItem('./../imgs/buy-mow-page-img/chocolate.png','Bread slice Avocado','499'),alert('Your Order Add Successfully 🎊🎉')">Add to Card</a>
               </div>
             </div>
           </div>
+
+
           <div class="card my-4 mx-4 shadow img-card-1" style="width: 18rem;">
             <img src="./../imgs/buy-mow-page-img/Mangoo.png" height="60%" class="card-img-top " alt="...">
             <div class="card-body">
               <h5 class="card-title ">Delicious Mango-Ice-Cream</h5>
               <p class="card-text ">Chill with Cremy!</p>
-              <p><span class="me-5">50% OFF </span><span class="ms-5 ha"> &nbsp; Rs. 699/-</span></p>
+              <p><span class="me-5">50% OFF </span><span class="ms-5 ha"> &nbsp; Rs. 399/-</span></p>
               <div class="d-flex justify-content-around">
-                <a href="#" onclick="addItem('../images/card-2.jpeg','Pasta With Parmesan','699'),alert('Your Order Add Successfully 🎊🎉')">Add to Card</a>
+                <a href="#" onclick="addItem('../../img/buy-mow-page-img/Mangoo.png','Delicious Mango-Ice-Cream','699'),alert('Your Order Add Successfully 🎊🎉')">Add to Card</a>
               </div>
             </div>
           </div>
+
+
           <div class="card my-4 mx-4 shadow img-card-1" style="width: 18rem;">
             <img src="./../imgs/buy-mow-page-img/strawberry.png" class="card-img-top " alt="...">
             <div class="card-body">
@@ -165,7 +126,7 @@
               <p class="card-text">Melting for it!</p>
               <p><span class="me-5">50% OFF </span><span class="ms-5 ha"> &nbsp; Rs. 229/-</span></p>
               <div class="d-flex justify-content-around">
-                <a href="#" onclick="addItem('../images/card-.3.jpg','Cheese Burger','229'),alert('Your Order Add Successfully 🎊🎉')">Add to Card</a>
+                <a href="#" onclick="addItem('./../imgs/buy-mow-page-img/strawberry.png','Cheese Burger','229'),alert('Your Order Add Successfully 🎊🎉')">Add to Card</a>
               </div>
             </div>
           </div>
@@ -174,70 +135,83 @@
     </div>
   </div>
 
+  <footer>
+    <div class="flex footer-cont">
+        <div>
+            <img src="./../imgs/logo1.png" alt="" id="footer-logo">
+            <h4 class="slogun">
+                "Scoops of joy, frozen delight,<br>
+                Taste the magic, day or night!"</h4>
+            <div class="footer mt-4">&nbsp;&nbsp;<a href="https://www.instagram.com/bhushan_potdar_19"
+                    onclick="return ready()" class="b" target="_blank"><i
+                        class="fa-brands fa-instagram fa-brand"></i></a>&emsp;<a
+                    href="https://www.linkedin.com/in/bhushan-potdar-62283a2a7/" onclick="return ready()" class="a"
+                    target="_blank"><i class="fa-brands fa-linkedin fa-brand"></i></a>&emsp;<a
+                    href="https://wa.me/7744049590" onclick="return ready()" class="b" target="_blank"><i
+                        class="fa-brands fa-whatsapp fa-brand"></i></a>
+                &emsp;<a href="https://github.com/bhushanpotdar19" onclick="return ready()" class="b"
+                    target="_blank"><i class="fa-brands fa-github fa-brand"></i></a></div>
+            <br>
 
 
-  <div class="shop-footer">
-    <div class="footer-sec">
-        <p class="footer-sec-title"> Quick Links </p>
-        <div class="footer-data">
-          <p><a href="../index.html">Home </a></p>
-          <p><a href="#">About us</a></p>
-          <p><a href="./contact.html">Contact us</a>
-          </p>
 
-          <p><a href="./login.html"> Login </a>
-          <p><a href="./orderNow.html"> Order Now</a>
-      </div>
-    </div>
-    <div class="footer-sec">
-        <p class="footer-sec-title"> Social :</p>
-        <div class="footer-data">
-            <p> <i class="fa-solid fa-envelope"></i>
-              &nbsp; &nbsp; <a href="mailto:pratikshakatore08@gmail.com">pratikshakatore08@gmail.com</a>
-            </p>
-
-
-            <p> <i class="fa-solid fa-phone"></i>
-                &nbsp; &nbsp; <a href="tel:+911212121212" class="footer-anchor"> +91-1212121212</a>
-            </p>
-
-            <p> <i class="fa-brands fa-facebook"></i> &nbsp;
-                &nbsp; Facebook </p>
-
-            <p> <i class="fa-brands fa-twitter"></i> &nbsp;
-                &nbsp; Twitter</p>
-
-            <p> <i class="fa-brands fa-instagram"></i> &nbsp;
-                &nbsp; Instagram</p>
-
-            <p> <i class="fa-brands fa-linkedin"></i> &nbsp;
-                &nbsp; LinkedIn</p>
+        </div>
+        <div class="quick-links">
+            <UL type="none">
+                <li>Quick Links</li>
+                <hr>
+                <li>
+                    <ul type="none">
+                        <li><a href="./../index.html">Home</a></li>
+                        <li><a href="./../Pages/about-us.html">About Us</a></li>
+                        <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
+                        <li><a href="./../Pages/services.html">Services</a></li>
+                        <li><a href="./../Pages/menu-page.html">Menu Card</a></li>
+                        <li><a href="./../Pages/buy-now.html">buy-now</a></li>
+                    </ul>
+                </li>
+            </UL>
+        </div>
+        <div class="quick-links1">
+            <UL type="none">
+                <li>Help & Information</li>
+                <hr>
+                <li>
+                    <ul type="none">
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Product Return</a></li>
+                        <li><a href="">Wholesale Policy</a></li>
+                        <li><a href="">Help Center</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="quick-links1">
+            <UL type="none">
+                <li>Contact Us</li>
+                <hr>
+                <li>
+                    <ul type="none">
+                        <li class="slogun1">1/2, Rachik House, <br> Yeolekar, College Road, <br> Nashik, Maharashtra
+                        </li>
+                        <li><a href="">0253 230 5411</a></li>
+                        <li><a href="" target="mailto">creamydesert@gmail.com</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="footer-sec">
-        <p class="footer-sec-title"> Contact us :</p>
-        <div class="footer-data">
-
-            <p><i class="fa-solid fa-location-dot"></i>
-                &nbsp; &nbsp; <a href="https://maps.app.goo.gl/N3ngnED1vBDYVvj19" target="blank"> pune-maharashtra ,
-                    </a>
-            </p>
-            <p> <i class="fa-solid fa-envelope"></i>
-                &nbsp; &nbsp; <a href="mailto:pratikshakatore08@gmail.com">pratikshakatore08@gmail.com</a>
-            </p>
-
-            <p> <i class="fa-solid fa-phone"></i>
-                &nbsp; &nbsp; <a href="tel:+91-0000000000"> +91-0000000000</a>
-            </p>
-        </div>
-    </div>
-</div>
-<script src="https://kit.fontawesome.com/4d47a5db67.js" crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    <hr class="hr">
+    <p id="copyright" style="text-align:center;">Copyright @ Creamy Desert | All Rights Reserved.</p>
+    <img src="./../icons/logoo-removebg-preview.png" class="visa-image" alt="">
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <script src="../js/orderNow.js"></script>
-</body>
 
-</html>
+  </body>
+  </html>
+
+
+  
