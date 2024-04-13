@@ -10,6 +10,10 @@ header{
     background-size:cover;
     /* width: 100%;                     Set the type of gradient (linear or radial) */
 }
+.logo{
+  height: 130px;
+
+}
 .hamburger{
   display: none;
 }
@@ -52,6 +56,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
 /* padding: 10px; */
     margin: auto;
     height: 100px;
@@ -187,14 +193,15 @@ header{
   .overlay button:hover {
     background: #000;
   }
-  .sidenav1 {
+  .sidenav {
     height: 100%; 
     font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
     width: 0; 
     position: fixed;
     z-index: 1000;
     top: 0; 
-    right: 0;
+    left: 0;
     background-color: #fff; 
     overflow-x: hidden; 
     padding-top: 60px; 
@@ -203,83 +210,34 @@ header{
   }
   
   /* The navigation menu links */
-  .sidenav1 a {
-    padding: 8px 8px 8px 32px;
+  .sidenav a {
+    padding: 4px 4px 4px 15px;
     text-decoration: none;
     font-size: 25px;
     color: #000;
     display: block;
+    margin-left: 2px;
     transition: 0.3s;
   }
-  .cart1{
-    font-family: "Space Grotesk", sans-serif;
-    margin-left: 30%;
-    font-size: 20px;
-    font-weight: bold;
+  .sidenav a:hover{
+    color: #e83e8c;
+    margin-left: 4px;
   }
-  .sidenav1 .closebtn1 {
+  .sidenav .closebtn {
     position: absolute;
     top: 0;
     font-family: "Space Grotesk", sans-serif;
-    left: 10px;
+    right: 10px;
     font-size: 36px;
-    margin-right: 5px;
+    margin-right: 2px;
   }
-  .closebtn1:hover{
+  .closebtn:hover{
     color: #e83e8c;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav1 {padding-top: 15px;}
-    .sidenav1 a {font-size: 18px;}
-  }
-  .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 2999; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
+    transition: margin-right .5s;
     padding: 20px;
   }
   
@@ -288,11 +246,12 @@ header{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
+ 
   @media screen and (max-width:1200px) {
     .logo{
       position: absolute;
-      left: 300%;
+      top: -100%;
+      left: 1000%;
     }
     .hamburger{
       display:  inline-block;

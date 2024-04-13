@@ -25,6 +25,7 @@ body{
     color:white;
     text-align:center;
 }
+
 #choco2{
     width:350px;
     height:380px;
@@ -53,8 +54,9 @@ body{
     width:450px;
 }
 .ice-des{
-   justify-content: center;
-   align-items:center;
+  width:400px;
+  margin-left:300px;
+  height:300px;
 }
 .products{
     margin:-10px;
@@ -90,7 +92,7 @@ body{
     box-shadow:1px 1px 2px black;
     width:300px;
     height:400px;
-    box-shadow:1px 1px 12px #021530;
+    box-shadow:1px 1px 12px #e83e8c;
     justify-content:space-between;
 }
 .icecream{
@@ -114,19 +116,129 @@ body{
 }
 .btn{
     border: 1px solid black;
-    margin: 25px 30px;
+    margin: 25px 1px;
     padding: 10px 20px;
-    background-color:#000;
-    color: #fff;
+    background-color:#e83e8c;
+    color: white;
     border-radius: 60px;
     font-weight: bold;
     font-family: "Space Grotesk", sans-serif;
     text-decoration: none;
     font-size: 15px;
     transition: all .3s ease-out;
+    border:none;
 }
 .btn:hover{
-    background-color:transparent;
-    color: #000;
-    border :1px solid black;
+    background-color:white;
+    color: #e83e8c;
+    border :1px solid #e83e8c;
 }
+.effect-hover{
+    width:200px;
+    padding: 5px 10px;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-around;
+    visibility: visible;
+    margin-left:-100px;
+    cursor:pointer;
+    
+    }
+    
+    .flavour-card:hover{
+    .effect-hover{
+        visibility: visible;
+        transition:1.25s;
+      
+    }
+    }
+    #plus{
+        cursor:pointer;
+    }
+    #plus:hover{
+       
+        color:white;
+    }
+    #minus{
+        cursor:pointer;
+    }
+    .btn1{
+        background:transparent;
+        border:none;
+        font-size: 20px;
+        outline:none;
+        color:black;
+        margin-top:-5px;
+    }
+    .btn i:hover{
+        cursor:pointer;
+    }
+    .icecones{
+        height:300px;
+        box-shadow:0px 0px 1px #e83e8c;
+    }
+    .addtocart{
+      width:300px;
+        text-align:center;
+    }
+    /*media query apply*/
+    @media screen and (max-width: 500px) {
+        body{
+            max-width:500px;
+        }
+        .main-img{
+            width:100%;
+            height:200px;
+            margin-left: 25px;
+            object-fit: cover;
+         }
+       .product-card{
+        height:100px;
+       }
+       .ice-des{
+     margin-left:50px;
+     }
+     .product-content{
+       visibility:hidden;
+    }
+    .addtocart{
+        visibility:hidden;
+    }
+    .ice-des{
+      margin-left:100px;
+
+    }
+    .more{
+        margin-bottom:30px;
+    }
+    .container{
+           justify-content:center;
+    text-align:center;
+    background-color:white;
+    border:1px solid black;
+    border-radius:20px;
+    box-shadow:1px 1px 2px black;
+    width:200px;
+    height:400px;
+    box-shadow:1px 1px 12px #e83e8c;
+    justify-content:center;
+   
+
+    }
+    .icecream{
+        width:200px;
+    }
+    .icecream1{
+        width:200px;
+    }
+    .btn{
+        visibility: hidden;
+    }
+}
+
+    @media (max-width:768px) {
+        .women {
+            display: none;
+        }
+    }
+   

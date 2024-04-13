@@ -1,5 +1,5 @@
 body {
-    background: url(/imgs/about-page-img/login-img.webp); 
+    background: url(./../imgs/about-page-img/log-in-page.png); 
     backdrop-filter: blur(4px);
     margin: 0;
     padding: 0;
@@ -56,7 +56,6 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    color: #e83e8c;
 
 }
 .Register{
