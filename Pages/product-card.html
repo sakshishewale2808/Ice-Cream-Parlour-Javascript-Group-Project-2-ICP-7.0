@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product card</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="./../css/product-card.css">
+
+        <script src="https://kit.fontawesome.com/029a190c6b.js" crossorigin="anonymous"></script>
+       
+    </head>
+    <body>
+     <div class="main-img" alt="first-img" style="background-image:url('./../imgs/product-card/pro-main-img.jpg');background-repeat:no-repeat;background-size:cover;";>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <p class="text-start text-white fs-1 m-5">Enjoy our Creamy <br/>and <br/>tasty products</p><br/><br/><br/><br/><br/><br/><br/><br/>
+     </div>
+     <div class="body-des">
+       <p class="text-center text-black fs-2">
+        Enjoy our flavoursome <br/>range<br/> of gorgeous ice cream
+    </p>  
+    <div class="d-flex justify-content-center row">
+        <div class="col col-lg-2 col-md-1 col-sm-1 mt-5 chocolate"><img  src="./../imgs/product-card/choco2.png" class="mx-5" id="choco2" alt="choco2"/> </div>
+       
+     <div class="ice-des d-inline-block text-start fs-5 mt-4  col col-lg-2 col-md-1 col-sm-1"> 
+        <h1 id="name">Cereal And Milk</h1> 
+        <h3 id="price">only at ₹160/-</h3>
+        <p class="id mx-5">
+             <span id="minus" onclick="dec()"><i class="fa-solid fa-circle-minus outline-hidden fs-2 mt-auto" style="background-color:white;color:#e83e8c"></i></span>
+
+            <span class="one" id="one">1 </span>
+            <span id="plus" onclick="inc()"><i class="fa-solid fa-circle-plus outline-hidden fs-2 mt-auto" style="color:#e83e8c;"></i></span>
+
+        </p>
+        <p id="order">You Order:<p>
+            <p id="total">Total amount</p>
+        <!--<p class="my-4">
+            It's a sweet, creamy, and rich dessert that can be enjoyed any time.<br>Simple pleasures: <br>ice cream and sunshine.
+      
+        </p>-->
+        <section class="flavour-card mx-4" >
+            <p class="effect-hover">
+                <img src="./../icons/menupage-icons/shopping-bag.png" height="20px">
+                <img src="./../icons/menupage-icons/search.png" height="20px" alt="">
+                <button onclick="Toggle1()"  id="btnh1" class="btn1"><i class="fa-solid fa-heart my-0"></i></button>
+            </p>
+            <button type="button" class="mb-5 btn addtocart">Add to cart</button>
+          
+        </section>
+   
+   
+    </div>
+   
+   
+</div>
+
+
+
+    <!-- ***Product cards formation starts*** -->
+         
+    <div class="product-container row mt-4">
+         
+                
+    <div class=" products col col-lg-3 col-md-4 col-sm-2 my-1">
+        <img src="./../imgs/product-card/choco2.png" class="col product-image" onclick="changeimage('Cereal And Milk')" alt="choco3"/>
+    </div>
+          <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/choco3.png" class="col product-image" onclick="changeimage('Choco berry')" alt="choco4"/>
+          </div>
+           <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/choco4.png" class="col product-image" onclick="changeimage('Creamy Cream')" alt="choco3"/>
+    </div>
+          <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/chocolate wafer.png" class="col product-image" onclick="changeimage('Chocolate wafer')" alt="choco4"/>
+    </div>
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/Creamy Strawberry.png" class="col product-image" onclick="changeimage('Creamy Strawberry')" alt="choco3"/>
+    </div>
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/Cookies-Dough1.png" class="col product-image"  onclick="changeimage('Cookies-Dough')" alt="choco4"/>
+    </div>
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1"> 
+     <img src="./../imgs/product-card/Milk Shake.png" class="col product-image" onclick="changeimage('Milk Shake')" alt="choco4"/>
+    </div>
+     <div class="products col col-lg-3 col-md-4 col-sm-2  my-1">
+     <img src="./../imgs/product-card/Choco-Cream2.png" class="col product-image" onclick="changeimage('Choco Cream2')" alt="choco4"/>
+    </div>
+           
+         </div>
+         <!-- ***Product cards formation ends*** -->
+
+         <!-- ***adding new info cards*** -->
+    <div class="row product-content" alt="first-img">
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC1.png" alt="IC1" onclick="icecream()" ondblclick="store()" >
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC3.png" alt="IC3">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC4.png" alt="IC4">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC5.png" alt="IC5">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC6.png" alt="IC6">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC7.png" alt="IC7">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC8.png" alt="IC8">
+         </div>
+         <div class="card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC9.png" alt="IC9">
+         </div>
+         <div class=" card col col-lg-4 col-md-3 col-sm-2">
+            <img src="./../imgs/product-card/IC2.png" alt="IC2">
+         </div>
+         
+         
+     </div></div>
+     <!--Cards are started-->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <h1 class="fs-1 text-center my-5 more">More about our products</h1>
+     
+<!-- Card making-->
+
+    <div class="row">
+     <div  class="container col col-lg-4 col-md-2 col-sm-1 m-auto">
+        <img class="icecream" src="./../imgs/product-card/Wafer-Ice-Cream.jpg" height="200" alt="bottle"/>
+         <div class="description">
+           <h2>Wafer Ice-Cream
+
+           </h2>
+      <p class="des">
+        Price:40₹/-
+      </p>
+      <p>
+20 products are available
+      </p>
+      <button class="btn mb-auto" type="button">more about product</button>
+   
+    </div>
+</div>
+
+<!-- Card making-->
+     <div class="container col col-lg-4 col-md-2 col-sm-1 m-auto">
+        <img class="icecream chocobar" src="./../imgs/product-card/Chokobar.jpg" height="200" alt="bottle"/>
+         <div class="description">
+           <h2>Chocobar
+
+           </h2>
+      <p class="des">
+        Price:30₹/-
+      </p>
+      <p>
+50 products are available
+      </p>
+      <button class=" btn" type="button">more about product</button>
+   
+    </div>
+</div>
+
+<!-- Card making-->
+     <div  class="container col col-lg-4 col-md-2 col-sm-1 m-auto">
+        <img class="icecream" src="./../imgs/product-card/Creamy-Cake.jpg" height="200" alt="bottle"/>
+         <div class="description">
+           <h2>Creamy Cake
+
+           </h2>
+      <p class="des">
+        Price:70₹/-
+      </p>
+      <p>
+15 products are available
+      </p>
+      <button class="btn" type="button">more about product</button>
+   
+    </div>
+</div>
+
+<!-- Card making-->
+     <div class="container col col-lg-4 col-md-2 col-sm-1 m-auto">
+        <img class="icecream1" src="./../imgs/product-card/fashion-cat.webp" height="200" alt="bottle"/>
+         <div class="description">
+           <h2>Fashion cat
+
+           </h2>
+      <p class="des">
+        Price:80₹/-
+      </p>
+      <p>
+No products are available.
+      </p>
+      <button class="btn" type="button">more about product</button>
+   
+    </div>
+</div>
+</div>
+<!--product section starts-->
+<h1 class="fs-1 text-center my-5">More Varieties</h1>
+<div class=" row d-flex justify-content-center m-5">
+<div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
+    <img src="./../imgs/product-card/Ice-pink.png" class="col icecones"  onclick="changeimage('Ice Cone')" alt="choco4" id="colors"/>
+    
+       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pink" height="35" onclick="ice('pink')"> <img src="./../imgs/product-card/yellow.png" alt="yellow" height="35" class="mx-5" onclick="ice('yellow')">
+    
+   </div>
+   <div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
+    <img src="./../imgs/product-card/Choco-Cream1.png" class="col icecones"  onclick="changeimage('Choco Cream')" alt="choco" id="themes"/>
+    
+       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Choco('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Choco('2')">
+    
+   </div>
+   <div class="products col col-lg-3 col-md-2 col-sm-1  my-1">
+    <img src="./../imgs/product-card/Cookies-Dough1.png" class="col icecones"  onclick="changeimage('Cookies-Dough')" alt="choco" id="dough"/>
+    
+       <img src="./../imgs/product-card/pink.png"class="mx-5 mb-1" alt="pinks" height="35" onclick="Cookies('1')"> <img src="./../imgs/product-card/yellow.png" alt="yellows" height="35" class="mx-5" onclick="Cookies('2')">
+    
+   </div>
+</div>
+<!--product section ends-->
+   
+<script>
+   
+           function changeimage(b)
+            {
+                const flavour = document.getElementById('choco2');
+                const price =  document.getElementById('price');
+                let quantity = document.getElementById("order");
+                let total = document.getElementById("total");
+                if(b=='Cereal And Milk')
+                {
+                flavour.src = './../imgs/product-card/choco2.png';
+                price.innerText ='only at ₹160/-'
+
+                }
+                else if(b=='Choco berry')
+                 {
+                     flavour.src = './../imgs/product-card/choco3.png';
+                     price.innerText ='only at ₹170/-'
+                     total.innerText=`Total amount ${quantity * price}`;
+                 }
+                 else if(b=='Creamy Cream')
+                 {
+                     flavour.src = './../imgs/product-card/choco4.png';
+                     price.innerText ='only at ₹265/-'
+                     total.innerText=`Total amount ${quantity * price}`;
+                 }
+                 else if(b=='Chocolate wafer')
+                 {
+                     flavour.src = './../imgs/product-card/chocolate wafer.png ';
+                     price.innerText ='only at ₹250/-'
+                     total.innerText=`Total amount ${quantity * price}`;
+                 }
+                 else if(b=='Creamy Strawberry')
+                 {
+                     flavour.src = './../imgs/product-card/Creamy Strawberry.png';
+                     price.innerText ='only at ₹160/-'
+                     total.innerText=`Total amount ${quantity * price}`;
+                 }
+                 else if(b=='Cookies-Dough')
+                 {
+                     flavour.src ="./../imgs/product-card/Cookies-Dough1.png";
+                     price.innerText ='only at ₹145/-'
+                     total.innerText=`Total amount ${quantity * price}`;
+                 }
+                 else if(b=='Milk Shake')
+                 {
+                     flavour.src = './../imgs/product-card/Milk Shake.png';
+                     price.innerText ='only at ₹160/-'
+                     total.innerText=`Total amount ${quantity * price}`;
+                 }
+                 else if(b=='Choco Cream2')
+                 {
+                     flavour.src = './../imgs/product-card/Choco-Cream2.png';
+                     price.innerText ='only at ₹210/-'
+                      total.innerText=`Total amount ${quantity * price}`;
+                 }
+                 const choice=document.getElementById("name");
+     
+     choice.innerText=`\n ${b}`; 
+         }
+         function icecream(){
+            alert("Thank you for visit our shop..! Price:₹40/-Creamy ice-cream");
+         }
+         function store(){
+            alert("awesome")
+
+         }
+         function ice(state){
+            const choose = document.getElementById("colors");
+            choose.src=`./../imgs/product-card/Ice-${state}.png`;
+           
+         }
+         function Choco(state){
+            const choose = document.getElementById("themes");
+            choose.src=`./../imgs/product-card/Choco-Cream${state}.png`;
+           
+         }
+         function Cookies(state){
+            const choose = document.getElementById("dough");
+            choose.src=`./../imgs/product-card/Cookies-Dough${state}.png`;
+           
+         }
+
+
+        
+         function inc(){
+            let quantity = parseInt(one.innerText);
+            if(quantity<10){
+              one.innerText = ++quantity;
+            }
+            else{
+
+                alert("Can't cart more than this")
+            }
+            settotalamout(quantity);
+            totalamt(quantity*price);
+        }
+        function dec(){
+            let quantity = parseInt(one.innerText);
+            if(quantity>1){
+                one.innerText = --quantity;
+            }
+            else{
+                alert("Not less than one quantity!")
+            }
+            settotalamout(quantity);
+        }
+        function  settotalamout(quantity){
+            order.innerText = `You order ${quantity} products`;
+            total.innerText = `Total amount ${quantity * 139}`;
+           }
+
+           var btnvar1 = document.getElementById("btnh1");
+           function Toggle1(){
+            if (btnvar1.style.color =="red"){
+                btnvar1.style.color = "grey"
+            }
+            else{
+                btnvar1.style.color = "red"
+            }
+           }
+
+           
+
+         
+     
+           
+         </script>
+         <!-- 
+         let num=parseInt(prompt('enter your number :'))
+         switch(num)
+         {
+             case 0:
+             alert.log("order cancelled!")
+             break;
+             case 1:
+             alert.log("You ordered one product")
+             break;
+             case 2:
+             alert.log("You ordered two product")
+             break;
+             case 3:
+             alert.log("You ordered three product")
+             break;
+             case 4:
+             alert.log("You ordered four product")
+             break;
+             case 5:
+             alert.log("You ordered five product")
+             break;
+             case 6:
+             alert.log("You ordered six product")
+             break;
+             case 7:
+             alert.log("You ordered seven product")
+             break;
+             case 8:
+             alert.log("You ordered eight product")
+             break;
+             case 9:
+             alert.log("You ordered nine product")
+             break;
+             default:
+             alert.log("can't order more than this..!")
+             
+         }-->
+       
+    </body>
+</html>
