@@ -8,10 +8,11 @@ body{
 }
 .bag{
     background-color: #e83e8c;
-    border:1px solid black;
+    border:1px solid #e83e8c;
 }
 .bod{
-    border: 1px solid black;
+    border: 1px solid #e83e8c;
+    background-color: #e83e8c;
 }
 .wdt{
     width: 50px;
@@ -34,8 +35,8 @@ body{
     transform: translateY(-10px);
 }
 .bag:hover{
-background-color: white;
+background-color:#fff;
 }
 .bod:hover{
-    background-color: #e83e8c;
+    background-color:#fff;
 }
