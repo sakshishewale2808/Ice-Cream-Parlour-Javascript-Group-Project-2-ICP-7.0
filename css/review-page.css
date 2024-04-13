@@ -2,14 +2,17 @@
 
 
 body{
-    background: #eef3f7;
+    background:white;
     font-family: 'Poppins', sans-serif;
+    background-color:#fff;
 }
 .bag{
-    background-color: #fb5f04;
+    background-color: #e83e8c;
+    border:1px solid #e83e8c;
 }
 .bod{
-    border: 1px solid #fb5f04;
+    border: 1px solid #e83e8c;
+    background-color: #e83e8c;
 }
 .wdt{
     width: 50px;
@@ -19,10 +22,10 @@ body{
     background-color: rgba(198, 196, 196, 0.213);
 }
 .r-bag{
-    background-color: #eef3f7;
+    background-color: white;
 }
 .ha{
-    color: #fb5f04;
+    color: white;
 }
 .img-card-1{
     cursor: pointer;
@@ -30,4 +33,10 @@ body{
 }
 .img-card-1:hover {
     transform: translateY(-10px);
+}
+.bag:hover{
+background-color:#fff;
+}
+.bod:hover{
+    background-color:#fff;
 }

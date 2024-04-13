@@ -17,14 +17,14 @@ function newArrival() {
   const productName7 = document.getElementById("productText7");
   const productName8 = document.getElementById("productText8");
   //price
-  const priceTag1 = document.document.getElementById('price1');
-  const priceTag2 = document.document.getElementById('price2');
-  const priceTag3 = document.document.getElementById('price3');
-  const priceTag4 = document.document.getElementById('price4');
-  const priceTag5 = document.document.getElementById('price5');
-  const priceTag6 = document.document.getElementById('price6');
-  const priceTag7 = document.document.getElementById('price7');
-  const priceTag8 = document.document.getElementById('price8');
+  // const priceTag1 = document.document.getElementById("price1");
+  // const priceTag2 = document.document.getElementById("price2");
+  // const priceTag3 = document.document.getElementById("price3");
+  // const priceTag4 = document.document.getElementById("price4");
+  // const priceTag5 = document.document.getElementById("price5");
+  // const priceTag6 = document.document.getElementById("price6");
+  // const priceTag7 = document.document.getElementById("price7");
+  // const priceTag8 = document.document.getElementById("price8");
 
   newarrival1.src = "./imgs/home/1.jpg";
   newarrival2.src = "./imgs/home/2.jpg";
@@ -44,14 +44,14 @@ function newArrival() {
   productName7.innerText = "Cookies Dough";
   productName8.innerText = "Creamy Cake";
 
-  priceTag1.innerText = "₹ 200.00 ";
-  priceTag2.innerText = "₹ 360.00 ";
-  priceTag3.innerText = "₹ 150.00 ";
-  priceTag4.innerText = "₹ 320.00 ";
-  priceTag5.innerText = "₹ 480.00 ";
-  priceTag6.innerText = "₹ 260.00 ";
-  priceTag7.innerText = "₹ 260.00 ";
-  priceTag8.innerText = "₹ 150.00 ";
+  // priceTag1.innerText = "₹ 200.00 ";
+  // priceTag2.innerText = "₹ 360.00 ";
+  // priceTag3.innerText = "₹ 150.00 ";
+  // priceTag4.innerText = "₹ 320.00 ";
+  // priceTag5.innerText = "₹ 480.00 ";
+  // priceTag6.innerText = "₹ 260.00 ";
+  // priceTag7.innerText = "₹ 260.00 ";
+  // priceTag8.innerText = "₹ 150.00 ";
 
   document.getElementById("newArrival").style.color = "#e83e8c";
   document.getElementById("bestSeller").style.color = "black";
@@ -77,14 +77,15 @@ function bestSeller() {
   const productName7 = document.getElementById("productText7");
   const productName8 = document.getElementById("productText8");
   //price
-  const priceTag1 = document.document.getElementById('price1');
-  const priceTag2 = document.document.getElementById('price2');
-  const priceTag3 = document.document.getElementById('price3');
-  const priceTag4 = document.document.getElementById('price4');
-  const priceTag5 = document.document.getElementById('price5');
-  const priceTag6 = document.document.getElementById('price6');
-  const priceTag7 = document.document.getElementById('price7');
-  const priceTag8 = document.document.getElementById('price8');
+  // const priceTag1 = document.document.getElementById("price1");
+  // const priceTag2 = document.document.getElementById("price2");
+  // const priceTag3 = document.document.getElementById("price3");
+  // const priceTag4 = document.document.getElementById("price4");
+  // const priceTag5 = document.document.getElementById("price5");
+  // const priceTag6 = document.document.getElementById("price6");
+  // const priceTag7 = document.document.getElementById("price7");
+  // const priceTag8 = document.document.getElementById("price8");
+
 
 
 
@@ -108,19 +109,18 @@ function bestSeller() {
   productName7.innerText = "Ice Cream Cakes";
   productName8.innerText = "Chocolate Wafer";
 
-  priceTag1.innerText = "₹ 200.00 ";
-  priceTag2.innerText = "₹ 360.00 ";
-  priceTag3.innerText = "₹ 150.00 ";
-  priceTag4.innerText = "₹ 320.00 ";
-  priceTag5.innerText = "₹ 480.00 ";
-  priceTag6.innerText = "₹ 260.00 ";
-  priceTag7.innerText = "₹ 260.00 ";
-  priceTag8.innerText = "₹ 150.00 ";
+  // priceTag1.innerText = "₹ 200.00 ";
+  // priceTag2.innerText = "₹ 360.00 ";
+  // priceTag3.innerText = "₹ 150.00 ";
+  // priceTag4.innerText = "₹ 320.00 ";
+  // priceTag5.innerText = "₹ 480.00 ";
+  // priceTag6.innerText = "₹ 260.00 ";
+  // priceTag7.innerText = "₹ 260.00 ";
+  // priceTag8.innerText = "₹ 150.00 ";
   document.getElementById("newArrival").style.color = "black";
   document.getElementById("bestSeller").style.color = "#e83e8c";
   document.getElementById("topRates").style.color = "black";
-  productName1.innerText = "abc";
-  price.innerText = "100"
+
 
 }
 function topRates() {
@@ -142,15 +142,14 @@ function topRates() {
   const productName7 = document.getElementById("productText7");
   const productName8 = document.getElementById("productText8");
   //price
-  const priceTag1 = document.document.getElementById('price1')
-  const priceTag2 = document.document.getElementById('price2')
-  const priceTag3 = document.document.getElementById('price3')
-  const priceTag4 = document.document.getElementById('price4')
-  const priceTag5 = document.document.getElementById('price5')
-  const priceTag6 = document.document.getElementById('price6')
-  const priceTag7 = document.document.getElementById('price7')
-  const priceTag8 = document.document.getElementById('price8')
-
+  // const priceTag1 = document.document.getElementById("price1");
+  // const priceTag2 = document.document.getElementById("price2");
+  // const priceTag3 = document.document.getElementById("price3");
+  // const priceTag4 = document.document.getElementById("price4");
+  // const priceTag5 = document.document.getElementById("price5");
+  // const priceTag6 = document.document.getElementById("price6");
+  // const priceTag7 = document.document.getElementById("price7");
+  // const priceTag8 = document.document.getElementById("price8");
 
   newarrival1.src = "./imgs/home/17.jpg";
   newarrival2.src = "./imgs/home/5.jpg";
@@ -170,14 +169,14 @@ function topRates() {
   productName7.innerText = "Cookies Dough";
   productName8.innerText = "Creamy Cake";
 
-  priceTag1.innerText = "₹ 200.00 ";
-  priceTag2.innerText = "₹ 360.00 ";
-  priceTag3.innerText = "₹ 150.00 ";
-  priceTag4.innerText = "₹ 320.00 ";
-  priceTag5.innerText = "₹ 480.00 ";
-  priceTag6.innerText = "₹ 260.00 ";
-  priceTag7.innerText = "₹ 260.00 ";
-  priceTag8.innerText = "₹ 150.00 ";
+  // priceTag1.innerText = "₹ 200.00 ";
+  // priceTag2.innerText = "₹ 360.00 ";
+  // priceTag3.innerText = "₹ 150.00 ";
+  // priceTag4.innerText = "₹ 320.00 ";
+  // priceTag5.innerText = "₹ 480.00 ";
+  // priceTag6.innerText = "₹ 260.00 ";
+  // priceTag7.innerText = "₹ 260.00 ";
+  // priceTag8.innerText = "₹ 150.00 ";
 
   document.getElementById("newArrival").style.color = "black";
   document.getElementById("bestSeller").style.color = "black";
