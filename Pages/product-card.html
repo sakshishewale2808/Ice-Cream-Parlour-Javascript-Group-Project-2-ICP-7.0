@@ -29,13 +29,13 @@
        
      <div class="ice-des d-inline-block text-start fs-5 mt-4 col col-lg-2 col-md-1 col-sm-1"> 
         <h1 id="name">Cereal And Milk</h1> 
-        <span style="color:#e83e8c";> ━━━━━━━━━━    </span>
+        <span style="color:#e83e8c";> &ensp;&ensp;&ensp;&ensp;&ensp;━━━━━━━━━━    </span>
         <h3 id="price">only at ₹160/-</h3>
         <p class="id mx-5">
-             <span id="minus" onclick="dec()"><i class="fa-solid fa-circle-minus outline-hidden fs-1 mt-auto" style="background-color:white;color:#e83e8c"></i></span>
+             <span id="minus" onclick="dec()"><i class="fa-solid fa-circle-minus outline-hidden fs-1 mt-auto mx-3" style="background-color:white;color:#e83e8c"></i></span>
 
             <span class="one fs-2" id="one">1 </span>
-            <span id="plus" onclick="inc()"><i class="fa-solid fa-circle-plus outline-hidden fs-1 mt-auto" style="color:#e83e8c;"></i></span>
+            <span id="plus" onclick="inc()"><i class="fa-solid fa-circle-plus outline-hidden fs-1 mt-auto mx-3" style="color:#e83e8c;"></i></span>
 
         </p>
        
@@ -114,19 +114,20 @@
         <div class="zoom-img fluid-img mb-5">
             <img src="./../imgs/product-card/zooming.webp"class="zoom-image" alt="">
         </div>
-       
-     
     </div>
 
      <!--Cards are started-->
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <h1 class="fs-1 text-center my-5 more">More about our products</h1>
+
+    <h1 class="fs-1 text-center mb-5 more">More about our products<br>
+        <span style="color:#e83e8c";> ━━━━━━━━━━    </span>
+    </h1>
+   
      
 <!-- Card making-->
 
-    <div class="row">
+    <div class="row mb-5">
      <div  class="container col col-lg-4 col-md-2 col-sm-1 m-auto">
-        <img class="icecream img-fluid " src="./../imgs/product-card/Wafer-Ice-Cream.jpg" height="200" alt="bottle"/>
+        <img class="icecream img-fluid " src="./../imgs/product-card/Wafer-Ice-Cream.jpg" height="150" alt="bottle"/>
          <div class="description">
            <h2>Wafer Ice-Cream
 
@@ -137,7 +138,7 @@
       <p>
 20 products are available
       </p>
-      <button class="btn mb-auto" type="button">more about product</button>
+      <button class="btn " type="button">more about product</button>
    
     </div>
 </div>
@@ -197,7 +198,9 @@ No products are available.
 </div>
 </div>
 <!--product section starts-->
-<h1 class="fs-1 text-center my-5">More Varieties</h1>
+<h1 class="fs-1 text-center my-5">More Varieties<br>
+    <span style="color:#e83e8c";> ━━━━━━━━━━    </span>
+</h1>
 <div class=" row d-flex justify-content-center m-5">
 <div class=" col col-lg-3 col-md-1 col-sm-1  m-3 my-1">
     <img src="./../imgs/product-card/Ice-pink.png" class="col icecones "  onclick="changeimage('Ice Cone')" alt="choco4" id="colors"/>
@@ -246,37 +249,37 @@ No products are available.
                  {
                      flavour.src = './../imgs/product-card/choco4.png';
                      price.innerText ='only at ₹265/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`at ₹${quantity * price}`;
                  }
                  else if(b=='Chocolate wafer')
                  {
                      flavour.src = './../imgs/product-card/chocolate wafer.png ';
                      price.innerText ='only at ₹250/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`at ₹${quantity * price}`;
                  }
                  else if(b=='Creamy Strawberry')
                  {
                      flavour.src = './../imgs/product-card/Creamy Strawberry.png';
                      price.innerText ='only at ₹160/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`at ₹${quantity * price}`;
                  }
                  else if(b=='Cookies-Dough')
                  {
                      flavour.src ="./../imgs/product-card/Cookies-Dough1.png";
                      price.innerText ='only at ₹145/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`at ₹${quantity * price}`;
                  }
                  else if(b=='Milk Shake')
                  {
                      flavour.src = './../imgs/product-card/Milk Shake.png';
                      price.innerText ='only at ₹160/-'
-                     total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`at ₹${quantity * price}`;
                  }
                  else if(b=='Choco Cream2')
                  {
                      flavour.src = './../imgs/product-card/Choco-Cream2.png';
                      price.innerText ='only at ₹210/-'
-                      total.innerText=`Total amount ${quantity * price}`;
+                     total.innerText=`at ₹${quantity * price}`;
                  }
                  const choice=document.getElementById("name");
      
