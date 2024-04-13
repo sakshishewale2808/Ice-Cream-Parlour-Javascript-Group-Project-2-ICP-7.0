@@ -28,11 +28,11 @@
   <p class="category-heading">Available Desserts</p>
   <div>
      <div class=" parent-card" >
-        <button type="button" class="category-div filter-container" onClick="all()" > All</button>
-        <button type="button" class="category-div filter-container" onClick="chocobar()" > Chocobar</button>
-        <button type="button" class="category-div filter-container" onClick="sobart()" > Sorbet </button>
-        <button type="button" class="category-div filter-container" onClick="icecreambucket()" > Ice Cream Bucket</button>
-        <button type="button" class="category-div filter-container" onClick="cones()" > Cones</button>
+        <button type="button" class="category-div filter-container" id="all" onClick="all()" > All</button>
+        <button type="button" class="category-div filter-container" id="chocobar" onClick="chocobar()" > Chocobar</button>
+        <button type="button" class="category-div filter-container" id="sorbet" onClick="sorbet()" > Sorbet </button>
+        <button type="button" class="category-div filter-container" id="bucket" onClick="icecreambucket()" > Ice Cream Bucket</button>
+        <button type="button" class="category-div filter-container" id="cones" onClick="cones()" > Cones</button>
       
      </div>
 
@@ -376,7 +376,7 @@
     let price14 = document.getElementById("price14")
     let price15 = document.getElementById("price15")
     
-    function all(){
+    /*function all(){
      img1.src="./../imgs/menu-card/Cereal-And-Milk.jpg"
      img2.src="./../imgs/menu-card/Choco-Cherry.jpg"
      img3.src="./../imgs/menu-card/Chokobar.jpg"
@@ -424,9 +424,18 @@
      price13.innerText="₹ 45"
      price14.innerText="₹ 50"
      price15.innerText="₹ 66"
- 
-    }
+
+
+     document.getElementById("all").style.color = "white";
+  document.getElementById("chocobar").style.color = "#e83e8c";
+  document.getElementById("sorbet").style.color = "#e83e8c";
+  document.getElementById("bucket").style.color = "#e83e8c";
+  document.getElementById("cones").style.color = "#e83e8c";
+  
+    }*/
+
     function chocobar(){
+        
 
         img1.src="./../imgs/menu-card/chocobar1.png"
         img2.src="./../imgs/menu-card/chokobar2.png"
@@ -445,20 +454,20 @@
         img15.src=""
        
         desc1.innerHTML ="Chocolate"
-        desc2.innerText ="Choco Cherry "
-        desc3.innerText ="Chocobar"
-        desc4.innerText ="Chokobar"
-        desc5.innerText ="Cookies"
-        desc6.innerText =`Cookies Cream`
-        desc7.innerText =`Cookies Dough`
-        desc8.innerText =`Cream MilkShake`
-        desc9.innerText =`Creamy Cake`
-        desc10.innerText =`Ice Cream Cakes`
-        desc11.innerText =`Lemon Ice Cream`
-        desc12.innerText =`Pretzel Cone`
-        desc13.innerText =`Toasted Strawberry`
-        desc14.innerText =`Vanilla`
-        desc15.innerText =`Wafer Ice Cream`
+        desc2.innerText ="Mango "
+        desc3.innerText ="Strawberry"
+        desc4.innerText ="Walnut mixed"
+        desc5.innerText ="Chocolate"
+        desc6.innerText =`Almond`
+        desc7.innerText =``
+        desc8.innerText =``
+        desc9.innerText =``
+        desc10.innerText =``
+        desc11.innerText =``
+        desc12.innerText =``
+        desc13.innerText =``
+        desc14.innerText =``
+        desc15.innerText =``
     
         price1.innerText="₹ 90 "
         price2.innerText="₹ 120"
@@ -466,17 +475,71 @@
         price4.innerText="₹ 30"
         price5.innerText="₹ 67"
         price6.innerText="₹ 40"
-        price7.innerText=" ₹ 100"
-        price8.innerText="₹ 170"
-        price9.innerText="₹ 50"
-        price10.innerText="₹ 60"
-        price11.innerText="₹150"
-        price12.innerText="₹ 49"
-        price13.innerText="₹ 45"
-        price14.innerText="₹ 50"
-        price15.innerText="₹ 66"
+        price7.innerText=""
+        price8.innerText=""
+        price9.innerText=""
+        price10.innerText=""
+        price11.innerText=""
+        price12.innerText=""
+        price13.innerText=""
+        price14.innerText=""
+        price15.innerText=""
     
+        
+    }
 
+    function sorbet(){
+
+        img1.src="./../imgs/menu-card/sorbet-banana.jpg"
+        img2.src="./../imgs/menu-card/sorbet-multiflavoured.webp"
+        img3.src="./../imgs/menu-card/sorbet-redCherry.jpg"
+        img4.src="./../imgs/menu-card/sorbet-strawberry.jpg"
+        img5.src="./../imgs/menu-card/sorbet-watermelon.jpg"
+        img6.src="./../imgs/menu-card/sorbet-banana.jpg"
+        img7.src=""
+        img8.src=""
+        img9.src=""
+        img10.src=""
+        img11.src=""
+        img12.src=""
+        img13.src=""
+        img14.src=""
+        img15.src=""
+       
+        desc1.innerHTML ="banana sorbet"
+        desc2.innerText ="Multiflavoured sorbet "
+        desc3.innerText ="Red Cherry Sorbet"
+        desc4.innerText ="Strawberry Sorbet"
+        desc5.innerText ="Watermelon Sorbet"
+        desc6.innerText =`Banana Sorbet`
+        desc7.innerText =``
+        desc8.innerText =``
+        desc9.innerText =``
+        desc10.innerText =``
+        desc11.innerText =``
+        desc12.innerText =``
+        desc13.innerText =``
+        desc14.innerText =``
+        desc15.innerText =``
+    
+        price1.innerText="₹ 90 "
+        price2.innerText="₹ 120"
+        price3.innerText="₹ 100"
+        price4.innerText="₹ 30"
+        price5.innerText="₹ 67"
+        price6.innerText="₹ 40"
+        price7.innerText=""
+        price8.innerText=""
+        price9.innerText=""
+        price10.innerText=""
+        price11.innerText=""
+        price12.innerText=""
+        price13.innerText=""
+        price14.innerText=""
+        price15.innerText=""
+    
+        
+        
     }
  
  
