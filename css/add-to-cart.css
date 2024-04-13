@@ -28,6 +28,10 @@ body {
 .product-div{
  background-color: #e83e8c;
 }
+.item{
+    text-align: right;
+    
+}
 .price-div{
     display: flex;
     flex-direction: row;
