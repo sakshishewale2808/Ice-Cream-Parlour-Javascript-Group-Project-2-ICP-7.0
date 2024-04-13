@@ -107,3 +107,33 @@ width: auto;
     color: #e83e8c;
     border: 1px solid #e83e8c;
 }
+
+@media (max-width: 300px) { 
+.paragraph{
+    width: 100%;
+    display: block;
+}
+.img{
+    width: 50%;
+    display: block;
+}
+ }
+
+ @media screen and (max-width:718px) {
+    .img {
+        width: 50%;
+        height: 100px;
+        display: block;
+        margin: 10%;
+
+    }
+
+    .paragraph{
+        display: block;
+        margin: 10%;
+    }
+    .icon{
+        height: 50%;
+        display: block;
+    }
+}
