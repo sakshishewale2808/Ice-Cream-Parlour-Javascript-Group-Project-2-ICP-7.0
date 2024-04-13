@@ -34,6 +34,15 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin: 5px;
+        }
+        .bg-dim{
+            background: #e7e7e7;
+            text-align: center;
+            font-size: 14px;
+        }
+        .safe-logo{
+            width: 25px;
         }
     </style>
     
@@ -49,28 +58,29 @@
 
             <div class="col-4">
                 <h2>Price Details</h2>
-                <div class="price-div">
+                <div class="price-div px-1">
                     <span>Total Product Price</span>
                     <span>₹400</span>
                 </div>
-                <div class="price-div">
+                <div class="price-div px-1">
                     <span>Total Discount</span>
                     <span>₹100</span>
                 </div>
-                <div class="price-div">
+                <div class="price-div px-1">
                     <span>Delivery Charges</span>
                     <span>Free Delivery</span>
                 </div>
-                <div class="price-div">
+                <div class="price-div mt-5 border-top border-bottom p-1">
                     <span>Total Amount</span>
                     <span>₹500</span>
                 </div>
-                <div>
-                    <span>Safe and secure payment. Easy returns. 100% guaranntee.</span>
+                <div class="bg-dim mx-1 my-3 p-1">
+                    <img src="./../imgs/add_to_cart_imgs/safe_logo1.jpeg" class="safe-logo rounded-circle"/>
+                    <span >Safe and secure payment. Easy returns. 100% guaranntee.</span>
                 </div>
                 <div>
-                    <button type="button">Continue Shopping</button>
-                    <button type="button">Place Order</button>
+                    <button type="button" class="btn1">Continue Shopping</button>
+                    <button type="button" class="btn2 m">Place Order</button>
                 </div>
             </div>
         </div>
