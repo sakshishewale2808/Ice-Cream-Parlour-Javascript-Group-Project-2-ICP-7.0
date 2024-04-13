@@ -8,70 +8,71 @@
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
-    <style>
-        body{
-            background-color: rgb(248, 145, 162);
-
-        }
-        .container{
-            box-shadow: 0px 0px 5px 0px rgb(90, 89, 89);
-        }
-        .h1{
-            background-color: rgb(247, 28, 112);
-            padding: 6px;
-            font-size: 31px;
-            font-weight: bolder;
-            color: white;
-            text-align: center;
-            margin-bottom: 20px;
-            border-radius: 2px;
-            box-shadow: 2px 2px 5px 0px rgb(48, 45, 45);
-        }
-        .product-div{
-            box-shadow: 0px 0px 5px 0px rgb(48, 45, 45);
-        }
-        .price-div{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./../css/add-to-cart.css">
+    <link rel="stylesheet" href="./../css/header.css">
+    
     
 </head>
 <body>
-    <div class="container bg-white mt-5 px-4 py-4">
-        <h1 class="h1">Shopping Cart</h1>
+    <div class="nav-container flex" id="nav">
+        <div class="right-flex flex">
+            <img src="./../imgs/menu.png" height="40px" class="hamburger" onclick="openNav()" alt="">
+            <a href="./../index.html"> <img src="./../imgs/logo.png" class="logo" alt=""></a>
+        </div>
+        <div class="mid-flex">
+            <ul class="menu-list flex" type="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./../Pages/about-us.html">About Us</a></li>
+                <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
+                <li><a href="./../Pages/services.html">Services</a></li>
+            </ul>
+        </div>
+        <div class="left-flex">
+            <img src="./../icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
+            <a href="./../Pages/login-page.html"><img src="./../icons/add-contact.png" class="nav-icons login-icon"
+                    alt=""></a>
+            <img src="./../icons/heart.png" class="nav-icons  heart-icon" alt="">
+            <a href="./../Pages/add-to-cart.html"><img src="./../icons/shopping-bag.png" class="nav-icons" alt=""
+                    onclick="openCarts()"></a>
+        </div>
+    </div>
+
+    <div class="container bg-white px-4 py-4">
+        <h1 class="h1 mb-4">Shopping Cart</h1>
         <div class="row">
 
             <div class="col-8 product-div">
-                <h2>Product Details</h2>
+                <h2 class="fs-4 fw-bold mx-2">Product Details</h2>
+                <div class="item me-3">
+                <span>0 items</span>
+                </div>
             </div>
 
-            <div class="col-4">
-                <h2>Price Details</h2>
-                <div class="price-div">
+            <div class="col-4 border-start">
+                <h2 class="fs-4 fw-bold mx-2 mb-3">Price Details</h2>
+                <div class="price-div px-1 fs-6">
                     <span>Total Product Price</span>
-                    <span>₹400</span>
+                    <span class="fw-bold">₹0.0</span>
                 </div>
-                <div class="price-div">
+                <div class="price-div px-1 fs-6">
                     <span>Total Discount</span>
-                    <span>₹100</span>
+                    <span class="fw-bold">₹0.0</span>
                 </div>
-                <div class="price-div">
+                <div class="price-div px-1 fs-6">
                     <span>Delivery Charges</span>
-                    <span>Free Delivery</span>
+                    <span class="fw-bold">Free Delivery</span>
                 </div>
-                <div class="price-div">
+                <div class="price-div mt-5 border-top border-bottom p-1 fs-6 fw-bold">
                     <span>Total Amount</span>
-                    <span>₹500</span>
+                    <span>₹0.00</span>
                 </div>
-                <div>
-                    <span>Safe and secure payment. Easy returns. 100% guaranntee.</span>
+                <div class="bg-dim mx-1 my-3 p-1">
+                    <img src="./../imgs/add_to_cart_imgs/safe_logo1.jpeg" class="safe-logo rounded-circle"/>
+                    <span >Safe and secure payment. Easy returns. 100% guaranntee.</span>
                 </div>
-                <div>
-                    <button type="button">Continue Shopping</button>
-                    <button type="button">Place Order</button>
+                <div class="btn-div">
+                    <a href="./product-card.html" target="blank"><button type="button" class="btn">Continue Shopping</button></a>
+                    <a href="./buy-now.html" target="blank"><button type="button" class="btn m">Place Order</button></a>
                 </div>
             </div>
         </div>
