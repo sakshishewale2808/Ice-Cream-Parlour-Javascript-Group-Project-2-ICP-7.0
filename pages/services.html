@@ -130,7 +130,7 @@
                     onclick="openCarts()"></a>
         </div>
     </div>
-   <!--<header>
+    <header>
 
         <div id="myOverlay" class="overlay">
             <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
@@ -142,13 +142,13 @@
                 </form>
             </div>
         </div>
-        <div id="mySidenav1" class="sidenav1">
+     <!--    <div id="mySidenav1" class="sidenav1">
             <a href="javascript:void(0)" class="closebtn1" onclick="closeNavs()">&times;</a>
             <p class="cart1">Shopping Cart</p>
             <hr>
         </div>
 
-        <div class="bg-img" id="bg-img">
+         <div class="bg-img" id="bg-img">
             <div class="text-overlay">
                 <span class="heading">Style Destination</span>
                 <h1>Taste From The </h1>
@@ -156,7 +156,7 @@
                 <button class="buyNow-btn1">SHOP NOW</button>
             </div>
 
-        </div>
+        </div> -->
         <div class="slide-btn-comtain" onclick="changeBg()">
             <img src="./icons/new-moon.png" alt="" class="slide-btn" id="slide-btn"
                 onclick="changeSlideBtn('./imgs/s5.jpg')">
@@ -172,7 +172,7 @@
         </div>
 
 
-    </header> --> 
+    </header>
     <!-- ----------------------Nav-Bar-End-------------------------------- -->
     <section>
         <h1 class="text-center text-dark mt-3 display-3 fw-semibold">Our services</h1>
@@ -397,7 +397,7 @@
             const ampm = document.getElementById('ampm');
 
             const date = new Date();
-            hrs.innerText = date.getHours() % 12 || 12;
+            hrs.innerText =  (date.getHours() < 10 ? "0" : "") + date.getHours() % 12 || 12;
             min.innerText = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
             sec.innerText = (date.getSeconds() < 10 ? "0" : "") + date.getSeconds();
             ampm.innerText = date.getHours() >= 12 ? 'PM' : 'AM';
