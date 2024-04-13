@@ -4,9 +4,10 @@
 body{
     background:white;
     font-family: 'Poppins', sans-serif;
+    background-color:#fff;
 }
 .bag{
-    background-color: white;
+    background-color: #e83e8c;
     border:1px solid black;
 }
 .bod{
@@ -33,7 +34,7 @@ body{
     transform: translateY(-10px);
 }
 .bag:hover{
-background-color: #e83e8c;
+background-color: white;
 }
 .bod:hover{
     background-color: #e83e8c;
