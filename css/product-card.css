@@ -47,6 +47,7 @@ body{
     cursor:pointer;
     justify-content:space-around;
     margin-left:90px;
+    border: 1px solid black;
 }
  .product-image:hover{
     border: 1px solid  #e83e8c;
