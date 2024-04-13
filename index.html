@@ -13,21 +13,20 @@
     <link rel="stylesheet" href="./css/footer1.css">
     <script src="./JS/header.js"></script>
     <script src="./JS/index.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="nav-container flex" id="nav">
-        <div class="right-flex flex">
-            <img src="./imgs/menu.png" height="40px" class="hamburger" onclick="openNav()" alt="">
-            <a href="./index.html"> <img src="./imgs/logo.png" class="logo" alt=""></a>
+    <div class="nav-container-main1 flex-display">
+        <div class="right-flex flex-display">
+            <img src="./imgs/menu.png" height="40px" class="hamburger-img-nav" onclick="openNav()" alt="">
+            <a href="./index.html"> <img src="./imgs/logo.png" class="navigationbar-logo" alt=""></a>
         </div>
         <div class="mid-flex">
-            <ul class="menu-list flex" type="none">
+            <ul class="menu-list flex-display" type="none">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="./Pages/about-us.html">About Us</a></li>
                 <li><a href="./Pages/contact-page.html">Contact Us</a></li>
@@ -38,7 +37,7 @@
             <img src="./icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
             <a href="./Pages/login-page.html"><img src="./icons/add-contact.png" class="nav-icons login-icon"
                     alt=""></a>
-            <img src="./icons/heart.png" class="nav-icons  heart-icon" alt="">
+            <a href="./Pages/review-page.html"><img src="./icons/heart.png" class="nav-icons  heart-icon" alt=""></a>
             <a href="./Pages/add-to-cart.html"><img src="./icons/shopping-bag.png" class="nav-icons" alt=""
                     onclick="openCarts()"></a>
         </div>
@@ -61,8 +60,8 @@
             <hr>
         </div> -->
 
-        <div class="bg-img" id="bg-img">
-            <div class="text-overlay">
+        <div class="bg-img-navigation" id="bg-img-navigation">
+            <div class="text-overlay-on-image">
                 <span class="heading">Style Destination</span>
                 <h1>Taste From The </h1>
                 <h1>Good Old Days.</h1>
@@ -89,15 +88,14 @@
 
     </header>
     <!-- ----------------------Nav-Bar-End-------------------------------- -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="visit">
         <span class="headings">VISIT OUR STORE</span><br>
-        <span class="color">__________</span>
+        <!-- <span class="colores12">__________</span> -->
         <!-- slider -->
         <div class="visit-images-containere">
             <div id="carouselExample" class="carousel slide margin-left">
                 <div class="carousel-inner">
-                    <div class="carousel-item active flex">
+                    <div class="carousel-item active flex-display">
                         <a href="./Pages/menu-page.html"><img src="./imgs/ba20.webp" class="visit-img" alt=""></a>
                         <a href="./Pages/menu-page.html"><img src="./imgs/ba21.webp" class="visit-img visit-img1 "
                                 alt=""></a>
@@ -106,7 +104,7 @@
                         <a href="./Pages/menu-page.html"><img src="./imgs/ba19.webp" class="visit-img visit-img3"
                                 alt=""></a>
                     </div>
-                    <div class="carousel-item active flex">
+                    <div class="carousel-item active flex-display">
                         <a href="./Pages/menu-page.html"><img src="./imgs/home/ba23.jpg" class="visit-img" alt=""></a>
                         <a href="./Pages/menu-page.html"><img src="./imgs/ba20.webp" class="visit-img visit-img1"
                                 alt=""></a>
@@ -115,7 +113,7 @@
                         <a href="./Pages/menu-page.html"><img src="./imgs/ba22.webp" class="visit-img visit-img3"
                                 alt=""></a>
                     </div>
-                    <div class="carousel-item active flex">
+                    <div class="carousel-item active flex-display">
                         <a href="./Pages/menu-page.html"><img src="./imgs/ba22.webp" class="visit-img visit-img"
                                 alt=""></a>
                         <a href="./Pages/menu-page.html"><img src="./imgs/home/ba23.jpg" class="visit-img visit-img1"
@@ -146,7 +144,7 @@
     <!-- slider end -->
     <div class="Seller-container">
         <span class="headings ">Our Best Seller</span>
-        <span class="color1">__________</span>
+        <!-- <span class="colores1">__________</span> -->
 
         <center>
             <!-- <div class="seller-heading"> -->
@@ -156,8 +154,8 @@
             <!-- </div> -->
         </center>
         <div class="flavour-container">
-            <div class="row  ">
-                <div class=" flavour-card col col-md-2 col-lg-3">
+            <div class="w3-row">
+                <div class="w3-col w3-container m4 l3 ">
                     <div>
                         <img src="./imgs/home/1.jpg" class="flavour-img img-fluid" id="productImage1" alt="" />
                     </div>
@@ -172,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="flavour-card col col-md-2 col-lg-3">
+                <div class="w3-col w3-container m4 l3 ">
                     <div>
                         <img src="./imgs/home/2.jpg" class="flavour-img img-fluid" id="productImage2" alt="">
                     </div>
@@ -187,7 +185,7 @@
                     </div>
                 </div>
 
-                <div class=" flavour-card col col-md-2 col-lg-3">
+                <div class="w3-col w3-container m4 l3 ">
                     <div>
                         <img src="./imgs/home/3.jpg" class="flavour-img img-fluid" id="productImage3" alt="">
                     </div>
@@ -202,7 +200,7 @@
                     </div>
                 </div>
 
-                <div class="flavour-card col col-md-2 col-lg-3">
+                <div class="w3-col w3-container m4 l3 ">
                     <div>
                         <img src="./imgs/home/4.jpg" class="flavour-img img-fluid" id="productImage4" alt="">
                     </div>
@@ -218,7 +216,7 @@
                 </div>
 
 
-                <div class="flavour-card col col-md-2 col-lg-3">
+                <div class="w3-col w3-container m4 l3 ">
                     <div>
                         <img src="./imgs/home/5.jpg" class="flavour-img img-fluid" id="productImage5" alt="">
                     </div>
@@ -233,7 +231,7 @@
                     </div>
                 </div>
 
-                <div class="flavour-card col col-md-2 col-lg-3">
+                <div class="w3-col w3-container m4 l3">
                     <div>
                         <img src="./imgs/home/6.jpg" class="flavour-img img-fluid" id="productImage6" alt="">
                     </div>
@@ -248,7 +246,7 @@
                     </div>
                 </div>
 
-                <div class="flavour-card col col-md-2 col-lg-3">
+                <div class="w3-col w3-container m4 l3 ">
                     <div>
                         <img src="./imgs/home/7.jpg" class="flavour-img img-fluid" id="productImage7" alt="">
                     </div>
@@ -263,7 +261,7 @@
                     </div>
                 </div>
 
-                <div class="flavour-card col col-md-2 col-lg-3">
+                <div class="w3-col w3-container m4 l3 ">
                     <div>
                         <img src="./imgs/home/8.jpg" class="flavour-img img-fluid" id="productImage8" alt="">
                     </div>
@@ -284,33 +282,40 @@
     </div>
     <!-- image zoom hover -->
     <div class="margin-top margin-bottom">
-        <div class="flex img-cont">
+        <div class="flex-display">
             <div class="img-size">
-                <img src="./imgs/ba16.webp" class="img-size1 img-fluid float-start" alt="">
+                <img src="./imgs/ba16.webp" class="img-size1  float-start" alt="">
             </div>
-            <div class="white-bg" style="margin: auto;">
-                <img src="./imgs/home/white-bg.png" width="500px" alt="">
+            <div class="" style=" text-align: center; width: 500px; height:auto; overflow: hidden;">
+                <!-- <img src="./imgs/home/white-bg.png" width="500px" class="white-bg" alt=""> -->
                 <h2>Ice Cream Cone</h2>
                 <h5 style="margin-left: 10%;">Save up to 40% off</h5>
                 <button class="buyNow-btn2" style="margin-left:5%;">SHOP NOW</button>
 
             </div>
+
             <div class="img-size">
-                <img src="./imgs/ba18.webp" class="img-size1 img-fluid float-end" alt="">
+                <img src="./imgs/ba18.webp" class="img-size1  float-end" alt="">
             </div>
         </div>
+
+
         <!--  -->
-        <div class="flex ">
-            <div class="white-bg" style="margin: auto;">
+        <div class="flex-display">
+            <div class="container-fluid"
+                style="margin: auto; text-align: center; width:500px; height:auto; overflow: hidden;">
                 <h2>Ice Cream Cone</h2>
                 <h5 style="margin-left: 10%;">Save up to 40% off</h5>
                 <button class="buyNow-btn2" style="margin-left:5%;">SHOP NOW</button>
 
             </div>
+
             <div class="image-size text-center">
                 <img src="./imgs/ba17.webp" class="img-size2 img-fluid" alt="">
             </div>
-            <div class="white-bg" style="margin: auto;">
+
+            <div class="container-fluid"
+                style="margin: auto; text-align: center; width: 500px; height: auto; overflow: hidden;">
 
                 <h2>Ice Cream Cone</h2>
                 <h5 style="margin-left: 10%;">Save up to 40% off</h5>
@@ -321,43 +326,52 @@
         </div>
     </div>
     <!-- end hover -->
-    <div class="about-section flex">
-        <div class="about-section-dis">
-            <p class="mb-4 description">OUR ABOUT US</p>
-            <h3 class="mb-4">Ice Cream Drinks</h3>
-            <p class="mb-4 description ">Summer brings with it the terrible heat, making everyone feel sluggish and
-                <br> uncomfortable. In that
-                weather, a glass of soft drink or a few ice cream cones is a <br> choice not to be missed
-                <br>
-                <br>
-                However, not everyone knows all about that beverage. Let's climb the "time machine" <br> and
-                discover all
-                the history of cool ice cream!
-                <br><br>
+    <div class="about-section flex-display">
+        <div class="w3-row-padding ">
 
-                Roman Emperor Nero was the first to eat ice cream. At a great party in 54, he came <br> up with an
-                extremely strange dessert with the name "sweet snow". This dish is a <br> precursor to today's
-                modern ice
-                cream, it is made from the snow on the top of the <br> Apennine mountains and marinated many times
-                with
-                fruit and honey.
-            </p>
+            <div class="w3-col w3-container m2 l6 s1 ">
+                <div class="about-section-dis">
+                    <p class="mb-4 description">OUR ABOUT US</p>
+                    <h3 class="mb-4">Ice Cream Drinks</h3>
+                    <p class="mb-4 description ">Summer brings with it the terrible heat, making everyone feel sluggish
+                        and
+                        <br> uncomfortable. In that
+                        weather, a glass of soft drink or a few ice cream cones is a <br> choice not to be missed
+                        <br>
+                        <br>
+                        However, not everyone knows all about that beverage. Let's climb the "time machine" <br> and
+                        discover all
+                        the history of cool ice cream!
+                        <br><br>
 
-        </div>
-        <div>
-            <img src="./imgs/ba-1.webp" class="img-fluid" alt="">
+                        Roman Emperor Nero was the first to eat ice cream. At a great party in 54, he came <br> up with
+                        an
+                        extremely strange dessert with the name "sweet snow". This dish is a <br> precursor to today's
+                        modern ice
+                        cream, it is made from the snow on the top of the <br> Apennine mountains and marinated many
+                        times
+                        with
+                        fruit and honey.
+                    </p>
+
+                </div>
+            </div>
+            <div class="w3-col w3-container m6 l6 s12 ">
+                <div>
+                    <img src="./imgs/ba-1.webp" class="img-fluid" alt="">
+                </div>
+            </div>
         </div>
     </div>
 
 
 
-
     <div class="trending mt-4">
         <h3 class="trend-label"> HOT DEALS</h3>
-        <span class="color1">_________</span>
-        <div class="row ">
+        <!-- <span class="colores1">_________</span> -->
+        <div class="w3-row-padding ">
 
-            <div class="flavour-card col col-md-2 col-lg-3">
+            <div class="w3-col w3-container m4 l3 ">
                 <div>
                     <img src="./imgs/home/1.jpg" class="flavour-img img-fluid" alt="">
                 </div>
@@ -373,7 +387,7 @@
                 </div>
             </div>
 
-            <div class="flavour-card col col-md-2 col-lg-3">
+            <div class="w3-col w3-container m4 l3 ">
                 <div>
                     <img src="./imgs/home/3.jpg" class="flavour-img img-fluid" alt="">
                 </div>
@@ -390,7 +404,7 @@
             </div>
 
 
-            <div class="flavour-card col col-md-2 col-lg-3">
+            <div class="w3-col w3-container m4 l3 ">
                 <div>
                     <img src="./imgs/home/5.jpg" class="flavour-img img-fluid" alt="">
                 </div>
@@ -407,7 +421,7 @@
             </div>
 
 
-            <div class="flavour-card col col-md-2 col-lg-3">
+            <div class="w3-col w3-container m4 l3 ">
                 <div>
                     <img src="./imgs/home/6.jpg" class="flavour-img img-fluid" alt="">
                 </div>
@@ -433,7 +447,7 @@
             <h1>Take The Experience Of Our Delightful</h1>
             <h1>Ice Cream Menu</h1>
         </div>
-        <div class="flex menu-product">
+        <!-- <div class="flex-display menu-product">
             <div class=" menu-card-icons">
                 <div class="card-img">
                     <img src="./icons/cone.png" width="120px" class="img-fluid" alt="">
@@ -466,36 +480,46 @@
                     <h2>Box Ice Cream</h2>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="insta-container">
         <h3>Follow Us On Instagram!</h3>
         @creamy_desert (ice-cream) <br>
-        <p class="color2">_________</p>
+        <!-- <p class="colores2">_________</p> -->
         <div class="single-image-container"></div>
-        <div class="flex  image-content">
+        <div class="flex-display  image-content">
+
             <div class="insta-img-div">
                 <img src="./imgs/home/instagram2.webp" height="300px" class="insta-image" alt="">
                 <div class="middle-insta">
-                    <div class="insta-icon"><i class="fa-brands fa-instagram" style="height: 50px;"></i></div>
+                    <div class="insta-icon"><i class="fa-brands fa-instagram" style="height: 50px;"></i>
+                    </div>
                 </div>
+
             </div>
+
             <div class="insta-img-div">
                 <img src="./imgs/home/instagram3.webp" height="300px" class="insta-image" alt="">
             </div>
+
             <div class="insta-img-div">
                 <img src="./imgs/home/instagram4.webp" height="300px" class="insta-image" alt="">
             </div>
+
             <div class="insta-img-div">
                 <img src="./imgs/home/instagram5.webp" height="300px" class="insta-image" alt="">
             </div>
+
             <div class="insta-img-div">
                 <img src="./imgs/home/instagram6.webp" height="300px" class="insta-image" alt="">
             </div>
+
         </div>
     </div>
+    </div>
+    <!-- ------------------------------- -->
     <footer>
-        <div class="flex footer-cont">
+        <div class="flex-display footer-cont">
             <div>
                 <img src="./imgs/logo1.png" alt="" id="footer-logo">
                 <h4 class="slogun">
@@ -551,7 +575,8 @@
                     <hr>
                     <li>
                         <ul type="none">
-                            <li class="slogun1">1/2, Rachik House, <br> Yeolekar, College Road, <br> Nashik, Maharashtra
+                            <li class="slogun1">1/2, Rachik House, <br> Yeolekar, College Road, <br> Nashik,
+                                Maharashtra
                             </li>
                             <li><a href="">0253 230 5411</a></li>
                             <li><a href="" target="mailto">creamydesert@gmail.com</a></li>

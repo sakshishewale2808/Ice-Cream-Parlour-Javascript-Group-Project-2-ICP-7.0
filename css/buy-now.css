@@ -1,22 +1,42 @@
-.shop-footer {
-  background-color: #b5b4b4;
-  display: flex;
-  justify-content: space-around;
-  font-size: 15px;
-  padding: 50px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-.footer-sec {
-  width: 400px;
-  margin: 10px 10px;
-  border-right: 2px solid #de1212;
-}
 
-.footer-sec-title {
-  font-size: 17px;
-  font-weight: bold;
+body{
+    background:  #f5eff2;
+    font-family: 'Poppins', sans-serif;
 }
-
-.footer-data {
-  margin-left: 20px;
+.bag{
+    background-color: #e83e8c ;
+}
+.body{
+    border: 1px solid #e83e8c;
+}
+.wdt{
+    width: 50px;
+    height: 50px;
+}
+.c-bag{
+    background-color:lightpink;
+}
+.r-bag{
+    background-color: #eef3f7;
+}
+.ha{
+    color:#e83e8c;
+}
+.img-card-1{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-card-1:hover {
+    transform: translateY(-10px);
+}
+.identity{
+    color: #e83e8c;
+}
+.identity-2{
+    color: #e83e8c;
+}
+.mb-4{
+    color: #e83e8c;
 }
