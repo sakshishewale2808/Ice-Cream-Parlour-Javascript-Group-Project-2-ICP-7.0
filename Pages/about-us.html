@@ -11,72 +11,76 @@
     <link rel="stylesheet" href="/css/about-us.css"/>
     <link rel="stylesheet" href="./../css/header.css">
     <link rel="stylesheet" href="./../css/footer1.css">
+    <link rel="stylesheet" href="./../css/header.css">
+        <script src="./../JS/header.js"></script>
+        <script src="./../JS/index.js"></script>
 </head>
 
 <body>
 
+  <div class="nav-container-main1 flex-display" >
+    <div class="right-flex flex-display">
+        <img src="./../imgs/menu.png" height="40px" class="hamburger-img-nav" onclick="openNav()" alt="">
+        <a href="./../index.html"> <img src="./../imgs/logo.png" class="navigationbar-logo" alt=""></a>
+    </div>
+    <div class="mid-flex">
+        <ul class="menu-list flex-display" type="none">
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./../Pages/about-us.html">About Us</a></li>
+            <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
+            <li><a href="./../Pages/services.html">Services</a></li>
+        </ul>
+    </div>
+    <div class="left-flex">
+        <img src="./../icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
+        <a href="./../Pages/login-page.html"><img src="./../icons/add-contact.png" class="nav-icons login-icon"
+                alt=""></a>
+        <img src="./../icons/heart.png" class="nav-icons  heart-icon" alt="">
+        <a href="./../Pages/add-to-cart.html"><img src="./../icons/shopping-bag.png" class="nav-icons" alt=""
+                onclick="openCarts()"></a>
+    </div>
+</div>
+<header>
 
-    <div class="nav-container flex" id="nav">
-        <div class="right-flex flex">
-            <img src="./../imgs/menu.png" height="40px" class="hamburger" onclick="openNav()" alt="">
-            <a href="./../index.html"> <img src="./../imgs/logo.png" class="logo" alt=""></a>
-        </div>
-        <div class="mid-flex">
-            <ul class="menu-list flex" type="none">
-                <li><a href="./../index.html">Home</a></li>
-                <li><a href="./../Pages/about-us.html">About Us</a></li>
-                <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
-                <li><a href="./../Pages/services.html">Services</a></li>
-            </ul>
-        </div>
-        <div class="left-flex">
-            <img src="./../icons/magnifying-glass.png" class="nav-icons" alt="" onclick="openSearch()">
-            <a href="./../Pages/login-page.html"><img src="./../icons/add-contact.png" class="nav-icons login-icon"
-                    alt=""></a>
-            <img src="./../icons/heart.png" class="nav-icons  heart-icon" alt="">
-            <a href="./../Pages/add-to-cart.html"><img src="./../icons/shopping-bag.png" class="nav-icons" alt=""
-                    onclick="openCarts()"></a>
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
+        <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
+        <h2 class="search-title">And Hit Enter...</h2>
+        <div class="overlay-content">
+            <form>
+                <input type="text" placeholder="Search Your Favorite Ice-Cream Here..." name="search">
+            </form>
         </div>
     </div>
-    <header>
+    <!-- <div id="mySidenav1" class="sidenav1">
+        <a href="javascript:void(0)" class="closebtn1" onclick="closeNavs()">&times;</a>
+        <p class="cart1">Shopping Cart</p>
+        <hr>
+    </div> -->
 
-        <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeSearch()" title="Close Search">x</span><br><br><br>
-            <h1 class="search-title">Search Your Favorite Ice-Cream </h1>
-            <h2 class="search-title">And Hit Enter...</h2>
-            <div class="overlay-content">
-                <form>
-                    <input type="text" placeholder="Search Your Favorite Ice-Cream Here..." name="search">
-                </form>
-            </div>
-        </div>
-        <!-- <div id="mySidenav1" class="sidenav1">
-            <a href="javascript:void(0)" class="closebtn1" onclick="closeNavs()">&times;</a>
-            <p class="cart1">Shopping Cart</p>
-            <hr>
-        </div> -->
+    
 
-
-        </div>
-        <div class="slide-btn-comtain" onclick="changeBg()">
-            <img src="./../icons/new-moon.png" alt="" class="slide-btn" id="slide-btn"
-                onclick="changeSlideBtn('./imgs/s5.jpg')">
-            <img src="./../icons/oval.png" alt="" class="slide-btn btn-2" id="slide-btn1"
-                onclick="changeSlideBtn('./imgs/s6.jpg')">
-        </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <ul class="menu-list" type="none">
-                <li><a href="./../index.html">Home</a></li>
-                <li><a href="./../Pages/about-us.html">About Us</a></li>
-                <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
-                <li><a href="./../Pages/services.html">Services</a></li>
-            </ul>
-        </div>
+    </div>
+    <div class="slide-btn-comtain" onclick="changeBg()">
+        <img src="./../icons/new-moon.png" alt="" class="slide-btn" id="slide-btn"
+            onclick="changeSlideBtn('./imgs/s5.jpg')">
+        <img src="./icons/oval.png" alt="" class="slide-btn btn-2" id="slide-btn1"
+            onclick="changeSlideBtn('./imgs/s6.jpg')">
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="menu-list" type="none">
+            <li><a href="./../index.html">Home</a></li>
+            <li><a href="./../Pages/about-us.html">About Us</a></li>
+            <li><a href="./../Pages/contact-page.html">Contact Us</a></li>
+            <li><a href="./../Pages/services.html">Services</a></li>
+        </ul>
+    </div>
 
 
-    </header>
-    <!-- ----------------------Nav-Bar-End-------------------------------- -->
+</header>
+<!-- ----------------------Nav-Bar-End-------------------------------- -->
+
 
 
 
@@ -95,14 +99,14 @@
 We Are An Awesome Agency.
         </div>
     
-        <div class="pragraph-text mt-5 lh-lg col-sm-12"> 
+        <div class=" pragraph-text mt-5 lh-lg "> 
             <p> Indulge your senses in a world of frozen delights at Frosty Delights, where every scoop tells a story of creamy perfection and tantalizing flavors. Here, we craft ice cream that's not just a dessert but an experience, elevating the ordinary to extraordinary.
              Delight in guilt-free indulgence with our selection of vegan and dairy-free options, including Coconut Bliss, Almond Delight, and Raspberry Sorbet. Everyone deserves a taste of happiness!</p>
              For the daring palate, we offer flavors like Salted Caramel Swirl, Espresso Crunch, and Lavender Honey. Let your taste buds embark on an exciting journey with each spoonful. 
            </div>
 
            <div class="mt-4">
-            <a href="" class="color" > EXPLORE MORE </a>
+            <a href="./../Pages/product-card.html" class="color " > EXPLORE MORE </a>
         </div>
 
         <div  class="mt-5">
@@ -127,18 +131,18 @@ We Are An Awesome Agency.
             </video>
         </div>
 
-        <div class="d-flex">
+        <div class="d-flex ">
           <div class="mx-4 ext-start " >
               <h1 class="heading-font fs-1 fw-bolder mt-5 mb-3">Our Story</h1>
               <span class="color"> ━━━━━━━━━━    </span> &nbsp;&nbsp;&nbsp;&nbsp;
              <span class="pragraph-text"> Creamy Desert</span>
-             <p class="pragraph-text lh-lg fs-6 my-5">
+             <p class="pragraph-text lh-lg fs-6 my-5 paragraph">
               Welcome to Creamy Desert, where every scoop tells a story! Our journey began with a simple desire to create moments of joy and indulgence through the timeless pleasure of ice cream. Nestled in the heart of our customer, our cozy shop invites you to embark on a delightful adventure of flavors and fun.
               
-           <p class="pragraph-text lh-lg fs-6 my-5">  At Creamy Desert, we believe that great ice cream starts with the finest ingredients and a dash of imagination. Each scoop is crafted with love and attention to detail, ensuring a creamy, decadent experience with every bite. </p>
+           <p class="pragraph-text lh-lg fs-6 my-5 paragraph col-sm-12">  At Creamy Desert, we believe that great ice cream starts with the finest ingredients and a dash of imagination. Each scoop is crafted with love and attention to detail, ensuring a creamy, decadent experience with every bite. </p>
         </div>
         <div >
-          <img src="/imgs/about-page-img/stawberry-icecream.png" class="paragraph-img m-5 pt-5"/>
+          <img src="/imgs/about-page-img/stawberry-icecream.png" class="paragraph-img m-5 pt-5 img col-sm-12"/>
         </div>
         </div>
 
@@ -176,8 +180,7 @@ We Are An Awesome Agency.
     <p class="fs-4 p-3"> Natural and Fresh Ingredients </p></div>
 
     <div class="d-flex m-4  pragraph-text " > <img src="./../icons/about-us/img/ice-cream.png" class="icon"/>  
-    <p class="fs-4 p-3">Balanced Sweetness</p>
-    </div>
+    <p class="fs-4 p-3">Balanced Sweetness</p> </div>
  </div>
 </div>
 
